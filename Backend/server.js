@@ -19,9 +19,10 @@ const __dirname = path.dirname(__filename);
 
 app.use(express.static(path.join(__dirname, "../Frontend/dist")));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../Frontend/dist/index.html"));
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 });
+
 // -------------------------
 
 app.listen(5000, "0.0.0.0", () => {
