@@ -52,7 +52,7 @@ export default function ContactPage() {
     };
 
     try {
-      const res = await fetch(" http://localhost:5000/api/contact", {
+      const res = await fetch("http://72.60.173.145:5000/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
