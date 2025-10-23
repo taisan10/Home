@@ -165,7 +165,7 @@ export default function ContactPage() {
               disabled={loading}
               className="rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 px-6 py-3 text-sm font-medium text-white shadow-lg disabled:opacity-50"
             >
-              {loading ? "Submitting..." : "Book a call"}
+              {loading ? "Submitting..." : "Chat With Us  "}
             </button>
 
             {status && (

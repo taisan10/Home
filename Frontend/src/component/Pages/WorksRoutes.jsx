@@ -1,12 +1,4 @@
-// import Work from "./Work";
 
-// export const Works = [
-//   { path: "/Work/Triveeni Events", element: <Work /> },
-  
-// ];
-
-
-// component/Pages/WorksRoutes.jsx
 
 
 import WorksData from "./CaseStudy/index/WorksData";
