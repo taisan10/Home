@@ -2,8 +2,8 @@ import express from "express";
 import cors from "cors";
 import contactRoutes from "./routes/contact.js";
 import dotenv from "dotenv";
-import path from "path";
-import { fileURLToPath } from "url";
+// import path from "path";
+// import { fileURLToPath } from "url";
 
 dotenv.config();
 
@@ -13,15 +13,15 @@ app.use(express.json());
 
 app.use("/api", contactRoutes);
 
-// ---- Serve Frontend ----
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// // ---- Serve Frontend ----
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
 
-app.use(express.static(path.join(__dirname, "../Frontend/dist")));
+// app.use(express.static(path.join(__dirname, "../Frontend/dist")));
 
-app.use((req, res) => {
-  res.sendFile(path.join(__dirname, "../Frontend/dist/index.html"));
-});
+// app.use((req, res) => {
+//   res.sendFile(path.join(__dirname, "../Frontend/dist/index.html"));
+// });
 
 // -------------------------
 

@@ -70,7 +70,7 @@ export   function Stat({ kpi, accent, title, desc }) {
    
   };
   return (
-    <div className="rounded-[22px] bg-white/5 p-6 sm:p-8 ring-5 ring-white/12 shadow-[0_1px_0_0_rgba(255,255,255,0.05)_inset]">
+    <div className="rounded-[22px] bg-white/5 p-6 sm:p-8 ring-5 ring-white/0 shadow-[0_1px_0_0_rgba(255,255,255,0.05)_inset]">
       <div className="text-4xl sm:text-6xl font-semibold tracking-tight">
         {kpi}
       </div>

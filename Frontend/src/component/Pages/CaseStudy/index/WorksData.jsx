@@ -4,6 +4,9 @@ const WorksData = [
   name: "Triveeni Events",
   names: "Triveeni Events",
   slug: "triveeni-events",
+   grid:{
+ image: "/Grid/1.jpg",
+  },
   heroSection: {
     title: "Triveeni Events",
     subtitle: "1.3M+ Views in 90 Days: Organic Social Media Strategy",
@@ -107,6 +110,9 @@ const WorksData = [
   name: "Beaver Bank Station Bar & Grill",
   names: "Beaver Bank Station",
   slug: "beaver-bank-station-Bar-&-grill",
+   grid:{
+ image: "/Grid/2.jpg",
+  },
   // name: "Beaver Bank Station Bar & Grill",
   heroSection: {
     title: "Beaver Bank Station Bar & Grill",
@@ -217,6 +223,9 @@ const WorksData = [
   name: "Nayya Pizza & Grill",
   names: "Nayya Pizza & Grill",
   slug: "nayya-pizza-&-grill",
+ grid:{
+ image: "/Grid/3.jpg",
+  },
   heroSection: {
     title: "Nayya Pizza & Grill",
     subtitle: "3.6M+ Views in 90 Days: Explosive Organic Growth for Nayya Pizza & Grill",
@@ -320,6 +329,9 @@ const WorksData = [
   name: "Adda Indian Eatery",
   names: "Adda Indian Eatery",
   slug: "adda-indian-eatery",
+  grid:{
+ image: "/Grid/4.jpg",
+  },
   // name: "Adda Indian Eatery",
   heroSection: {
     title: "Adda Indian Eatery",
@@ -426,6 +438,9 @@ const WorksData = [
   name: "Pita Nutso",
   names: "Pita Nutso",
   slug: "pita-nutso",
+  grid:{
+ image: "/Grid/5.jpg",
+  },
   heroSection: {
     title: "Pita Nutso",
     subtitle: "36.1K+ Views in 90 Days: Organic Growth Strategy for Pita Nutso",
@@ -526,6 +541,9 @@ const WorksData = [
   name: "Sake Cafe  Sushi Bar & Grill",
   names: "Sake Cafe ",
   slug: "sake-cafe-sushi-bar-&-grill",
+   grid:{
+ image: "/Grid/6.jpg",
+  },
   // name: "Sake Cafe | Sushi Bar & Grill",
   heroSection: {
     title: "Sake Cafe | Sushi Bar & Grill",
@@ -634,6 +652,9 @@ const WorksData = [
   name: "Hearthstone Inn",
   names: "Hearthstone Inn",
   slug: "hearthstone-inn",
+   grid:{
+ image: "/Grid/7.jpg",
+  },
   heroSection: {
     title: "Hearthstone Inn",
     subtitle: "1.6K+ Views in 60 Days: Building Brand Presence for Hearthstone Inn from Scratch",
@@ -739,6 +760,9 @@ const WorksData = [
   name: "The Garden Retreat",
   names: "The Garden Retreat",
   slug:"the-garden-retreat",
+  grid:{
+ image: "/Grid/8.jpg",
+  },
   heroSection: {
     title: "The Garden Retreat",
     subtitle: "67K+ Views in 60 Days: Establishing Premium Presence for The Garden Retreat",
@@ -845,6 +869,9 @@ const WorksData = [
   name: "Besharam Bar and Grill",
   names: "Besharam Bar and Grill",
   slug: "beshram-bar-and-grill",
+  grid:{
+ image: "/Grid/9.jpg",
+  },
   heroSection: {
     title: "Besharam Bar and Grill",
     subtitle: "60K+ Views in 60 Days: Bold Fusion Strategy for Besharam Bar and Grill",
@@ -952,6 +979,9 @@ const WorksData = [
   name: "Rivaaj Resto-Bar",
   names: "Rivaaj Resto-bar ",
    slug: "rivaaj-resto-bar",
+  grid:{
+ image: "/Grid/10.jpg",
+  },
 
   heroSection: {
     title: "Rivaaj Resto-Bar",

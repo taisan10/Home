@@ -91,7 +91,7 @@ const formatValue = (value, metric) => {
         ))}
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-md sm:max-w-xl mx-auto">
+      <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 sm:gap-6 max-w-md sm:max-w-xl mx-auto">
         {metrics.map((item, index) => (
           <div
             key={index}

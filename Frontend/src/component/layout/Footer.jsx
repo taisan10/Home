@@ -204,17 +204,18 @@ export default function Footer() {
       {/* Embedded Map */}
       <Container>
         <div className="w-full h-80 rounded-xl overflow-hidden ring-1 ring-white/10 mt-10">
-          <iframe
-            title="Company Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.4654753839936!2d-63.63251087902276!3d44.659525482942136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a213a9bb324a1%3A0x893bde709f90f7dc!2sBluenose%20Studio!5e0!3m2!1sen!2sca!4v1759469414406!5m2!1sen!2sca"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-        </div>
+  <iframe
+    title="Bluenose Marketing Location"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.4654753839936!2d-63.63251087902276!3d44.659525482942136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a21b80b962dc5%3A0x2da108dfe8358fea!2sBluenose%20Marketing!5e0!3m2!1sen!2sca!4v1759469414406!5m2!1sen!2sca"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  />
+</div>
+
       </Container>
 
       {/* Bottom Section */}

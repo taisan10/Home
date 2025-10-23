@@ -63,13 +63,13 @@ export default function Work() {
             </p>
 
             {/* Stats */}
-            <div className="grid md:grid-cols-2 gap-4 mt-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3  md:grid-cols-2 lg:grid-cols-2  gap-4 mt-4">
               {activeWork.overview.metrics.map((stat, idx) => (
                 <div
                   key={idx}
                   className="bg-white text-black rounded-lg sm:rounded-xl px-3 sm:px-4 py-2 sm:py-3 text-center shadow-md"
                 >
-                  <div className="text-lg sm:text-2xl font-bold">{stat.value}</div>
+                  <div className="text-lg sm:text-xl md:text-2xl font-bold">{stat.value}</div>
                   <div className="text-xs sm:text-sm font-medium">{stat.label}</div>
                 </div>
               ))}
@@ -87,14 +87,29 @@ export default function Work() {
           </div>
 
           {/* Right: Image */}
-          <div className="w-full md:w-1/2 flex justify-center">
-            <img
-              src={activeWork.heroSection.image}
-              alt={activeWork.name}
-              className="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-xl sm:rounded-2xl object-cover"
-            />
-          </div>
+        <div className="w-full md:w-1/2 flex justify-center px-4 sm:px-6 lg:px-8">
+  <div className="relative group w-full max-w-[90%] sm:max-w-sm md:max-w-md lg:max-w-lg rounded-xl sm:rounded-2xl overflow-hidden">
+    {/* Default image */}
+    <img
+      src={activeWork.heroSection.image}
+      alt={activeWork.name}
+      className="w-full h-auto sm:h-[400px] md:h-[450px] lg:h-[500px] object-contain transition-opacity duration-500 group-hover:opacity-0"
+    />
+
+    {/* Hover image */}
+    <img
+      src={activeWork.grid.image}
+      alt={activeWork.name}
+      className="absolute top-0 left-0 w-full h-[210px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-contain opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+    />
+  </div>
+</div>
+
+
+
         </div>
+
+        
 
         {/* Bottom Navigation */}
         <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
