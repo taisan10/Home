@@ -16,7 +16,7 @@ const logos = Array.from({ length: 16 }, (_, i) => `/Client_Logo/${i + 1}.png`);
 
       <Container className="py-14 sm:py-20 lg:py-28 text-center mt-10 sm:mt-5">
         <h1 className="w-full text-3xl sm:text-5xl lg:text-6xl font-semibold leading-tight">
-          <GradientText> All-in-One Marketing, </GradientText>
+          <GradientText> hAll-in-One Marketing, </GradientText>
           Built for Growing Businesses.
         </h1>
 

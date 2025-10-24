@@ -12,23 +12,17 @@ export default function Video() {
       "/videos/UGC/UGC3.mp4",
       "/videos/UGC/UGC4.mp4",
      
-      // "/videos/video3.MP4",
-      // "/videos/video2.mov",
-      // "/videos/video4.mov",
-      // "/videos/video1.mp4",
+     
     ],
     EVENTS: [
        
       "/videos/Events/Events.mp4",
-      "/videos/Events/Events1.mp4",
-      "/videos/Events/Events2.mp4",
-      "/videos/Events/Events3.mp4",
-      "/videos/Events/Events4.mp4",
+      "/videos/Events/Events 1.mp4",
+      "/videos/Events/Events 2.mp4",
+      "/videos/Events/Events 3.mp4",
+      "/videos/Events/Events 4.mp4",
       
-      // "/videos/video3.MP4",
-      // "/videos/video2.mov",
-      // "/videos/video4.mov",
-      // "/videos/video1.mp4",
+     
     ],
     SMM: [
       "/videos/SMM/SMM.mp4",
@@ -38,10 +32,7 @@ export default function Video() {
       "/videos/SMM/SMM4.mp4",
 
 
-      // "/videos/video3.MP4",
-      // "/videos/video2.mov",
-      // "/videos/video4.mov",
-      // "/videos/video1.mp4",
+     
     ],
     "Video Production": [
       "/videos/Video Production/Video Production.mp4",
@@ -51,10 +42,7 @@ export default function Video() {
       "/videos/Video Production/Video Production4.mp4",
 
       
-      // "/videos/video3.MP4",
-      // "/videos/video2.mov",
-      // "/videos/video4.mov",
-      // "/videos/video1.mp4",
+      
     ],
     "Personal Branding": [
       "/videos/Personal Branding/Personal Branding5.mp4",
@@ -62,12 +50,8 @@ export default function Video() {
       "/videos/Personal Branding/Personal Branding2.mp4",
       "/videos/Personal Branding/Personal Branding.mp4",
       "/videos/Personal Branding/Personal Branding3.mp4",
-      // "/videos/Personal Branding/Personal Branding4.mp4",
-
-      // "/videos/video3.MP4",
-      // "/videos/video2.mov",
-      // "/videos/video4.mov",
-      // "/videos/video1.mp4",
+  
+,
 
     ],
     "Influencer Marketing": [
@@ -77,11 +61,7 @@ export default function Video() {
       "/videos/Influencer Marketing/Influencer marketing3.mp4",
       "/videos/Influencer Marketing/Influencer marketing4.mp4",
 
-      // "/videos/video3.MP4",
-      // "/videos/video2.mov",
-      // "/videos/video4.mov",
-      // "/videos/video1.mp4",
-
+     
     ],
   };
 

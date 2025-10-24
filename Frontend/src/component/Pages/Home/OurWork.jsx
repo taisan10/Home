@@ -100,7 +100,7 @@ export default function Work() {
     <img
       src={activeWork.grid.image}
       alt={activeWork.name}
-      className="absolute top-0 left-0 w-full h-[210px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-contain opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+      className="absolute top-0 left-0 w-full h-[190px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-contain opacity-0 transition-opacity duration-500 group-hover:opacity-100"
     />
   </div>
 </div>

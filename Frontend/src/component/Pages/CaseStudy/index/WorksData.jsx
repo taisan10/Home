@@ -97,7 +97,7 @@ const WorksData = [
   
     title: "Sake Cafe | Sushi Bar & Grill",
     desc: "9.7K+ Views in 60 Days: Building Authentic Presence for Sake Cafe | Sushi Bar & Grill",
-    img: "/Client_Logo/7.png",
+    img: "/Client_Logo/7.1.png",
     theme: "bg-[#b2222b] text-black",
     slug: "sake-cafe-sushi-bar-&-grill",
 
@@ -337,7 +337,7 @@ const WorksData = [
     title: "Adda Indian Eatery",
     subtitle: "214K+ Views in 90 Days: Emotional Storytelling & Cultural Connection for Adda Indian Eatery",
     tags: ["Strategic Planning", "Performance Pulse", "Content Power"],
-    image: "/Client_Logo/444.png",
+    image: "/Client_Logo/4.1.png",
     theme: "bg-[#FFC100] text-black",
   },
   overview: {
@@ -426,7 +426,7 @@ const WorksData = [
 {
     title: "Sake Cafe | Sushi Bar & Grill",
     desc: "9.7K+ Views in 60 Days: Building Authentic Presence for Sake Cafe | Sushi Bar & Grill",
-    img: "/Client_Logo/7.png",
+    img: "/Client_Logo/7.1.png",
     theme: "bg-[#b2222b] text-black",
     slug: "sake-cafe-sushi-bar-&-grill",
   },
@@ -549,7 +549,7 @@ const WorksData = [
     title: "Sake Cafe | Sushi Bar & Grill",
     subtitle: "9.7K+ Views in 60 Days: Building Authentic Presence for Sake Cafe | Sushi Bar & Grill",
     tags: ["Audience Connect", "Visibility Boost", "Growth Strategy"],
-    image: "/Client_Logo/7.png",
+    image: "/Client_Logo/7.1.png",
     theme: "bg-[#b2222b] text-black",
   },
   overview: {
@@ -855,7 +855,7 @@ const WorksData = [
 {
     title: "Sake Cafe | Sushi Bar & Grill",
     desc: "9.7K+ Views in 60 Days: Building Authentic Presence for Sake Cafe | Sushi Bar & Grill",
-    img: "/Client_Logo/7.png",
+    img: "/Client_Logo/7.1.png",
     theme: "bg-[#b2222b] text-black",
     slug: "sake-cafe-sushi-bar-&-grill",
   },
@@ -957,7 +957,7 @@ const WorksData = [
   {
     title: "Sake Cafe | Sushi Bar & Grill",
     desc: "9.7K+ Views in 60 Days: Building Authentic Presence for Sake Cafe | Sushi Bar & Grill",
-    img: "/Client_Logo/7.png",
+    img: "/Client_Logo/7.1.png",
     theme: "bg-[#b2222b] text-black",
     slug: "sake-cafe-sushi-bar-&-grill",
   },
@@ -1052,7 +1052,7 @@ const WorksData = [
    {
     title: "Sake Cafe | Sushi Bar & Grill",
     desc: "9.7K+ Views in 60 Days: Building Authentic Presence for Sake Cafe | Sushi Bar & Grill",
-    img: "/Client_Logo/7.png",
+    img: "/Client_Logo/7.1.png",
     theme: "bg-[#b2222b] text-black",
     slug: "sake-cafe-sushi-bar-&-grill",
   },

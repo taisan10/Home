@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Container, Logo, PrimaryButton, MobileNav } from "../UI/UiComponent";
 
-
+import { ServiceRoutes } from "../Pages/Services/ServiceRoutes";
 
 import WorksData from "../Pages/CaseStudy/index/WorksData";
 
@@ -14,8 +14,14 @@ export default function Header() {
   const [showNavbar, setShowNavbar] = useState(true);
   const lastScrollY = useRef(0);
   let timeoutId = useRef(null);
-
-
+  
+// const serviceNavChildren = ServiceRoutes.map(({ path, element }) => {
+//   const label = path.split("/").pop().replace(/-/g, " ");
+//   return {
+//     label: label.charAt(0).toUpperCase() + label.slice(1),
+//     href: path,
+//   };
+// });
 
 
 const workNavChildren = WorksData.map((item) => ({
@@ -31,7 +37,12 @@ const workNavChildren = WorksData.map((item) => ({
 {
   label: "Work",
   children: workNavChildren,
-}
+},
+
+// {
+//     label: "Services",
+//     children: serviceNavChildren,
+//   },
 
 
 
@@ -171,3 +182,12 @@ const workNavChildren = WorksData.map((item) => ({
     </header>
   );
 }
+
+
+
+
+
+
+
+
+
