@@ -1,10 +1,15 @@
 
 
 import { PrimaryButton, GradientText, Container } from "../../UI/UiComponent";
-import { useState } from "react";
+
 import { useSwipeable } from "react-swipeable";
 
 import WorksData from "../CaseStudy/index/WorksData";
+
+import { useEffect, useState, useRef } from "react";
+ 
+
+
 
 export default function Work() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -22,12 +27,54 @@ export default function Work() {
     trackMouse: true,
   });
 
+  // timer. first logo , second  grid
+  const [showSecondImage, setShowSecondImage] = useState(false);
+const sectionRef = useRef(null);
+
+useEffect(() => {
+  let observer;
+  let timer;
+
+  function handleIntersection(entries) {
+    const entry = entries[0];
+    if (entry.isIntersecting) {
+      setShowSecondImage(false); // Reset
+      timer = setTimeout(() => {
+        setShowSecondImage(true);
+      }, 3000);
+    } else {
+      clearTimeout(timer);
+      setShowSecondImage(false); // Hide second image when out of view
+    }
+  }
+
+  observer = new IntersectionObserver(handleIntersection, {
+    threshold: 0.5, // 50% visible
+  });
+
+  if (sectionRef.current) {
+    observer.observe(sectionRef.current);
+  }
+
+  return () => {
+    if (observer && sectionRef.current) {
+      observer.unobserve(sectionRef.current);
+    }
+    clearTimeout(timer);
+  };
+}, [activeIndex]);
+
+ 
+
   return (
-    <section className="py-12 px-4 sm:px-6 md:px-12 text-center">
+    <section   
+    ref={sectionRef}
+    className="py-12 px-4 sm:px-6 md:px-12 text-center">
       <Container>
         <h2 className="text-2xl sm:text-4xl md:text-6xl font-bold mb-8 sm:mb-10">
           Our Works
         </h2>
+      
 
         {/* Company Tabs */}
         <div className="w-full overflow-x-auto scrollbar-hide scroll-smooth mb-6 sm:mb-10">
@@ -86,24 +133,29 @@ export default function Work() {
             </div>
           </div>
 
-          {/* Right: Image */}
+          {/* Right Side */}
         <div className="w-full md:w-1/2 flex justify-center px-4 sm:px-6 lg:px-8">
-  <div className="relative group w-full max-w-[90%] sm:max-w-sm md:max-w-md lg:max-w-lg rounded-xl sm:rounded-2xl overflow-hidden">
-    {/* Default image */}
-    <img
-      src={activeWork.heroSection.image}
-      alt={activeWork.name}
-      className="w-full h-auto sm:h-[400px] md:h-[450px] lg:h-[500px] object-contain transition-opacity duration-500 group-hover:opacity-0"
-    />
+      <div className="relative w-full max-w-[90%] sm:max-w-sm md:max-w-md lg:max-w-lg rounded-xl sm:rounded-2xl overflow-hidden">
+        {/* First Logo Image */}
+<img
+  src={activeWork.heroSection.image}
+  alt={activeWork.name}
+  className={`w-full h-auto sm:h-[400px] md:h-[450px] lg:h-[500px] object-contain transition-opacity duration-700 ${
+    showSecondImage ? "opacity-0" : "opacity-100"
+  }`}
+/>
 
-    {/* Hover image */}
-    <img
-      src={activeWork.grid.image}
-      alt={activeWork.name}
-      className="absolute top-0 left-0 w-full h-[190px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-contain opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-    />
-  </div>
-</div>
+{/* Second Grid Image — Render only after timer */}
+{showSecondImage && (
+  <img
+    src={activeWork.grid.image}
+    alt={activeWork.name}
+    className="absolute top-0 left-0 w-full h-[190px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-contain opacity-100 transition-opacity duration-700"
+  />
+)}
+      </div>
+    </div>
+
 
 
 
