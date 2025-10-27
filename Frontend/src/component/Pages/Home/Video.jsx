@@ -132,8 +132,8 @@ useEffect(() => {
     (entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) {
-          // Section bahar gaya, sab videos mute
-          videoRefs.current.forEach((vid) => {
+          // ✅ Mute all actual video elements
+          videoElementsRef.current.forEach((vid) => {
             if (vid) vid.muted = true;
           });
         }
@@ -177,6 +177,7 @@ useEffect(() => {
   };
 }, [videos, currentIndex]);
 
+const videoElementsRef = useRef([]);
 
   return (
     <section className="-mt-20">
@@ -228,12 +229,14 @@ useEffect(() => {
 >
   {visibleVideos[idx] && (
     <video
-      src={video}
-      className="w-full h-full object-cover"
-      autoPlay
-      loop
-      muted={mutedStates[idx]}
-    />
+  ref={(el) => (videoElementsRef.current[idx] = el)}
+  src={video}
+  className="w-full h-full object-cover"
+  autoPlay
+  loop
+  muted={mutedStates[idx]}
+  preload="none"
+/>
   )}
 </div>
                   {/* Mute/Unmute Button */}
