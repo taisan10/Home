@@ -3,8 +3,6 @@ import cors from "cors";
 import contactRoutes from "./routes/contact.js";
 import streamRoutes from "./routes/stream.js";
 import dotenv from "dotenv";
-// import path from "path";
-// import { fileURLToPath } from "url";
 
 dotenv.config();
 
@@ -13,7 +11,27 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/api", contactRoutes);
-app.use("/", streamRoutes); 
+app.use("/", streamRoutes);
+
+
+
+app.listen(5000, "0.0.0.0", () => {
+  console.log("Server running on http://0.0.0.0:5000");
+});
+
+
+
+
+
+
+
+
+
+
+
+// import path from "path";
+// import { fileURLToPath } from "url";
+
 
 // // ---- Serve Frontend ----
 // const __filename = fileURLToPath(import.meta.url);
@@ -26,7 +44,3 @@ app.use("/", streamRoutes);
 // });
 
 // -------------------------
-
-app.listen(5000, "0.0.0.0", () => {
-  console.log("Server running on http://0.0.0.0:5000");
-});
