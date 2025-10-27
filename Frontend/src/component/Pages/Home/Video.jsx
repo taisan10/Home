@@ -76,10 +76,17 @@ export default function Video() {
     videos.map(() => true) // sab mute by default
   );
 
+  const [visibleVideos, setVisibleVideos] = useState(
+  videos.map(() => false)
+); 
+
+
   // ✅ Reset when category changes
   useEffect(() => {
     setCurrentIndex(0);
     setMutedStates(videos.map(() => true));
+    setVisibleVideos(videos.map(() => false)); // reset visibility
+
   }, [activeCategory]);
 
   // ✅ Responsive visible slides
@@ -142,6 +149,34 @@ useEffect(() => {
 }, []);
 
 
+useEffect(() => {
+  const observers = [];
+
+  videoRefs.current.forEach((videoEl, idx) => {
+    if (!videoEl) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisibleVideos((prev) =>
+            prev.map((v, i) => (i === idx ? true : v))
+          );
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    observer.observe(videoEl);
+    observers.push(observer);
+  });
+
+  return () => {
+    observers.forEach((observer) => observer.disconnect());
+  };
+}, [videos, currentIndex]);
+
+
+
   return (
     <section className="-mt-20">
       <Container>
@@ -186,15 +221,20 @@ useEffect(() => {
               >
                 <div className="relative w-full aspect-[9/16] bg-black rounded-[2rem] border border-neutral-800 shadow-xl overflow-hidden">
                   {/* Video */}
-                  <video
-                    ref={(el) => (videoRefs.current[idx] = el)}
-  
-                    src={video}
-                    className="w-full h-full object-cover"
-                    autoPlay
-                    loop
-                    muted={mutedStates[idx]}
-                  />
+           <div
+  ref={(el) => (videoRefs.current[idx] = el)}
+  className="relative w-full h-full"
+>
+  {visibleVideos[idx] && (
+    <video
+      src={video}
+      className="w-full h-full object-cover"
+      autoPlay
+      loop
+      muted={mutedStates[idx]}
+    />
+  )}
+</div>
                   {/* Mute/Unmute Button */}
                   <button
                     onClick={() => toggleMute(idx)}
