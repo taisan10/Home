@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import contactRoutes from "./routes/contact.js";
+import streamRoutes from "./routes/stream.js";
 import dotenv from "dotenv";
 // import path from "path";
 // import { fileURLToPath } from "url";
@@ -12,6 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/api", contactRoutes);
+app.use("/", streamRoutes); 
 
 // // ---- Serve Frontend ----
 // const __filename = fileURLToPath(import.meta.url);

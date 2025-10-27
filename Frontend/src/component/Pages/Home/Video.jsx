@@ -3,67 +3,111 @@ import { useState, useEffect, useRef } from "react";
 
 export default function Video() {
   // ✅ Multiple categories
-  const videoCategories = {
-    UGC: [
+//   const videoCategories = {
+//     UGC: [
 
-      "/videos/UGC/UGC.mp4",
-      "/videos/UGC/UGC1.mp4",
-      "/videos/UGC/UGC2.mp4",
-      "/videos/UGC/UGC3.mp4",
-      "/videos/UGC/UGC4.mp4",
+//       "/videos/UGC/UGC.mp4",
+//       "/videos/UGC/UGC1.mp4",
+//       "/videos/UGC/UGC2.mp4",
+//       "/videos/UGC/UGC3.mp4",
+//       "/videos/UGC/UGC4.mp4",
      
      
-    ],
-    EVENTS: [
+//     ],
+//     EVENTS: [
        
-      "/videos/Events/Events.mp4",
-      "/videos/Events/Events 1.mp4",
-      "/videos/Events/Events 2.mp4",
-      "/videos/Events/Events 3.mp4",
-      "/videos/Events/Events 4.mp4",
+//       "/videos/Events/Events.mp4",
+//       "/videos/Events/Events 1.mp4",
+//       "/videos/Events/Events 2.mp4",
+//       "/videos/Events/Events 3.mp4",
+//       "/videos/Events/Events 4.mp4",
       
      
-    ],
-    SMM: [
-      "/videos/SMM/SMM.mp4",
-      "/videos/SMM/SMM1.mp4",
-      "/videos/SMM/SMM2.mp4",
-      "/videos/SMM/SMM3.mp4",
-      "/videos/SMM/SMM4.mp4",
+//     ],
+//     SMM: [
+//       "/videos/SMM/SMM.mp4",
+//       "/videos/SMM/SMM1.mp4",
+//       "/videos/SMM/SMM2.mp4",
+//       "/videos/SMM/SMM3.mp4",
+//       "/videos/SMM/SMM4.mp4",
 
 
      
-    ],
-    "Video Production": [
-      "/videos/Video Production/Video Production.mp4",
-      "/videos/Video Production/Video Production1.mp4",
-      "/videos/Video Production/Video Production2.mp4",
-      "/videos/Video Production/Video Production3.mp4",
-      "/videos/Video Production/Video Production4.mp4",
+//     ],
+//     "Video Production": [
+//       "/videos/Video Production/Video Production.mp4",
+//       "/videos/Video Production/Video Production1.mp4",
+//       "/videos/Video Production/Video Production2.mp4",
+//       "/videos/Video Production/Video Production3.mp4",
+//       "/videos/Video Production/Video Production4.mp4",
 
       
       
-    ],
-    "Personal Branding": [
-      "/videos/Personal Branding/Personal Branding5.mp4",
-      "/videos/Personal Branding/Personal Branding1.mp4",
-      "/videos/Personal Branding/Personal Branding2.mp4",
-      "/videos/Personal Branding/Personal Branding.mp4",
-      "/videos/Personal Branding/Personal Branding3.mp4",
+//     ],
+//     "Personal Branding": [
+//       "/videos/Personal Branding/Personal Branding5.mp4",
+//       "/videos/Personal Branding/Personal Branding1.mp4",
+//       "/videos/Personal Branding/Personal Branding2.mp4",
+//       "/videos/Personal Branding/Personal Branding.mp4",
+//       "/videos/Personal Branding/Personal Branding3.mp4",
   
-,
+// ,
 
-    ],
-    "Influencer Marketing": [
-      "/videos/Influencer Marketing/Influencer marketing.mp4",
-      "/videos/Influencer Marketing/Influencer marketing1.mp4",
-      "/videos/Influencer Marketing/Influencer marketing2.mp4",
-      "/videos/Influencer Marketing/Influencer marketing3.mp4",
-      "/videos/Influencer Marketing/Influencer marketing4.mp4",
+//     ],
+//     "Influencer Marketing": [
+//       "/videos/Influencer Marketing/Influencer marketing.mp4",
+//       "/videos/Influencer Marketing/Influencer marketing1.mp4",
+//       "/videos/Influencer Marketing/Influencer marketing2.mp4",
+//       "/videos/Influencer Marketing/Influencer marketing3.mp4",
+//       "/videos/Influencer Marketing/Influencer marketing4.mp4",
 
      
-    ],
-  };
+//     ],
+//   };
+ const videoCategories = {
+  UGC: [
+    "http://localhost:5000/video/UGC/UGC.mp4",
+    "http://localhost:5000/video/UGC/UGC1.mp4",
+    "http://localhost:5000/video/UGC/UGC2.mp4",
+    "http://localhost:5000/video/UGC/UGC3.mp4",
+    "http://localhost:5000/video/UGC/UGC4.mp4",
+  ],
+  EVENTS: [
+    "http://localhost:5000/video/Events/Events.mp4",
+    "http://localhost:5000/video/Events/Events 1.mp4",
+    "http://localhost:5000/video/Events/Events 2.mp4",
+    "http://localhost:5000/video/Events/Events 3.mp4",
+    "http://localhost:5000/video/Events/Events 4.mp4",
+  ],
+  SMM: [
+    "http://localhost:5000/video/SMM/SMM.mp4",
+    "http://localhost:5000/video/SMM/SMM1.mp4",
+    "http://localhost:5000/video/SMM/SMM2.mp4",
+    "http://localhost:5000/video/SMM/SMM3.mp4",
+    "http://localhost:5000/video/SMM/SMM4.mp4",
+  ],
+  "Video Production": [
+    "http://localhost:5000/video/Video Production/Video Production.mp4",
+    "http://localhost:5000/video/Video Production/Video Production1.mp4",
+    "http://localhost:5000/video/Video Production/Video Production2.mp4",
+    "http://localhost:5000/video/Video Production/Video Production3.mp4",
+    "http://localhost:5000/video/Video Production/Video Production4.mp4",
+  ],
+  "Personal Branding": [
+    "http://localhost:5000/video/Personal Branding/Personal Branding5.mp4",
+    "http://localhost:5000/video/Personal Branding/Personal Branding1.mp4",
+    "http://localhost:5000/video/Personal Branding/Personal Branding2.mp4",
+    "http://localhost:5000/video/Personal Branding/Personal Branding.mp4",
+    "http://localhost:5000/video/Personal Branding/Personal Branding3.mp4",
+  ],
+  "Influencer Marketing": [
+    "http://localhost:5000/video/Influencer Marketing/Influencer marketing.mp4",
+    "http://localhost:5000/video/Influencer Marketing/Influencer marketing1.mp4",
+    "http://localhost:5000/video/Influencer Marketing/Influencer marketing2.mp4",
+    "http://localhost:5000/video/Influencer Marketing/Influencer marketing3.mp4",
+    "http://localhost:5000/video/Influencer Marketing/Influencer marketing4.mp4",
+  ],
+};
 
   const categories = Object.keys(videoCategories);
 
