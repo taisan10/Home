@@ -129,7 +129,7 @@ export default function Video() {
   useEffect(() => {
     setCurrentIndex(0);
     setMutedStates(videos.map(() => true));
-    setVisibleVideos(videos.map(() => false)); // reset visibility
+    setVisibleVideos(videos.map(() => true)); // reset visibility
     videoRefs.current = []; // ✅ Reset refs
 
   }, [activeCategory]);
@@ -207,7 +207,7 @@ useEffect(() => {
             );
           }
         },
-        { threshold: 0.5 }
+        { threshold: 0.1 }
       );
 
       observer.observe(videoEl);
@@ -280,6 +280,9 @@ const videoElementsRef = useRef([]);
   loop
   muted={mutedStates[idx]}
   preload="none"
+  playsInline
+  crossOrigin="anonymous"
+
 />
   )}
 </div>
