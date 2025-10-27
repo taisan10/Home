@@ -64,6 +64,7 @@ export default function Video() {
      
 //     ],
 //   };
+
  const videoCategories = {
   UGC: [
     "http://72.60.173.145/video/UGC/UGC.mp4",
