@@ -283,7 +283,7 @@ const videoElementsRef = useRef([]);
   preload="none"
   playsInline
   crossOrigin="anonymous"
-
+onError={() => console.error("Video failed:", video)}
 />
   )}
 </div>
