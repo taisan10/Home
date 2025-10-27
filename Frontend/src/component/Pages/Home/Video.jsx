@@ -86,6 +86,7 @@ export default function Video() {
     setCurrentIndex(0);
     setMutedStates(videos.map(() => true));
     setVisibleVideos(videos.map(() => false)); // reset visibility
+    videoRefs.current = []; // ✅ Reset refs
 
   }, [activeCategory]);
 
@@ -148,33 +149,33 @@ useEffect(() => {
   };
 }, []);
 
-
 useEffect(() => {
   const observers = [];
+  const timeout = setTimeout(() => {
+    videoRefs.current.forEach((videoEl, idx) => {
+      if (!videoEl) return;
 
-  videoRefs.current.forEach((videoEl, idx) => {
-    if (!videoEl) return;
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setVisibleVideos((prev) =>
+              prev.map((v, i) => (i === idx ? true : v))
+            );
+          }
+        },
+        { threshold: 0.5 }
+      );
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisibleVideos((prev) =>
-            prev.map((v, i) => (i === idx ? true : v))
-          );
-        }
-      },
-      { threshold: 0.5 }
-    );
-
-    observer.observe(videoEl);
-    observers.push(observer);
-  });
+      observer.observe(videoEl);
+      observers.push(observer);
+    });
+  }, 100); // ✅ Delay to allow DOM render
 
   return () => {
+    clearTimeout(timeout);
     observers.forEach((observer) => observer.disconnect());
   };
 }, [videos, currentIndex]);
-
 
 
   return (
