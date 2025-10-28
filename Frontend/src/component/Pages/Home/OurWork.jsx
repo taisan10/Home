@@ -1,6 +1,6 @@
 
 
-import { PrimaryButton, GradientText, Container } from "../../UI/UiComponent";
+import { PrimaryButton, GradientText, Container, SectionTitle, } from "../../UI/UiComponent";
 
 import { useSwipeable } from "react-swipeable";
 
@@ -41,7 +41,7 @@ useEffect(() => {
       setShowSecondImage(false); // Reset
       timer = setTimeout(() => {
         setShowSecondImage(true);
-      }, 3000);
+      }, 20000);
     } else {
       clearTimeout(timer);
       setShowSecondImage(false); // Hide second image when out of view
@@ -69,15 +69,13 @@ useEffect(() => {
   return (
     <section   
     ref={sectionRef}
-    className="py-12 px-4 sm:px-6 md:px-12 text-center">
+    className="py-12 px-4 sm:px-6 md:px-12 -mt-19 sm:-mt-20 text-center">
       <Container>
-        <h2 className="text-2xl sm:text-4xl md:text-6xl font-bold mb-8 sm:mb-10">
-          Our Works
-        </h2>
+          <h4 className="text-3xl md:text-5xl lg:text-5xl bg-gradient-to-r from-sky-400 via-cyan-400 to-teal-300 bg-clip-text text-transparent" >Our Works</h4>
       
 
         {/* Company Tabs */}
-        <div className="w-full overflow-x-auto scrollbar-hide scroll-smooth mb-6 sm:mb-10">
+        <div className="w-full overflow-x-auto scrollbar-hide scroll-smooth mb-5 sm:mb-10 mt-5 md:mt-5 lg:mt-7">
           <div className="flex flex-nowrap  justify-start  gap-2 sm:gap-3 px-1 min-w-max ">
             {WorksData.map((work, index) => (
               <button
@@ -147,11 +145,11 @@ useEffect(() => {
 
 {/* Second Grid Image — Render only after timer */}
 {showSecondImage && (
-  <img
-    src={activeWork.grid.image}
-    alt={activeWork.name}
-    className="absolute top-0 left-0 w-full h-[190px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-contain opacity-100 transition-opacity duration-700"
-  />
+ <img
+  src={activeWork.grid.image}
+  alt={activeWork.name}
+  className="absolute top-0 left-0 w-full h-[190px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-contain transition-opacity duration-700"
+/>
 )}
       </div>
     </div>

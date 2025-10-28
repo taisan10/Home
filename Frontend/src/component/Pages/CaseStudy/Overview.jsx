@@ -80,7 +80,7 @@ const formatValue = (value, metric) => {
 };
 
   return (
-    <section ref={sectionRef} id="overview" className="px-4 sm:px-6 py-10 bg-gray-50">
+    <section ref={sectionRef} id="overview" className="px-4 sm:px-6 py-10 bg-gray-50 mt-1 sm:-mt-3">
       <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 text-center sm:text-left">
         Overview
       </h2>

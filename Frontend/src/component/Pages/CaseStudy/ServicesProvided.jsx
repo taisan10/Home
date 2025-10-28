@@ -23,7 +23,7 @@
 
 export function ServicesProvided({ data }) {
   return (
-    <section id="services-provided" className="px-6 py-10 bg-gray-50">
+    <section id="services-provided" className="px-6 py-10 bg-gray-50 -mt-13 sm:-mt-13">
       <h2 className="text-3xl font-bold text-gray-900 mb-6">Services Provided</h2>
 
       {/* Responsive grid layout */}

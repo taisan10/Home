@@ -5,10 +5,10 @@ export function HeroSection({ data }) {
   const { title, subtitle, tags, image, theme } = data;
 
   return (
-    <section className={`${theme} px-4 sm:px-6 py-20 sm:py-28 pt-38 sm:pt-40 -mt-20`}>
+    <section className={`${theme} px-4 sm:px-6 py-20 sm:py-28 pt-38 sm:pt-40 -mt-20   -mb-16 md:-mb-5 lg:-mb-5`}>
       <Container className="flex flex-col md:flex-row md:items-center md:justify-between gap-10">
         {/* Left Side */}
-        <div className="md:w-1/2 space-y-6">
+        <div className="md:w-1/2 space-y-6 ">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}

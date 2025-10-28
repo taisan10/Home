@@ -212,7 +212,7 @@ useEffect(() => {
 const videoElementsRef = useRef([]);
 
   return (
-    <section className="-mt-20">
+    <section className="-mt-20 md:-mt-25 lg:-mt-30">
       <Container>
         {/* Category Buttons Section */}
         <div className="w-full overflow-x-auto scrollbar-hide scroll-smooth relative z-10">
@@ -239,7 +239,7 @@ const videoElementsRef = useRef([]);
         {/* ✅ Videos Slider */}
         <div 
          ref={sectionRef}
-         className="relative w-full py-10 overflow-hidden ">
+         className="relative w-full py-10 overflow-hidden -mt-5 md:-mt-5 lg:-mt-5">
           <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{

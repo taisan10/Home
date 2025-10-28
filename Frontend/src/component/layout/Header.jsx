@@ -151,29 +151,34 @@ const workNavChildren = WorksData.map((item) => ({
           </div>
 
           {/* Mobile Actions */}
-          <div className="flex items-center gap-2 w-46    md:hidden">
-            <PrimaryButton href="#contact">Contact Us</PrimaryButton>
-            <button
-              aria-label="Open menu"
-              className="grid h-10 w-15 place-items-center rounded-full ring-1 ring-black/10"
-              onClick={() => setOpen(true)}
-            >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                className="text-black"
-              >
-                <path
-                  d="M3 6h18M3 12h18M3 18h18"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-              </svg>
-            </button>
-          </div>
+      <div
+  className="flex items-center justify-end gap-2 w-15 px-4 md:hidden "
+>
+  <PrimaryButton href="#contact" className="text-sm px-3 py-2 ">
+    Contact Us
+  </PrimaryButton>
+
+  <button
+    aria-label="Open menu"
+    className="grid h-10 w-10 place-items-center rounded-full ring-1 ring-black/10"
+    onClick={() => setOpen(true)}
+  >
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      className="text-black"
+    >
+      <path
+        d="M3 6h18M3 12h18M3 18h18"
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
+    </svg>
+  </button>
+</div>
         </div>
       </Container>
 

@@ -16,7 +16,7 @@ export function Strategic({ data }) {
   return (
     <section
       id="key-strategy"
-      className="px-4 sm:px-6 py-8 sm:py-10 bg-gray-50"
+      className="px-4 sm:px-6 py-8 sm:py-10 bg-gray-50 -mt-19 sm:-mt-21"
     >
       <h2 className="text-[18px] sm:text-[22px] lg:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">
         Key Strategies Implemented:

@@ -2,7 +2,7 @@ import { Container } from "../../UI/UiComponent";
 
 export function CuriousSection({ data }) {
   return (
-    <section id="curious-about-our-approach" className="py-12 sm:py-16 bg-gray-50">
+    <section id="curious-about-our-approach" className="py-12 sm:py-16 bg-gray-50 -mt-21 sm:-mt-23">
       <Container>
         <div className="rounded-3xl bg-gradient-to-r from-sky-500 to-cyan-400 p-6 sm:p-8 ring-1 ring-white/10">
           <div className="mx-auto max-w-2xl text-center">

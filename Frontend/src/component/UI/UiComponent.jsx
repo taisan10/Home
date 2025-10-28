@@ -48,7 +48,7 @@ export   function PrimaryButton({ children, href = "#" }) {
   return (
     <a
       href={href}
-      className="inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium text-white shadow-lg shadow-sky-500/20 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-400   bg-gradient-to-r from-sky-500 to-cyan-400"
+      className="hide-on-medium inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium text-white shadow-lg shadow-sky-500/20 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-400   bg-gradient-to-r from-sky-500 to-cyan-400"
     >
       {children}
     </a>
@@ -188,7 +188,7 @@ export function MobileNav({ open, setOpen, navItems }) {
               </NavLink>
             )
           )}
-          <PrimaryButton href="#contact">Book Intro Call</PrimaryButton>
+          <PrimaryButton href="#contact">Contact Us </PrimaryButton>
         </nav>
       </div>
       )}

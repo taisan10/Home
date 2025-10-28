@@ -48,3 +48,9 @@
 /* in globals.css or tailwind.config.js */
 .w-35\% { width: 35%; }
 .w-65\% { width: 65%; }
+
+@media (max-width: 760px) {
+  .hide-on-mediu {
+    display: none !important;
+  }
+}

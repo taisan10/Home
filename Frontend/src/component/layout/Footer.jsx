@@ -2,7 +2,7 @@ import { Container } from "../UI/UiComponent";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 py-10  text-white">
+    <footer className="border-t border-white/15 py-10  text-white -mt-6 md:mt-5 lg:-mt-5 ">
       <Container className="grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Column 1: Logo + Contact + Social */}
         <div className="space-y-2">

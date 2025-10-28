@@ -4,7 +4,7 @@ import { Container } from "../../UI/UiComponent";
 
 export function CaseStudiesSections({ data }) {
   return (
-    <section className="bg-gray-50 px-6 py-8">
+    <section className="bg-gray-50 px-6 py-8 -mt-15 sm:-mt-18 ">
       <Container>
         <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">
           Read other Case Studies Of Company

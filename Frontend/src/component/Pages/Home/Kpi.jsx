@@ -84,7 +84,7 @@ import {
 
 export default function Kpi(){
   return(
-    <section className="py-12 sm:py-16 ">
+    <section className="py-12 sm:py-16 -mt-13 sm:-mt-12 ">
   <Container>
     <SectionTitle
       title={

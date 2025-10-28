@@ -3,7 +3,7 @@
 
 export function ChallengeSection({ data }) {
   return (
-    <section id="challenge" className="px-6 py-10 bg-gray-50">
+    <section id="challenge" className="px-6 py-10 bg-gray-50 -mt-18 sm:-mt-17">
       <h2 className="text-3xl font-bold text-gray-900 mb-6">Challenge</h2>
 
       {data.summary.map((p, i) => (

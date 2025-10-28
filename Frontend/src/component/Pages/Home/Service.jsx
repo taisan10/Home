@@ -123,7 +123,7 @@ export default  function Services() {
   };
 
   return (
-    <div className="relative py-14 bg-neutral-950 text-white overflow-hidden">
+    <div className="relative py-14 text-white overflow-hidden  -mt-18 md:mt-13 lg:-mt-15">
       <Container>
         <SectionTitle
           title={<GradientText>What We Do Best
