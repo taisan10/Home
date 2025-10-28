@@ -152,7 +152,8 @@ const workNavChildren = WorksData.map((item) => ({
 
           {/* Mobile Actions */}
       <div
-  className="flex items-center justify-end gap-2 w-15 px-4 md:hidden "
+  className="flex items-center justify-end gap-2 w-full px-4 md:hidden 
+"
 >
   <PrimaryButton href="#contact" className="text-sm px-3 py-2 ">
     Contact Us
