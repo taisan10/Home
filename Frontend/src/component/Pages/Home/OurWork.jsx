@@ -41,7 +41,7 @@ useEffect(() => {
       setShowSecondImage(false); // Reset
       timer = setTimeout(() => {
         setShowSecondImage(true);
-      }, 20000);
+      }, 3000);
     } else {
       clearTimeout(timer);
       setShowSecondImage(false); // Hide second image when out of view
