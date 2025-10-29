@@ -23,7 +23,7 @@ export default function Work() {
   const handlers = useSwipeable({
     onSwipedLeft: nextWork,
     onSwipedRight: prevWork,
-    preventDefaultTouchmoveEvent: true,
+    preventDefaultTouchmoveEvent: false,
     trackMouse: true,
   });
 
@@ -131,14 +131,18 @@ useEffect(() => {
             </div>
           </div>
 
-          {/* Right Side */}
-  <div className="w-full md:w-1/2 flex justify-center px-4 sm:px-6 lg:px-8">
-  <div className="relative w-full max-w-[90%] sm:max-w-sm md:max-w-md lg:max-w-lg aspect-[4/3] flex items-center justify-center rounded-xl sm:rounded-2xl overflow-hidden ">
+         {/* Right Side */}
+<div className="w-full md:w-1/2 flex justify-center px-4 sm:px-6 lg:px-8">
+  <div className="relative flex items-center justify-center w-full 
+                  max-w-[95%] sm:max-w-sm md:max-w-md lg:max-w-lg 
+                  rounded-xl sm:rounded-2xl overflow-hidden 
+                  aspect-[4/5] md:aspect-[7/10] ">
+
     {/* First Logo Image */}
     <img
       src={activeWork.heroSection.image}
       alt={activeWork.name}
-      className={`max-h-[80%] max-w-[80%] object-contain transition-opacity duration-700 ${
+      className={`object-contain w-full h-full transition-opacity duration-700 ${
         showSecondImage ? "opacity-0" : "opacity-100"
       }`}
     />
@@ -148,12 +152,11 @@ useEffect(() => {
       <img
         src={activeWork.grid.image}
         alt={activeWork.name}
-        className="absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-700"
+        className="absolute inset-0 w-full h-full object-contain transition-opacity duration-700"
       />
     )}
   </div>
 </div>
-
 
 
 
@@ -169,7 +172,7 @@ useEffect(() => {
             {/* Prev */}
             <button
               onClick={prevWork}
-              className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200 text-white shadow-md"
+              className="w-10 h-10 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200 text-white shadow-md z-10"
             >
               <svg
                 className="w-4 h-4 sm:w-5 sm:h-5"
@@ -185,7 +188,7 @@ useEffect(() => {
             {/* Next */}
             <button
               onClick={nextWork}
-              className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200 text-white shadow-md"
+              className="w-10 h-10 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200 text-white shadow-md z-10"
             >
               <svg
                 className="w-4 h-4 sm:w-5 sm:h-5"
