@@ -98,41 +98,41 @@ export default function Kpi(){
     {/* ✅ Wrapper for small/tablet (acts as unified 3x2 grid) */}
     <div className="mt-10 lg:mt-10" >
 
-    <div className=" grid gap-4 grid-cols-2 sm:grid-cols-2 sm:grid-rows-3 lg:hidden">
+    <div className=" grid gap-4 grid-cols-2 sm:grid-cols-2 sm:grid-rows-3 md:hidden">
       <Stat
         kpi="3x"
         title="Faster Go-to-Market"
-        desc="Accelerate launches with agile strategy and creative execution."
+        // desc="Accelerate launches with agile strategy and creative execution."
         />
       <Stat
         kpi="100%"
         title="Transparent Pricing"
-        desc="No hidden fees. No fine print. Only clear, results-driven value."
+        // desc="No hidden fees. No fine print. Only clear, results-driven value."
         />
       <Stat
         kpi="10.3M+"
         title="Total Views"
-        desc="Campaigns that captured attention and delivered massive reach."
+        // desc="Campaigns that captured attention and delivered massive reach."
         />
       <Stat
         kpi="100%"
         title="Data-Driven Decisions"
-        desc="Every strategy is backed by analytics. No guesswork, just results."
+        // desc="Every strategy is backed by analytics. No guesswork, just results."
         />
       <Stat
         kpi="15+"
         title="Industries Served"
-        desc="From cafés to hotels, proven strategies that drive real growth."
+        // desc="From cafés to hotels, proven strategies that drive real growth."
         />
       <Stat
         kpi="24/7"
         title="Strategic Support"
-        desc="Always available to align, analyze, and advance your marketing goals."
+        // desc="Always available to align, analyze, and advance your marketing goals."
         />
     </div>
 
     {/* ✅ Original layout preserved for laptop */}
-    <div className="hidden lg:block">
+    <div className="hidden md:block">
       {/* First Row (same as before) */}
       <div className="grid grid-cols-[48%_48%] gap-4 lg:grid-cols-[24%_24%_48%]">
         <Stat

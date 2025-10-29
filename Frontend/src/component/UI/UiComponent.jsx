@@ -54,10 +54,11 @@ export   function HeaderButton({ children, href = "#" }) {
     </a>
   );
 }
-export   function PrimaryButton({ children, href = "#" }) {
+export   function PrimaryButton({ children, href = "#", onClick}) {
   return (
     <a
       href={href}
+       onClick={onClick}
       className="inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium text-white shadow-lg shadow-sky-500/20 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-400   bg-gradient-to-r from-sky-500 to-cyan-400"
     >
       {children}
@@ -152,7 +153,7 @@ export function MobileNav({ open, setOpen, navItems }) {
       {/* Drawer */}
       {open && ( 
       <div
-        className={`fixed -top-10 right-0 z-50 h-full w-80 max-w-[85vw] transform bg-white shadow-xl transition ${
+        className={`fixed -top-1  right-0 z-50 h-full w-80 max-w-[85vw]  transform bg-white shadow-xl transition ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -167,7 +168,7 @@ export function MobileNav({ open, setOpen, navItems }) {
           </button>
         </div>
 
-        <nav className="flex flex-col gap-4 p-4 text-black bg-white h-145">
+        <nav className="flex flex-col gap-4 p-4 text-black bg-white h-105">
           {navItems.map((item, idx) =>
             item.children ? (
               <div key={item.label}>
@@ -198,7 +199,7 @@ export function MobileNav({ open, setOpen, navItems }) {
               </NavLink>
             )
           )}
-          <PrimaryButton href="#contact">Contact Us </PrimaryButton>
+          <PrimaryButton href="#contact" onClick={() => setOpen(false)}>Contact Us </PrimaryButton>
         </nav>
       </div>
       )}

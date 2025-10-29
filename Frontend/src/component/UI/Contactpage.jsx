@@ -130,27 +130,36 @@ export default function ContactPage() {
               required
             />
 
-            <div className="flex gap-2">
-              <select
-                name="phoneCode"
-                value={formData.phoneCode}
-                onChange={handleChange}
-                className="w-12 md:w-24 lg:w-24 text-xs md:text-base lg:text-md rounded-xl border border-neutral-200 bg-white px-3 py-3 text-sm"
-              >
-                <option value="" >Code</option>
-                <option value="+44">+44</option>
-                <option value="+1">+1</option>
-                <option value="+91">+91</option>
-              </select>
+         <div className="flex gap-2 items-center relative">
+  {/* Country Code Dropdown */}
+  <div className="relative">
+    <select
+      name="phoneCode"
+      value={formData.phoneCode}
+      onChange={handleChange}
+      className="w-19 sm:w-28 md:w-32 lg:w-36 rounded-xl border border-neutral-300 bg-white px-4 py-3 text-sm appearance-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400 transition-all duration-200"
+    >
+      <option value="">Code</option>
+     <option value="+44">+44</option> <option value="+1">+1</option> <option value="+91">+91</option>
+      
+    </select>
 
-              <input
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                placeholder="Phone (optional)"
-                className="flex-1 rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm"
-              />
-            </div>
+    {/* Custom dropdown arrow */}
+    <span className="absolute right-3 top-1/2 -translate-y-1/2 text-neutral-500 pointer-events-none">
+      ▼
+    </span>
+  </div>
+
+  {/* Phone Number Input */}
+  <input
+    name="phone"
+    value={formData.phone}
+    onChange={handleChange}
+    placeholder="Phone (optional)"
+    className="flex-1 rounded-xl border border-neutral-300 bg-white px-4 py-3 text-sm focus:ring-2 focus:ring-sky-400 focus:border-sky-400 transition-all duration-200"
+  />
+</div>
+
 
             <textarea
               name="message"
