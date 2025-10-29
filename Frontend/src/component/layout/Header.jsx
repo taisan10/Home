@@ -89,7 +89,7 @@ const workNavChildren = WorksData.map((item) => ({
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-6 text-black relative">
             {navItems.map((item) =>
-              item.children ? (
+              item.children ? ( 
                 <div
                   key={item.label}
                   className="relative text-lg"
