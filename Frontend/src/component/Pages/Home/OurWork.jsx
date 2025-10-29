@@ -132,27 +132,27 @@ useEffect(() => {
           </div>
 
           {/* Right Side */}
-        <div className="w-full md:w-1/2 flex justify-center px-4 sm:px-6 lg:px-8">
-      <div className="relative w-full max-w-[90%] sm:max-w-sm md:max-w-md lg:max-w-lg rounded-xl sm:rounded-2xl overflow-hidden">
-        {/* First Logo Image */}
-<img
-  src={activeWork.heroSection.image}
-  alt={activeWork.name}
-  className={`w-full h-auto sm:h-[400px] md:h-[450px] lg:h-[500px] object-contain transition-opacity duration-700 ${
-    showSecondImage ? "opacity-0" : "opacity-100"
-  }`}
-/>
+  <div className="w-full md:w-1/2 flex justify-center px-4 sm:px-6 lg:px-8">
+  <div className="relative w-full max-w-[90%] sm:max-w-sm md:max-w-md lg:max-w-lg aspect-[4/3] flex items-center justify-center rounded-xl sm:rounded-2xl overflow-hidden ">
+    {/* First Logo Image */}
+    <img
+      src={activeWork.heroSection.image}
+      alt={activeWork.name}
+      className={`max-h-[80%] max-w-[80%] object-contain transition-opacity duration-700 ${
+        showSecondImage ? "opacity-0" : "opacity-100"
+      }`}
+    />
 
-{/* Second Grid Image — Render only after timer */}
-{showSecondImage && (
- <img
-  src={activeWork.grid.image}
-  alt={activeWork.name}
-  className="absolute top-0 left-0 w-full h-[190px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-contain transition-opacity duration-700"
-/>
-)}
-      </div>
-    </div>
+    {/* Second Grid Image */}
+    {showSecondImage && (
+      <img
+        src={activeWork.grid.image}
+        alt={activeWork.name}
+        className="absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-700"
+      />
+    )}
+  </div>
+</div>
 
 
 
