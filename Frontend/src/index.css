@@ -49,7 +49,7 @@
 .w-35\% { width: 35%; }
 .w-65\% { width: 65%; }
 
-@media (max-width: 76px) {
+@media (max-width: 760px) {
   .hide-on-medium {
     display: none !important;
   }

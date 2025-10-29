@@ -1,7 +1,7 @@
 
 
 import { useState, useRef, useEffect } from "react";
-import { Container, Logo, PrimaryButton, MobileNav } from "../UI/UiComponent";
+import { Container, Logo, PrimaryButton,HeaderButton, MobileNav } from "../UI/UiComponent";
 
 import { ServiceRoutes } from "../Pages/Services/ServiceRoutes";
 
@@ -155,9 +155,9 @@ const workNavChildren = WorksData.map((item) => ({
   className="flex items-center justify-end gap-2 w-full px-4 md:hidden 
 "
 >
-  <PrimaryButton href="#contact" className="text-sm px-3 py-2 ">
+  <HeaderButton href="#contact" className="text-sm px-3 py-2  hidden">
     Contact Us
-  </PrimaryButton>
+  </HeaderButton>
 
   <button
     aria-label="Open menu"

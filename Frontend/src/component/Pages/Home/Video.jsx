@@ -290,7 +290,7 @@ onError={() => console.error("Video failed:", video)}
           {currentIndex > 0 && (
             <button
               onClick={prevSlide}
-              className="absolute -left-1 top-1/2 -translate-y-1/2 z-40 bg-white text-black p-3 rounded-full "
+              className="absolute -left-0.5 top-1/2 -translate-y-1/2 z-40 bg-white text-black p-3 rounded-full "
             >
               {"<"}
             </button>
@@ -300,7 +300,7 @@ onError={() => console.error("Video failed:", video)}
           {currentIndex < videos.length - visibleSlides && (
             <button
               onClick={nextSlide}
-              className="absolute -right-1 top-1/2 -translate-y-1/2 z-40 bg-white text-black p-3 rounded-full"
+              className="absolute -right-0.5  top-1/2 -translate-y-1/2 z-40 bg-white text-black p-3 rounded-full"
             >
               {">"}
             </button>
