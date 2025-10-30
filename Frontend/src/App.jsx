@@ -8,6 +8,8 @@ import Contact from "./component/Pages/Contact";
 import WorkDetail from "./component/Pages/CaseStudy/index/WorksPage";
 
 import { ServiceRoutes } from "./component/Pages/Services/ServiceRoutes";
+import Works from "./component/Pages/Works";
+import About from "./component/Pages/About";
 
 export default function App() {
   return (
@@ -23,6 +25,8 @@ export default function App() {
           <Route path="/work/:companyName" element={<WorkDetail />} />
 
           <Route path="/company" element={<Company />} />
+          <Route path="/Works" element={<Works/>} />
+          <Route path="/About" element={<About/>} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>
