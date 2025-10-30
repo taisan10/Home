@@ -8,7 +8,7 @@ import Contact from "./component/Pages/Contact";
 import WorkDetail from "./component/Pages/CaseStudy/index/WorksPage";
 
 import { ServiceRoutes } from "./component/Pages/Services/ServiceRoutes";
-import Works from "./component/Pages/Works";
+import Works from "./component/Pages/About2jsx";
 import About from "./component/Pages/About";
 
 export default function App() {
