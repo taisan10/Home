@@ -34,6 +34,7 @@ const workNavChildren = WorksData.map((item) => ({
   const navItems = [
     { label: "Home", href: "/" },
     
+    { label: "Company", href: "/company" },
 {
   label: "Work",
   children: workNavChildren,
@@ -44,7 +45,7 @@ const workNavChildren = WorksData.map((item) => ({
 //     children: serviceNavChildren,
 //   },
 
-
+    
 
   ];
 

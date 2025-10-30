@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Contact Info */}
           <div className="text-sm space-y-1 text-white/80">
             <a href="/" target="_blank" rel="noopener noreferrer">
-              bluenosemarketing.com
+              Bluenosemarketing.com
             </a>
             <p>+91 72319 20002</p>
             <p>+1 (902) 448-5080</p>
@@ -172,7 +172,7 @@ export default function Footer() {
               <a href="/work/beshram-bar-and-grill">Besharam Bar and Grill</a>
             </li>
             <li>
-              <a href="/work/rivaaj-bedford">Rivaaj Bedford | Cultural Resto-Bar</a>
+              <a href="/work/rivaaj-resto-bar">Rivaaj Resto-Bar</a>
             </li>
           </ul>
         </div>

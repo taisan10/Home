@@ -139,8 +139,7 @@ export   function TeamStrip() {
 
 export function MobileNav({ open, setOpen, navItems }) {
   const [expanded, setExpanded] = useState(null);
-// export function MobileNav({ open, setOpen, navItems }) {
-//   const [expanded, setExpanded] = useState(null);
+
 
   return (
     <div className={`md:hidden ${open ? "pointer-events-auto" : "pointer-events-none"}`}>

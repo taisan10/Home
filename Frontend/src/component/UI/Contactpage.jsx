@@ -84,7 +84,7 @@ export default function ContactPage() {
 
   return (
     <section id="contact" className="py-16 sm:py-20">
-      <Container className="grid gap-8 sm:gap-12 md:grid-cols-2 items-start -mt-14 md:mt-12 lg:-mt-13">
+      <Container className="grid gap-8 sm:gap-12 md:grid-cols-2 items-start -mt-19 sm:-mt-20 md:-mt-20 lg:-mt-20 -mb-10 sm:-mb-10 md:-mb-18 lg:-mb-10">
         <div>
           <h3 className="text-3xl sm:text-4xl font-semibold leading-tight mb-4 sm:mb-6">
             Ready to Elevate Your Marketing?
@@ -137,7 +137,7 @@ export default function ContactPage() {
       name="phoneCode"
       value={formData.phoneCode}
       onChange={handleChange}
-      className="w-19 sm:w-28 md:w-32 lg:w-36 rounded-xl border border-neutral-300 bg-white px-4 py-3 text-sm appearance-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400 transition-all duration-200"
+      className="w-19 sm:w-30 md:w-20 lg:w-36 rounded-xl border border-neutral-300 bg-white px-4 py-3 text-sm appearance-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400 transition-all duration-200"
     >
       <option value="">Code</option>
      <option value="+44">+44</option> <option value="+1">+1</option> <option value="+91">+91</option>

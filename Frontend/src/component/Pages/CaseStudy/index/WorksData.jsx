@@ -305,7 +305,7 @@ const WorksData = [
   desc: "48.9K+ Views in 30 Days: Launching Bedford's First Cultural Resto-Bar",
   img: "/Client_Logo/17.png",
   theme: "bg-[#ad863e]  text-black",
-  slug: "rivaaj-bedford",
+  slug: "rivaaj-resto-bar",
 },
  {
   title: "The Garden Retreat",
@@ -510,7 +510,7 @@ const WorksData = [
   desc: "48.9K+ Views in 30 Days: Launching Bedford's First Cultural Resto-Bar",
   img: "/Client_Logo/17.png",
   theme: "bg-[#ad863e]  text-black",
-  slug: "rivaaj-bedford",
+  slug: "rivaaj-resto-bar",
 },
  {
       title: "Beaver Bank Station Bar & Grill",
@@ -736,7 +736,7 @@ const WorksData = [
   desc: "48.9K+ Views in 30 Days: Launching Bedford's First Cultural Resto-Bar",
   img: "/Client_Logo/17.png",
   theme: "bg-[#ad863e]  text-black",
-  slug: "rivaaj-bedford",
+  slug: "rivaaj-resto-bar",
 },
     {
      title: "Triveeni Events",
@@ -835,7 +835,7 @@ const WorksData = [
   desc: "48.9K+ Views in 30 Days: Launching Bedford's First Cultural Resto-Bar",
   img: "/Client_Logo/17.png",
   theme: "bg-[#ad863e]  text-black",
-  slug: "rivaaj-bedford",
+  slug: "rivaaj-resto-bar",
 },
 {
     title: "Hearthstone Inn",
