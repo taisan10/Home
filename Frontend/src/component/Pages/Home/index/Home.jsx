@@ -23,7 +23,7 @@ export default function Home(){
          {/* <CollageSlider /> */}
           <Services />
       
-          <ContactPage />
+          {/* <ContactPage /> */}
           </>
           
           </div>

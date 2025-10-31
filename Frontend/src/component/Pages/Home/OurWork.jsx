@@ -373,7 +373,7 @@ export default function Work() {
       className="py-12 px-4 sm:px-6 md:px-12 -mt-22 sm:-mt-24 md:-mt-22 lg:-mt-22 text-center"
     >
       <Container>
-        <h4 className="text-3xl md:text-5xl lg:text-5xl bg-gradient-to-r from-sky-400 via-cyan-400 to-teal-300 bg-clip-text text-transparent">
+        <h4 className="text-3xl md:text-5xl lg:text-5xl bg-gradient-to-r from-sky-400 via-cyan-400 to-teal-300 bg-clip-text text-transparent font-bold">
           Our Works
         </h4>
 
@@ -443,7 +443,7 @@ export default function Work() {
           </div>
 
           {/* Right Side: Image */}
-          <div className="w-full md:w-1/2 flex justify-center px-4 sm:px-6 lg:px-8">
+          <div className="w-full md:w-1/2 flex justify-end px-4 sm:px-20   md:px-1 lg:px-2">
             <div className="relative flex items-center justify-center w-full max-w-[95%] sm:max-w-sm md:max-w-md lg:max-w-lg rounded-xl sm:rounded-2xl overflow-hidden aspect-[4/5] md:aspect-[7/10] lg:aspect-[7/8]">
               {/* First Logo Image */}
               <img
@@ -459,7 +459,7 @@ export default function Work() {
                 <img
                   src={activeWork.grid.image}
                   alt={activeWork.name}
-                  className="absolute inset-0 w-full h-full object-contain transition-opacity duration-700"
+                  className="absolute inset-0 w-full h-full ml-0 sm:ml-0 md:ml-o lg:ml-5 object-contain transition-opacity duration-700"
                 />
               )}
             </div>

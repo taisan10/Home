@@ -1,14 +1,16 @@
+import Contact from "../Pages/Contact";
 import { Container } from "../UI/UiComponent";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/15 py-10  text-white -mt-6 md:mt-5 lg:-mt-5 ">
-      <Container className="grid grid-cols-1 md:grid-cols-4 gap-10">
-        {/* Column 1: Logo + Contact + Social */}
-        <div className="space-y-2">
-          {/* < Logo /> */}
+    <footer className="border-t border-white/1 py-10  text-white -mt-28 md:-mt-28 lg:-mt-28 ">
 
-          {/* Contact Info */}
+      <Contact/> 
+
+      <Container className="grid grid-cols-1 md:grid-cols-4 gap-10 -mt-10 md:mt-12 lg:-mt-12 ">
+        {/* Column 1: Logo + Contact + Social */}
+        <div className="space-y-3 order-1 md:col-span-1">
+
           <div className="text-sm space-y-1 text-white/80">
             <a href="/" target="_blank" rel="noopener noreferrer">
               Bluenosemarketing.com
@@ -36,23 +38,7 @@ export default function Footer() {
               </svg>
             </a>
 
-            {/* Twitter / X */}
-            {/* <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg
-                className="w-5 h-10 text-white hover:text-[#1DA1F2] transition-colors"
-    fill="currentColor"
-
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M24 4.557a9.828 9.828 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724 9.864 9.864 0 0 1-3.127 1.195 4.916 4.916 0 0 0-8.38 4.482A13.944 13.944 0 0 1 1.671 3.149a4.916 4.916 0 0 0 1.523 6.555 4.897 4.897 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.918 4.918 0 0 0 4.588 3.417A9.867 9.867 0 0 1 0 19.54a13.94 13.94 0 0 0 7.548 2.212c9.057 0 14.01-7.513 14.01-14.01 0-.213-.005-.425-.014-.636A10.012 10.012 0 0 0 24 4.557z" />
-              </svg>
-            </a> */}
-
+           
 {/* Instagram */}
 <a
   href="https://www.instagram.com/bluenose_marketing?utm_source=ig_web_button_share_sheet&igsh=dGFyenhtd25jN3Ix"
@@ -71,24 +57,6 @@ export default function Footer() {
     <path d="M377.33 162.67a23.47 23.47 0 1 1 23.47-23.47 23.47 23.47 0 0 1-23.47 23.47zM256 164a92 92 0 1 1-92 92 92 92 0 0 1 92-92m0-36a128 128 0 1 0 128 128A128 128 0 0 0 256 128z" />
   </svg>
 </a>
-
-
-            {/* YouTube */}
-            {/* <a
-              href="https://youtube.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg
-                className="w-5 h-10 text-white hover:text-[#FF0000] transition-colors"
-    fill="currentColor"
-
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M23.498 6.186a2.997 2.997 0 0 0-2.116-2.116C19.539 3.5 12 3.5 12 3.5s-7.539 0-9.382.57a2.997 2.997 0 0 0-2.116 2.116C.5 8.03.5 12 .5 12s0 3.97.57 5.814a2.997 2.997 0 0 0 2.116 2.116C4.461 20.5 12 20.5 12 20.5s7.539 0 9.382-.57a2.997 2.997 0 0 0 2.116-2.116C23.5 15.97 23.5 12 23.5 12s0-3.97-.002-5.814zM9.75 15.02V8.98l6.5 3.02-6.5 3.02z" />
-              </svg>
-            </a> */}
 
             {/* LinkedIn */}
             <a
@@ -116,30 +84,104 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Column 2: Services */}
-        <div>
-          <h4 className="font-semibold mb-4">Services</h4>
+
+
+
+
+  {/* 📱 Column 2 (Mobile): Pages + Services together */}
+        <div className="md:hidden flex justify-between gap-4 order-2">
+          {/* Pages */}
+          <div>
+            <h4 className="font-semibold mb-3">Pages</h4>
+            <ul className="space-y-2 text-sm text-white/80">
+              <li><a href="/">Home</a></li>
+              <li><a href="/">Our Clients</a></li>
+              {/* <li><a href="/">Service</a></li>
+              <li><a href="/">Work</a></li>
+              <li><a href="/">Company</a></li> */}
+            </ul>
+          </div>
+
+
+  {/* Right side: Our Clients (Mobile + Desktop both) */}
+        <div >
+
+          <h4 className="font-semibold mb-4">Our Clients</h4>
           <ul className="space-y-2 text-sm text-white/80">
-            <li>
-              <a href="/">Social Media</a>
+          <li>
+              <a href="/work/sake-cafe-sushi-bar-&-grill">Sake Cafe </a>
+            </li>
+          <li>
+              <a href="/work/pita-nutso">Pita Nutso</a>
             </li>
             <li>
-              <a href="/">Graphic Designing</a>
+              <a href="/work/triveeni-events">Triveeni Events</a>
+            </li>
+             <li>
+              <a href="/work/rivaaj-resto-bar">Rivaaj Resto-Bar</a>
+            </li>
+             <li>
+              <a href="/work/hearthstone-inn">Hearthstone Inn</a>
+            </li>
+             <li>
+              <a href="/work/adda-indian-eatery">Adda Indian Eatery
+</a>
             </li>
             <li>
-              <a href="/">Video Editing</a>
+              <a href="/work/the-garden-retreat">The Garden Retreat</a>
+            </li>
+            
+            <li>
+              <a href="/work/nayya-pizza-&-grill">Nayya Pizza & Grill</a>
+            </li>
+           
+            
+           
+           
+            
+           
+             
+            <li>
+              <a href="/work/beaver-bank-station-Bar-&-grill">Beaver Bank Station 
+</a>
             </li>
             <li>
-              <a href="/">VideoGraphy</a>
+              <a href="/work/beshram-bar-and-grill">Besharam Bar and Grill</a>
             </li>
-            {/* <li><a href="/services/content-marketing">Content Marketing</a></li> */}
-            {/* <li><a href="/services/design">Digital Design</a></li> */}
-            {/* <li><a href="/services/development">Web & Mobile Development</a></li> */}
           </ul>
         </div>
 
-        {/* Column 3: Industries */}
-        <div>
+        
+        </div>
+
+{/* 🖥️ Desktop Layout — Pages & Services separate */}
+        <div className="hidden md:block order-2">
+          <h4 className="font-semibold mb-4">Pages</h4>
+          <ul className="space-y-2 text-sm text-white/80">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Our Clients</a></li>
+            {/* <li><a href="/">Service</a></li>
+            <li><a href="/">Work</a></li>
+            <li><a href="/">Company</a></li> */}
+          </ul>
+        </div>
+
+         <div className="  -mt-60 sm:-mt-60   md:-mt-0  lg:-mt-0  order-3 md:order-3">
+          <h4 className="font-semibold mb-4">Services</h4>
+          <ul className="space-y-2 text-sm text-white/80">
+            <li><a href="/">Social Media</a></li>
+            <li><a href="/">Video Editing</a></li>
+            <li><a href="/">VideoGraphy</a></li>
+            <li><a href="/">Graphic Designing</a></li>
+          </ul>
+        </div>
+
+        
+
+
+  {/* Right side: Our Clients (Mobile + Desktop both) */}
+         <div className="hidden md:block order-4">
+
           <h4 className="font-semibold mb-4">Our Clients</h4>
           <ul className="space-y-2 text-sm text-white/80">
             <li>
@@ -177,28 +219,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Column 4: Company */}
-        <div>
-          <h4 className="font-semibold mb-4">Pages </h4>
-          <ul className="space-y-2 text-sm text-white/80">
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="/">Service</a>
-            </li>
-            <li>
-              <a href="/">Our_Clients</a>
-            </li>
-            <li>
-              <a href="/">Work</a>
-            </li>
-            <li>
-              <a href="/">Company</a>
-            </li>
-           
-          </ul>
-        </div>
+      
       </Container>
 
       {/* Embedded Map */}

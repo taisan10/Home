@@ -46,18 +46,18 @@ export default function Kpi() {
   return (
     <section
       ref={sectionRef}
-      className="py-12 sm:py-16 -mt-13 sm:-mt-12 md:-mt-15 lg:-mt-15"
+      className="py-12 sm:py-16 lg:py-18 -mt-13 sm:-mt-12 md:-mt-15 lg:-mt-15"
     >
       <Container>
-        <SectionTitle
-          title={
-            <>
-              The Next Era of Marketing,{" "}
-              <GradientText>Designed for Growth</GradientText>
-            </>
-          }
-        />
-
+    <SectionTitle
+  title={
+    <div className="whitespace-normal lg:whitespace-nowrap">
+      The Next Era of Marketing,{" "}
+      <br className="block lg:hidden" />
+      <GradientText>Designed for Growth</GradientText>
+    </div>
+  }
+/>
         <div className="mt-5 sm:mt-5   md:mt-5 lg:mt-10">
           {/* ✅ Mobile <400px logic */}
           {isTinyScreen ? (

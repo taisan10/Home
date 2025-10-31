@@ -89,7 +89,7 @@ const WorksData = [
     {
       title: "Adda Indian Eatery",
       desc: "214K+ Views in 90 Days: Emotional Storytelling & Cultural Connection for Adda Indian Eatery",
-      img: "/Client_Logo/4.png",
+      img: "/Client_Logo/4.1.png",
       theme: "bg-[#FFC100] text-black",
       slug: "adda-indian-eatery",
     },
@@ -632,7 +632,7 @@ const WorksData = [
     {
       title: "Adda Indian Eatery",
       desc: "214K+ Views in 90 Days: Emotional Storytelling & Cultural Connection for Adda Indian Eatery",
-      img: "/Client_Logo/4.png",
+      img: "/Client_Logo/4.1.png",
       theme: "bg-[#FFC100] text-black",
       slug: "adda-indian-eatery",
     },
