@@ -195,10 +195,19 @@ const workNavChildren = WorksData.map((item) => ({
       <MobileNav open={open} setOpen={setOpen} navItems={navItems} />
     </header>
   );
+  
 }
 
 
+// <!-- Google tag (gtag.js) -->
+// <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHTJ1QL8ZZ"></script>
+// <script>
+//   window.dataLayer = window.dataLayer || [];
+//   function gtag(){dataLayer.push(arguments);}
+//   gtag('js', new Date());
 
+//   gtag('config', 'G-JHTJ1QL8ZZ');
+// </script>
 
 
 
