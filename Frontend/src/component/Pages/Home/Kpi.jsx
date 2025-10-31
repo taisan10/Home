@@ -66,7 +66,7 @@ export default function Kpi() {
                 <>
                   <Stat
                     kpi="3x"
-                    title="Faster Go-to-Market"
+                    title="Growth"
                     desc="Accelerate launches with agile strategy and creative execution."
                   />
                   <Stat
@@ -76,7 +76,7 @@ export default function Kpi() {
                   />
                   <Stat
                     kpi="10.3M+"
-                    title="Total Views"
+                    title="Total Views That Convert"
                     desc="Campaigns that captured attention and delivered massive reach."
                   />
                 </>
@@ -84,7 +84,7 @@ export default function Kpi() {
                 <>
                   <Stat
                     kpi="100%"
-                    title="Data-Driven Decisions"
+                    title="Data-Driven Perfomance"
                     desc="Every strategy is backed by analytics. No guesswork, just results."
                   />
                   <Stat
@@ -105,7 +105,7 @@ export default function Kpi() {
             <div className="grid gap-4 grid-cols-2 sm:grid-cols-2 sm:grid-rows-3 md:hidden">
               <Stat
                 kpi="3x"
-                title="Faster Go-to-Market"
+                title="Growth"
                 desc="Accelerate launches with agile strategy and creative execution."
               />
               <Stat
@@ -115,12 +115,12 @@ export default function Kpi() {
               />
               <Stat
                 kpi="10.3M+"
-                title="Total Views"
+                title="Total Views That Convert"
                 desc="Campaigns that captured attention and delivered massive reach."
               />
               <Stat
                 kpi="100%"
-                title="Data-Driven Decisions"
+                title="Data-Driven Perfomance"
                 desc="Every strategy is backed by analytics. No guesswork, just results."
               />
               <Stat
@@ -141,7 +141,7 @@ export default function Kpi() {
             <div className="grid grid-cols-[48%_48%] gap-4 lg:grid-cols-[24%_24%_48%]">
               <Stat
                 kpi="3x"
-                title="Faster Go-to-Market"
+                title="Growth"
                 desc="Accelerate launches with agile strategy and creative execution."
               />
               <Stat
@@ -152,7 +152,7 @@ export default function Kpi() {
               <div className="col-span-2 lg:col-span-1">
                 <Stat
                   kpi="10.3M+"
-                  title="Total Views"
+                  title="Total Views That Convert"
                   desc="Campaigns that captured attention and delivered massive reach. Proven results with impactful digital strategies."
                 />
               </div>
@@ -161,7 +161,7 @@ export default function Kpi() {
             <div className="mt-5 grid grid-cols-2 gap-4 lg:grid-cols-[49%_24%_24%]">
               <Stat
                 kpi="100%"
-                title="Data-Driven Decisions"
+                title="Data-Driven Perfomance"
                 desc="Every strategy is backed by analytics. No guesswork, just results."
               />
               <Stat

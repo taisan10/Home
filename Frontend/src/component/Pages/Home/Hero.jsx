@@ -21,7 +21,7 @@ const logos = Array.from({ length: 16 }, (_, i) => `/Client_Logo/${i + 1}.png`);
         </h1>
 
         <p className="mt-5 sm:mt-6 max-w-3xl mx-auto text-white/70 text-base sm:text-lg">
-          Our team combines creativity, insight, and execution to deliver seamless marketing solutions that drive measurable results for your brand.
+          Our Halifax based team blends creativity, strategy, and performance to deliver impactful social media solutions for your brand.
         </p>
 
         <div className="mt-6 sm:mt-8 flex justify-center gap-3 sm:gap-4">
