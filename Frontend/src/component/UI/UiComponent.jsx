@@ -145,7 +145,7 @@ export function MobileNav({ open, setOpen, navItems }) {
     <div className={`md:hidden ${open ? "pointer-events-auto" : "pointer-events-none"}`}>
       {/* Backdrop */}
       <div
-        className={`fixed inset-0 z-40 transition ${
+        className={`fixed inset-0 z-50 transition  ${
           open ? "bg-black/40 opacity-100" : "bg-black/0 opacity-0"
         }`}
         onClick={() => setOpen(false)}
