@@ -32,18 +32,18 @@ const workNavChildren = WorksData.map((item) => ({
 
 
   const navItems = [
-    { label: "Home", href: "/" },
+    // { label: "Home", href: "/" },
     
-    { label: "About", href: "/about" },
+    // { label: "About", href: "/about" },
     { label: "About2", href: "/works" },
     { label: "About4", href: "/about4" },
-    { label: "About3", href: "/company" },
+    // { label: "About3", href: "/company" },
     { label: "About5", href: "/about5" },
 
-{
-  label: "Work",
-  children: workNavChildren,
-},
+// {
+//   label: "Work",
+//   children: workNavChildren,
+// },
 
 // {
 //     label: "Services",
@@ -95,7 +95,7 @@ const workNavChildren = WorksData.map((item) => ({
           </div>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-6 text-black relative">
+          <nav className="hidden  md:flex items-center gap-6 text-black relative">
             {navItems.map((item) =>
               item.children ? ( 
                 <div
