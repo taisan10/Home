@@ -37,7 +37,7 @@ const workNavChildren = WorksData.map((item) => ({
     // { label: "About", href: "/about" },
     // { label: "About2", href: "/works" },
     // { label: "About4", href: "/about4" },
-    // // { label: "About3", href: "/company" },
+    // { label: "About3", href: "/company" },
     // { label: "About5", href: "/about5" },
 
 {
@@ -88,7 +88,7 @@ const workNavChildren = WorksData.map((item) => ({
       <Container>
         <div className="flex h-15 sm:h-18 items-center justify-between rounded-full bg-white pl-4 pr-2 sm:px-4 md:px-6 ring-1 ring-black/10 shadow-sm">
           {/* Logo */}
-          <div className="w-100">
+          <div className="w-80 sm:w-40 md:w-40 lg:w-40">
           <a href="/" aria-label="Go to homepage">
             <Logo />
           </a>

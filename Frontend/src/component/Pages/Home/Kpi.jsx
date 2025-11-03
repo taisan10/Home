@@ -66,36 +66,37 @@ export default function Kpi() {
                 <>
                   <Stat
                     kpi="3x"
-                    title="Growth"
-                    desc="Accelerate launches with agile strategy and creative execution."
+                    title="Strategic Growth"
+                    desc="Smart strategy and creative execution that drives growth."
                   />
                   <Stat
                     kpi="100%"
-                    title="Transparent Pricing"
-                    desc="No hidden fees. No fine print. Only clear, results-driven value."
+                    title="Clear Costs"
+                    desc="Clarity from day one. Straightforward pricing backed by honest partnerships."
                   />
                   <Stat
                     kpi="10.3M+"
                     title="Total Views That Convert"
-                    desc="Campaigns that captured attention and delivered massive reach."
+                    desc="We don't just create visibility, we create campaigns that turn viewers into loyal customers."
                   />
                 </>
               ) : (
                 <>
                   <Stat
                     kpi="100%"
-                    title="Data-Driven Perfomance"
-                    desc="Every strategy is backed by analytics. No guesswork, just results."
+                    title="Results Through Analytics"
+                    desc="Every decision backed by real analytics. No guesswork. Just proven strategies that deliver measurable results.
+"
                   />
                   <Stat
-                    kpi="15+"
-                    title="Industries Served"
-                    desc="From cafés to hotels, proven strategies that drive real growth."
+                    kpi="50+"
+                    title="Growing Brands"
+                    desc="From startups to established brands, we've partnered with over 50+ businesses to deliver real,  growth."
                   />
                   <Stat
                     kpi="24/7"
-                    title="Strategic Support"
-                    desc="Always available to align, analyze, and advance your marketing goals."
+                    title="Always Here to Help"
+                    desc="Your marketing partner, always available to refine strategy, analyze performance, and drive growth for your business."
                   />
                 </>
               )}
@@ -103,78 +104,80 @@ export default function Kpi() {
           ) : (
             // ✅ Normal layout for ≥400px
             <div className="grid gap-4 grid-cols-2 sm:grid-cols-2 sm:grid-rows-3 md:hidden">
-              <Stat
-                kpi="3x"
-                title="Growth"
-                desc="Accelerate launches with agile strategy and creative execution."
-              />
-              <Stat
-                kpi="100%"
-                title="Transparent Pricing"
-                desc="No hidden fees. No fine print. Only clear, results-driven value."
-              />
-              <Stat
-                kpi="10.3M+"
-                title="Total Views That Convert"
-                desc="Campaigns that captured attention and delivered massive reach."
-              />
-              <Stat
-                kpi="100%"
-                title="Data-Driven Perfomance"
-                desc="Every strategy is backed by analytics. No guesswork, just results."
-              />
-              <Stat
-                kpi="15+"
-                title="Industries Served"
-                desc="From cafés to hotels, proven strategies that drive real growth."
-              />
-              <Stat
-                kpi="24/7"
-                title="Strategic Support"
-                desc="Always available to align, analyze, and advance your marketing goals."
-              />
+               <Stat
+                    kpi="3x"
+                    title="Strategic Growth"
+                    desc="Smart strategy and creative execution that drives growth."
+                  />
+          <Stat
+                    kpi="100%"
+                    title="Clear Costs"
+                    desc="Clarity from day one. Straightforward pricing backed by honest partnerships."
+                  />
+               <Stat
+                    kpi="10.3M+"
+                    title="Total Views That Convert"
+                    desc="We don't just create visibility, we create campaigns that turn viewers into loyal customers."
+                  />
+            <Stat
+                    kpi="100%"
+                    title="Results Through Analytics"
+                    desc="Every decision backed by real analytics. No guesswork. Just proven strategies that deliver measurable results.
+"
+                  />
+                  <Stat
+                    kpi="50+"
+                    title="Growing Brands"
+                    desc="From startups to established brands, we've partnered with over 50+ businesses to deliver real,  growth."
+                  />
+                  <Stat
+                    kpi="24/7"
+                    title="Always Here to Help"
+                    desc="Your marketing partner, always available to refine strategy, analyze performance, and drive growth for your business."
+                  />
             </div>
           )}
 
           {/* ✅ Desktop layout preserved */}
           <div className="hidden md:block">
             <div className="grid grid-cols-[48%_48%] gap-4 lg:grid-cols-[24%_24%_48%]">
-              <Stat
-                kpi="3x"
-                title="Growth"
-                desc="Accelerate launches with agile strategy and creative execution."
-              />
-              <Stat
-                kpi="100%"
-                title="Transparent Pricing"
-                desc="No hidden fees. No fine print. Only clear, results-driven value."
-              />
-              <div className="col-span-2 lg:col-span-1">
                 <Stat
-                  kpi="10.3M+"
-                  title="Total Views That Convert"
-                  desc="Campaigns that captured attention and delivered massive reach. Proven results with impactful digital strategies."
-                />
+                    kpi="3x"
+                    title="Strategic Growth"
+                    desc="Smart strategy and creative execution that drives growth."
+                  />
+                  <Stat
+                    kpi="100%"
+                    title="Clear Costs"
+                    desc="Clarity from day one. Straightforward pricing backed by honest partnerships."
+                  />
+              <div className="col-span-2 lg:col-span-1">
+                 <Stat
+                    kpi="10.3M+"
+                    title="Total Views That Convert"
+                    desc="We don't just create visibility, we create campaigns that turn viewers into loyal customers."
+                  />
               </div>
             </div>
 
             <div className="mt-5 grid grid-cols-2 gap-4 lg:grid-cols-[49%_24%_24%]">
-              <Stat
-                kpi="100%"
-                title="Data-Driven Perfomance"
-                desc="Every strategy is backed by analytics. No guesswork, just results."
-              />
-              <Stat
-                kpi="15+"
-                title="Industries Served"
-                desc="From cafés to hotels, proven strategies that drive real growth across every niche."
-              />
+               <Stat
+                    kpi="100%"
+                    title="Results Through Analytics"
+                    desc="Every decision backed by real analytics. No guesswork. Just proven strategies that deliver measurable results.
+"
+                  />
+                  <Stat
+                    kpi="50+"
+                    title="Growing Brands"
+                    desc="From startups to established brands, we've partnered with over 50+ businesses to deliver real,  growth."
+                  />
               <div className="col-span-2 lg:col-span-1">
                 <Stat
-                  kpi="24/7"
-                  title="Strategic Support"
-                  desc="Always available to align, analyze, and advance your marketing goals - for growth."
-                />
+                    kpi="24/7"
+                    title="Always Here to Help"
+                    desc="Your marketing partner, always available to refine strategy, analyze performance, and drive growth for your business."
+                  />
               </div>
             </div>
           </div>
