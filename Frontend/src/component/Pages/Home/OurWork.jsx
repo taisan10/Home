@@ -367,6 +367,34 @@ export default function Work() {
   const initialStats = metrics.slice(0, 3);
   const delayedStats = metrics.slice(3, 6);
 
+
+  const tabRefs = useRef([]);
+  const scrollRef = useRef(null);
+const scrollTabs = (direction) => {
+  const container = scrollRef.current;
+  if (!container) return;
+
+  const scrollAmount = 150;
+  container.scrollBy({
+    left: direction === "left" ? -scrollAmount : scrollAmount,
+    behavior: "smooth",
+  });
+
+  // Optional: shift active tab index
+  const newIndex =
+    direction === "left"
+      ? Math.max(activeIndex - 1, 0)
+      : Math.min(activeIndex + 1, WorksData.length - 1);
+
+  setActiveIndex(newIndex);
+  tabRefs.current[newIndex]?.scrollIntoView({
+    behavior: "smooth",
+    inline: "start",
+    block: "nearest",
+  });
+};
+
+
   return (
     <section
       ref={sectionRef}
@@ -378,23 +406,66 @@ export default function Work() {
         </h4>
 
         {/* Company Tabs */}
-        <div className="w-full overflow-x-auto scrollbar-hide scroll-smooth mb-5 sm:mb-10 mt-5 md:mt-5 lg:mt-7">
-          <div className="flex flex-nowrap justify-start gap-2 sm:gap-3 px-1 min-w-max">
-            {WorksData.map((work, index) => (
-              <button
-                key={work.id}
-                onClick={() => setActiveIndex(index)}
-                className={`whitespace-nowrap px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm md:text-md font-medium transition-all duration-300 ${
-                  activeIndex === index
-                    ? `${work.heroSection.theme}`
-                    : "bg-gray-50 text-gray-700 hover:bg-gray-200"
-                }`}
+   <div className="relative w-full mb-5 sm:mb-10 mt-5 md:mt-5 lg:mt-7">
+  {/* Left Button */}
+  <button
+    onClick={() => scrollTabs("left")}
+    className="absolute -left-6 top-1/2 -translate-y-1/2 z-10 bg-gray-500 shadow-md rounded-full p-2  sm:flex"
+  >
+   <svg
+                className="w-4 h-4 sm:w-5 sm:h-5"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
               >
-                {work.name}
-              </button>
-            ))}
-          </div>
-        </div>
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+  </button>
+
+  {/* Scrollable Tabs */}
+  <div ref={scrollRef} className="w-full overflow-x-auto scrollbar-hide scroll-smooth px-8">
+    <div className="flex flex-nowrap justify-start gap-2 sm:gap-3 min-w-max">
+      {WorksData.map((work, index) => (
+        <button
+          key={work.id}
+          ref={(el) => (tabRefs.current[index] = el)}
+          onClick={() => {
+            setActiveIndex(index);
+            tabRefs.current[index]?.scrollIntoView({
+              behavior: "smooth",
+              inline: "start",
+              block: "nearest",
+            });
+          }}
+          className={`whitespace-nowrap px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm md:text-md font-medium transition-all duration-300 ${
+            activeIndex === index
+              ? `${work.heroSection.theme}`
+              : "bg-gray-50 text-gray-700 hover:bg-gray-200"
+          }`}
+        >
+          {work.name}
+        </button>
+      ))}
+    </div>
+  </div>
+
+  {/* Right Button */}
+  <button
+    onClick={() => scrollTabs("right")}
+    className="absolute -right-6 top-1/2 -translate-y-1/2 z-10 bg-gray-500 shadow-md rounded-full p-2  sm:flex"
+  >
+    <svg
+                className="w-4 h-4 sm:w-5 sm:h-5"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+  </button>
+</div>
 
         {/* Active Work Details with swipe support */}
         <div
@@ -471,7 +542,7 @@ export default function Work() {
           <PrimaryButton href="#contact">Get In Touch With Us</PrimaryButton>
           <div className="flex gap-2 sm:gap-3">
             <button
-              onClick={prevWork}
+              onClick={() => scrollTabs("left")}
               className="w-10 h-10 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200 text-white shadow-md z-10"
             >
               <svg
@@ -487,7 +558,7 @@ export default function Work() {
 
             {/* Next */}
             <button
-              onClick={nextWork}
+              onClick={() => scrollTabs("right")}
               className="w-10 h-10 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200 text-white shadow-md z-10"
             >
               <svg
