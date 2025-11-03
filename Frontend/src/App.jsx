@@ -20,7 +20,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
 
-          {ServiceRoutes.map(({ path, element }) => (
+          {ServiceRoutes.map(({ path, element }) => ( 
             <Route key={path} path={path} element={element} />
           ))}
 
