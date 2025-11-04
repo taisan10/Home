@@ -28,7 +28,7 @@ const AboutPage = () => {
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-5xl md:text-7xl font-extrabold text-yellow-400 mb-6 -mt-10"
+          className="text-3xl md:text-5xl font-extrabold text-yellow-400 mb-6 -mt-10"
         >
           About Bluenose Digital Marketing
         </motion.h1>

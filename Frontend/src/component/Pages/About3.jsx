@@ -83,7 +83,7 @@ export default function AboutUs() {
 
       {/* Intro Section */}
       <div className="max-w-5xl mx-auto text-center">
-        <h1 className="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-teal-300 via-cyan-400 to-blue-400 bg-clip-text text-transparent">
+        <h1 className="text-3xl md:text-5xl font-extrabold bg-gradient-to-r from-teal-300 via-cyan-400 to-blue-400 bg-clip-text text-transparent">
           We Shape Stories That Spark Digital Movements
         </h1>
         <p className="mt-6 text-gray-300 text-lg leading-relaxed">
