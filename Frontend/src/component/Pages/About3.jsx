@@ -62,7 +62,7 @@ export default function AboutUs() {
       name: "Dev Singh",
       role: "Performance Lead",
       quote: "Numbers tell stories — we just learn to listen.",
-      image: "https://images.unsplash.com/photo-1603415526960-f8f0a1f0f0f0?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
     },
     {
       name: "Mitali Ghosh",
@@ -92,9 +92,9 @@ export default function AboutUs() {
           We don’t chase trends — we build narratives that stay.
         </p>
         <img
-          src="https://images.unsplash.com/photo-1581092334442-8c57f7b1a6b1?auto=format&fit=crop&w=1200&q=80"
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
           alt="Creative Office"
-          className="mt-10 rounded-2xl shadow-lg w-full mx-auto"
+          className="mt-10 rounded-2xl w-auto max-w-120 h-auto max-h-80 shadow-lg w-full mx-auto"
         />
       </div>
 
@@ -118,18 +118,18 @@ export default function AboutUs() {
 
       {/* Our Process */}
       <div className="max-w-6xl mx-auto space-y-12">
-        <h2 className="text-center text-3xl md:text-4xl font-bold mb-4">Our Process to Impact</h2>
+        <h2 className="text-center text-3xl md:text-4xl font-bold mb-8">Our Process to Impact</h2>
         {process.map((p, i) => (
           <div
             key={i}
-            className={`flex flex-col ${i % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"} items-center gap-8`}
+            className={`flex flex-col ${i % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"} items-center gap-8`}
           >
             <img
               src={p.img}
               alt={p.title}
-              className="w-full lg:w-1/2  rounded-2xl shadow-lg object-cover"
+              className="w-full sm:w-1/2 h-auto max-h-80 rounded-2xl shadow-lg object-cover"
             />
-            <div className="lg:w-1/2 space-y-3">
+            <div className="sm:w-1/2 space-y-3  ">
               <span className="text-cyan-400 font-semibold text-lg">{p.step}</span>
               <h3 className="text-2xl font-bold">{p.title}</h3>
               <p className="text-gray-400 text-base">{p.desc}</p>
@@ -149,7 +149,7 @@ export default function AboutUs() {
         <img
           src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
           alt="Office Collaboration"
-          className="rounded-xl shadow-xl mx-auto"
+          className="rounded-xl shadow-xl mx-auto h-auto max-h-80"
         />
       </div>
 

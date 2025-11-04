@@ -28,17 +28,17 @@ const AboutPage = () => {
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-5xl md:text-7xl font-extrabold text-yellow-400 mb-6"
+          className="text-5xl md:text-7xl font-extrabold text-yellow-400 mb-6 -mt-10"
         >
           About Bluenose Digital Marketing
         </motion.h1>
-        <p className="text-gray-300 max-w-3xl mx-auto text-lg leading-relaxed">
+        <p className="text-gray-300 max-w-3xl mx-auto text-lg leading-relaxed -mb-18">
           Building global brands through innovation, strategy, and technology — from North America to the UK, we drive businesses forward in the digital era.
         </p>
       </section>
 
       {/* ---------------- CORE PHILOSOPHY ---------------- */}
-      <section className="py-24 px-8 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <section className="py-24 px-8 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center -mt-40">
         <motion.img
             src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=600&q=80"
           alt="Bluenose Team"
@@ -63,8 +63,8 @@ const AboutPage = () => {
       </section>
 
       {/* ---------------- MISSION / VISION / VALUES ---------------- */}
-      <section className="bg-gray-900 py-24 px-8 text-center">
-        <h2 className="text-3xl font-bold text-yellow-400 mb-12">Mission. Vision. Values.</h2>
+      <section className="bg-gray-900 py-24 px-8 text-center -mt-15">
+        <h2 className="text-3xl font-bold text-yellow-400 mb-12 -mt-15">Mission. Vision. Values.</h2>
         <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
           {[
             { title: "Mission", desc: "Empower brands to reach their full digital potential through data-driven creativity." },
@@ -85,8 +85,8 @@ const AboutPage = () => {
       </section>
 
       {/* ---------------- GLOBAL PRESENCE ---------------- */}
-      <section className="py-24 px-8 max-w-7xl mx-auto">
-        <motion.h2 {...fadeUp} className="text-3xl font-bold text-yellow-400 text-center mb-14">
+      <section className="py-24 px-8 max-w-7xl mx-auto -mt-15">
+        <motion.h2 {...fadeUp} className="text-3xl font-bold text-yellow-400 text-center mb-8">
           Global Presence
         </motion.h2>
         <div className="grid md:grid-cols-3 gap-12 text-center">
@@ -124,8 +124,8 @@ const AboutPage = () => {
       </section>
 
       {/* ---------------- INTERACTIVE MAP ---------------- */}
-      <section className="bg-gray-900 py-24 px-8 text-center">
-        <h2 className="text-3xl font-bold text-yellow-400 mb-10">
+      <section className="bg-gray-900 py-24 px-8 text-center -mt-15">
+        <h2 className="text-3xl font-bold text-yellow-400 mb-10 -mt-15">
           Our Global Offices
         </h2>
         <div className="max-w-5xl mx-auto h-[400px] rounded-2xl overflow-hidden shadow-lg border border-gray-800">
@@ -153,8 +153,8 @@ const AboutPage = () => {
       </section>
 
 {/* ---------------- LEADERSHIP / FUTURE ---------------- */}
-      <section className="py-24 px-8 max-w-5xl mx-auto text-center">
-        <motion.h2 {...fadeUp} className="text-3xl font-bold text-yellow-400 mb-10">
+      <section className="py-24 px-8 max-w-5xl mx-auto text-center -mt-15">
+        <motion.h2 {...fadeUp} className="text-3xl font-bold text-yellow-400 mb-10 -mt-5">
           The Future We’re Building
         </motion.h2>
         <motion.p
@@ -180,7 +180,7 @@ const AboutPage = () => {
 
 
       {/* ---------------- TEAM SECTION ---------------- */}
-      <section className="py-24 px-8 max-w-7xl mx-auto text-center">
+      <section className="py-24 px-8 max-w-7xl mx-auto text-center -mt-35">
         <motion.h2 {...fadeUp} className="text-3xl font-bold text-yellow-400 mb-12">
           Meet Our Leadership
         </motion.h2>

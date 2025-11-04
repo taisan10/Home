@@ -95,7 +95,7 @@ export default function Kpi() {
                   />
                   <Stat
                     kpi="24/7"
-                    title="Always Here to Help"
+                    title="Strategic Support"
                     desc="Your marketing partner, always available to refine strategy, analyze performance, and drive growth for your business."
                   />
                 </>
@@ -132,7 +132,7 @@ export default function Kpi() {
                   />
                   <Stat
                     kpi="24/7"
-                    title="Always Here to Help"
+                    title="Strategic Support"
                     desc="Your marketing partner, always available to refine strategy, analyze performance, and drive growth for your business."
                   />
             </div>
@@ -175,7 +175,7 @@ export default function Kpi() {
               <div className="col-span-2 lg:col-span-1">
                 <Stat
                     kpi="24/7"
-                    title="Always Here to Help"
+                    title="Strategic Support"
                     desc="Your marketing partner, always available to refine strategy, analyze performance, and drive growth for your business."
                   />
               </div>
