@@ -285,7 +285,7 @@ const scrollTabs = (direction) => {
 
         {/* Bottom Navigation */}
         <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
-          <PrimaryButton href="#contact">Get In Touch With Us</PrimaryButton>
+          <PrimaryButton href="#contact">Get a Free Quote</PrimaryButton>
           <div className="flex gap-2 sm:gap-3">
             <button
               onClick={() => scrollTabs("left")}
