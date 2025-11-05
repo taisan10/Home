@@ -1,6 +1,8 @@
  
+import { Container } from "../UI/UiComponent";
 
 import { useEffect, useState } from "react";
+
 
 export default function AboutUs() {
   const [isLarge, setIsLarge] = useState(false);

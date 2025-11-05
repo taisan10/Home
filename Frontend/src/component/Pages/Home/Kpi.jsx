@@ -72,7 +72,7 @@ export default function Kpi() {
                   <Stat
                     kpi="100%"
                     title="Clear Costs"
-                    desc="Clarity from day one. Straightforward pricing backed by honest partnerships."
+                    desc="Straightforward pricing backed by honest partnerships."
                   />
                   <Stat
                     kpi="10.3M+"
@@ -112,7 +112,7 @@ export default function Kpi() {
           <Stat
                     kpi="100%"
                     title="Clear Costs"
-                    desc="Clarity from day one. Straightforward pricing backed by honest partnerships."
+                    desc="Straightforward pricing backed by honest partnerships."
                   />
                <Stat
                     kpi="10.3M+"
@@ -149,7 +149,7 @@ export default function Kpi() {
                   <Stat
                     kpi="100%"
                     title="Clear Costs"
-                    desc="Clarity from day one. Straightforward pricing backed by honest partnerships."
+                    desc="Straightforward pricing backed by honest partnerships."
                   />
               <div className="col-span-2 lg:col-span-1">
                  <Stat
