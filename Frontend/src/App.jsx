@@ -6,7 +6,7 @@ import Home from "./component/Pages/Home/index/Home";
 // import About4 from "./component/Pages/About4";
 // import About5 from "./component/Pages/About5";
 // import About2 from "./component/Pages/About2";
-// import About from "./component/Pages/About";
+import About from "./component/Pages/About";
 
 import Contact from "./component/Pages/Contact";
 import WorkDetail from "./component/Pages/CaseStudy/index/WorksPage";
@@ -29,9 +29,9 @@ export default function App() {
           {/* <Route path="/about5" element={<About5 />} />
           <Route path="/about4" element={<About4 />} />
           <Route path="/company" element={<About3 />} />
-          <Route path="/Works" element={<About2/>} />
+          <Route path="/Works" element={<About2/>} /> */}
           <Route path="/About" element={<About/>} />
-          <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>
     </Router>
