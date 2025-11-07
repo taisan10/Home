@@ -18,11 +18,11 @@ const logos = Array.from({ length: 16 }, (_, i) => `/Client_Logo/${i + 1}.png`);
       <Container className="py-14 sm:py-20 lg:py-28 text-center mt-5 sm:-mt-10">
         <h1 className="w-full text-3xl sm:text-5xl lg:text-6xl font-semibold leading-tight">
           <GradientText> We are Bluenose, </GradientText>
-         for us <i>  Your Story  <br />above all. </i>
+         for us <i>  Your Story  <br /> is above all. </i>
         </h1>
 
         <p className="mt-5 sm:mt-6 max-w-3xl mx-auto text-white/70 text-base sm:text-lg">
-          Our Halifax based team blends creativity, strategy, and performance to deliver impactful social media solutions for your brand.
+          From day one, we embrace your goals as our own and translate them into action through results- driven marketing.
         </p>
 
         <div className="mt-6 sm:mt-8 flex justify-center gap-3 sm:gap-4">

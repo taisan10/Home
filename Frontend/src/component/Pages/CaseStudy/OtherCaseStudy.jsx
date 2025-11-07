@@ -23,7 +23,7 @@ export function CaseStudiesSections({ data }) {
               <div className={`${study.theme} text-black p-6 flex flex-col justify-between h-full`}>
                 <div>
                   <h3 className="text-2xl font-bold mb-6">{study.title}</h3>
-                  <p className="text-lg mb-15">{study.desc}</p>
+                  <p className="text-lg">{study.desc}</p>
                 </div>
 
 
