@@ -66,7 +66,7 @@ export default function Kpi() {
                 <>
                   <Stat
                     kpi="3x"
-                    title="Strategic Growth"
+                    title="Growth"
                     desc="Smart strategy and creative execution that drives growth."
                   />
                   <Stat
@@ -106,7 +106,7 @@ export default function Kpi() {
             <div className="grid gap-4 grid-cols-2 sm:grid-cols-2 sm:grid-rows-3 md:hidden">
                <Stat
                     kpi="3x"
-                    title="Strategic Growth"
+                    title="Growth"
                     desc="Smart strategy and creative execution that drives growth."
                   />
           <Stat
@@ -143,7 +143,7 @@ export default function Kpi() {
             <div className="grid grid-cols-[48%_48%] gap-4 lg:grid-cols-[24%_24%_48%]">
                 <Stat
                     kpi="3x"
-                    title="Strategic Growth"
+                    title="Growth"
                     desc="Smart strategy and creative execution that drives growth."
                   />
                   <Stat

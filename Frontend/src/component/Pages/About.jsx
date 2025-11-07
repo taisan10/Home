@@ -322,18 +322,18 @@ export default function CaseStudyStack() {
   h-80 sm:h-70 md:h-70 lg:h-70
   gap-6 p-4 sm:p-6 md:p-5">
                 {/* Left: Logo + Text */}
-                <div className="md:w-1/2 space-y-4 text-center md:text-left">
+                <div className="md:w-3/4 space-y-4 text-center md:text-left">
                   <img src={item.logo} alt="Logo" className="h-16 mx-auto md:mx-0" />
                   <h3 className="text-xl font-bold text-gray-800">{item.title}</h3>
                   <p className="text-gray-600">{item.desc}</p>
                 </div>
 
                 {/* Right: Image */}
-              <div className="hidden sm:block sm:w-1/2 md:w-1/2">
+              <div className="hidden md:block  md:w-1/4">
                   <img
                     src={item.image}
                     alt="Case Study"
-                    className="w-full sm:w-60 md:w-50 lg:w-50 h-50 sm:h-50 md:h-60 lg:h-60 lg:ml-15 rounded-lg object-cover"
+                    className="w-full sm:w-60 md:w-50 lg:w-50 h-50 sm:h-50 md:h-60 lg:h-60 rounded-lg object-cover"
                   />
                 </div>
               </div>

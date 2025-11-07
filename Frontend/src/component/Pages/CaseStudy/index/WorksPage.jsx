@@ -10,7 +10,7 @@ import { ServicesProvided } from "../ServicesProvided";
 import { ChallengeSection } from "../Challenge";
 import { ApproachSection } from "../Approach";
 import { Strategic } from "../KeyStrategy";
-import { CuriousSection } from "../CuriousAbout";
+// import { CuriousSection } from "../CuriousAbout";
 import { CaseStudiesSections } from "../OtherCaseStudy";
 import { Sidebar } from "../Sidebar";
 // import Contact from "../Contact";
@@ -40,7 +40,7 @@ const company = WorksData.find((item) => item.slug === companyName);
             "Challenge",
             "Approach",
             "Key Strategy",
-            "Curious About Our Approach",
+            // "Curious About Our Approach",
           ]} />
         </aside>
 
@@ -51,7 +51,7 @@ const company = WorksData.find((item) => item.slug === companyName);
           <ChallengeSection data={company.challenge} />
           <ApproachSection data={company.approach} />
           <Strategic data={company.keyStrategies} />
-          <CuriousSection data={company.cta} />
+          {/* <CuriousSection data={company.cta} /> */}
           
         </main>
         

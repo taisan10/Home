@@ -1,4 +1,4 @@
-import { Container } from "../../UI/UiComponent";
+import { Container, PrimaryButton } from "../../UI/UiComponent";
 import { motion } from "framer-motion";
 
 export function HeroSection({ data }) {
@@ -44,6 +44,18 @@ export function HeroSection({ data }) {
                 {tag}
               </button>
             ))}
+          </motion.div>
+       
+          <motion.div
+            className="flex flex-wrap gap-3 pt-4"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.9 }}
+          >
+           <div className="hidden md:block  ">
+                       <PrimaryButton href="#contact">Book A Free Audit</PrimaryButton>
+                     </div>
           </motion.div>
         </div>
 

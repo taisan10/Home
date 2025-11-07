@@ -4,7 +4,8 @@ import ContactPage from "../../../UI/Contactpage";
 
 import Hero from "../Hero";
 import Kpi from "../Kpi";
-import Work from "../OurWork";
+import OurWork from "../OurWork";
+
 import Services from "../Service";
 
 import Video from "../Video";
@@ -19,7 +20,7 @@ export default function Home(){
           <Hero />
           <Video />
           <Kpi />
-          <Work />
+          <OurWork />
          {/* <CollageSlider /> */}
           <Services />
       

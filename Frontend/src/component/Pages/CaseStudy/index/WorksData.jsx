@@ -30,6 +30,14 @@ const WorksData = [
       { label: "Non-Follower Engagement", value: "62%" },
       { label: "Avg. Monthly Growth Rate", value: "130%" },
     ],
+    otherCaseStudiesmetrics: [
+      { label: "Total Views", value: "1.3M+" },
+      { label: "Organic Reach", value: "89%" },
+      { label: "Accounts Reached", value: "439K+" },
+      { label: "Followers (136% Growth)", value: "713" },
+      // { label: "Non-Follower Engagement", value: "62%" },
+      // { label: "Avg. Monthly Growth Rate", value: "130%" },
+    ],
   },
   servicesProvided: [
     { name: "Social Media Strategy", icon: "📊" },
@@ -443,7 +451,7 @@ const WorksData = [
   },
   heroSection: {
     title: "Pita Nutso",
-    subtitle: "36.1K+ Views in 90 Days: Organic Growth Strategy for Pita Nutso",
+    subtitle: "36.1K+ Views in  90 Days: Organic Growth Strategy for Pita Nutso",
     tags: ["Brand Roadmap", "Design Impact", "Performance Pulse"],
     image: "/Client_Logo/3.png",
     theme: "bg-[#FDF1D9] text-black",
@@ -616,7 +624,7 @@ const WorksData = [
    otherCaseStudies: [
     {
      title: "Pita Nutso",
-     desc: "36.1K+ Views in 90 Days: Organic Growth Strategy for Pita Nutso",
+     desc: "36.1K+ Views    in 90 Days: Organic Growth Strategy for Pita Nutso",
      img: "/Client_Logo/3.png",
      theme: "bg-[#f0dfcc] text-black",
      slug: "pita-nutso",

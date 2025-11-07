@@ -13,7 +13,7 @@ import { useSwipeable } from "react-swipeable";
 import WorksData from "../CaseStudy/index/WorksData";
 import { useEffect, useState, useRef } from "react";
 
-export default function Work() {
+export default function OurWork() {
   const [activeIndex, setActiveIndex] = useState(0);
   const nextWork = () => setActiveIndex((prev) => (prev + 1) % WorksData.length);
   const prevWork = () => setActiveIndex((prev) => (prev === 0 ? WorksData.length - 1 : prev - 1));
@@ -41,7 +41,7 @@ export default function Work() {
         setShowSecondImage(false);
         timer = setTimeout(() => {
           setShowSecondImage(true);
-        }, 3000);
+        }, 2000);
       } else {
         clearTimeout(timer);
         setShowSecondImage(false);
@@ -148,30 +148,28 @@ const scrollTabs = (direction) => {
     >
       <Container>
         <h4 className="text-3xl md:text-5xl lg:text-5xl bg-gradient-to-r from-sky-400 via-cyan-400 to-teal-300 bg-clip-text text-transparent font-bold">
-          Our Works
+        Client Results
         </h4>
-
-        {/* Company Tabs */}
-   <div className="relative w-full mb-5 sm:mb-10 mt-5 md:mt-5 lg:mt-7">
-  {/* Left Button */}
+{/* Container */}
+<div className="relative w-full mb-5 sm:mb-10 mt-5 md:mt-5 lg:mt-7">
+  {/* Left Button (absolute, does not affect layout) */}
   <button
     onClick={() => scrollTabs("left")}
-    className="absolute -left-6 top-1/2 -translate-y-1/2 z-10 bg-gray-500 shadow-md rounded-full p-2  sm:flex"
+    className="absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-gray-500 shadow-md rounded-full p-2"
+    aria-label="scroll left"
   >
-   <svg
-                className="w-4 h-4 sm:w-5 sm:h-5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-              </svg>
+    <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+    </svg>
   </button>
 
   {/* Scrollable Tabs */}
-  <div ref={scrollRef} className="w-full overflow-x-auto scrollbar-hide scroll-smooth px-8">
-    <div className="flex flex-nowrap justify-start gap-2 sm:gap-3 min-w-max">
+  <div
+    ref={scrollRef}
+    className="w-full overflow-x-auto scrollbar-hide scroll-smooth px-0"
+    style={{ scrollPaddingLeft: "3rem", scrollPaddingRight: "2.5rem" }}
+  >
+    <div className="flex flex-nowrap justify-start gap-2 sm:gap-3 min-w-max pl-12 pr-6">
       {WorksData.map((work, index) => (
         <button
           key={work.id}
@@ -185,31 +183,27 @@ const scrollTabs = (direction) => {
             });
           }}
           className={`whitespace-nowrap px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm md:text-md font-medium transition-all duration-300 ${
-            activeIndex === index
-              ? `${work.heroSection.theme}`
-              : "bg-gray-50 text-gray-700 hover:bg-gray-200"
+            activeIndex === index ? `${work.heroSection.theme}` : "bg-gray-50 text-gray-700 hover:bg-gray-200"
           }`}
         >
           {work.name}
         </button>
       ))}
+
+      {/* optional invisible spacer to guarantee last tab fully visible */}
+      <div className="w-6 flex-shrink-0" aria-hidden="true" />
     </div>
   </div>
 
   {/* Right Button */}
   <button
     onClick={() => scrollTabs("right")}
-    className="absolute -right-6 top-1/2 -translate-y-1/2 z-10 bg-gray-500 shadow-md rounded-full p-2  sm:flex"
+    className="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-gray-500 shadow-md rounded-full p-2"
+    aria-label="scroll right"
   >
-    <svg
-                className="w-4 h-4 sm:w-5 sm:h-5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
+    <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+    </svg>
   </button>
 </div>
 
@@ -261,7 +255,7 @@ const scrollTabs = (direction) => {
 
           {/* Right Side: Image */}
           <div className="w-full md:w-1/2 flex justify-end px-4 sm:px-20   md:px-1 lg:px-2">
-            <div className="relative flex items-center justify-center w-full max-w-[95%] sm:max-w-sm md:max-w-md lg:max-w-lg rounded-xl sm:rounded-2xl overflow-hidden aspect-[4/5] md:aspect-[7/10] lg:aspect-[7/8]">
+            <div className="relative flex items-center justify-center w-full max-w-[95%] sm:max-w-sm md:max-w-md lg:max-w-lg rounded-xl sm:rounded-2xl overflow-hidden aspect-[4/5] md:aspect-[7/10] lg:aspect-[5/5]">
               {/* First Logo Image */}
               <img
                 src={activeWork.heroSection.image}
@@ -285,7 +279,7 @@ const scrollTabs = (direction) => {
 
         {/* Bottom Navigation */}
         <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
-          <PrimaryButton href="#contact">Get a Free Quote</PrimaryButton>
+          <PrimaryButton href="#contact">Book A Free Audit</PrimaryButton>
           <div className="flex gap-2 sm:gap-3">
             <button
               onClick={() => scrollTabs("left")}
