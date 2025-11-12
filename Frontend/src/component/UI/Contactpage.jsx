@@ -87,19 +87,14 @@ export default function ContactPage() {
       <Container className="grid gap-8 sm:gap-12 md:grid-cols-2 items-start -mt-8 sm:-mt-12 md:-mt-12 lg:-mt-12 -mb-10 sm:-mb-10 md:-mb-18 lg:-mb-10 ">
         <div>
           <h3 className="text-3xl sm:text-4xl font-semibold leading-tight mb-4 sm:mb-6 text-white/80">
-           Ready to Grow Your Revenue Through Digital Marketing?
-
+            Ready to Elevate Your Marketing?
           </h3>
-          {/* <ul className="space-y-2 sm:space-y-3 text-white/80 text-base sm:text-lg">
+          <ul className="space-y-2 sm:space-y-3 text-white/80 text-base sm:text-lg">
             <li>• How does the Bluenose agency work for your brand?</li>
             <li>• How can you do marketing at scale better, faster and cheaper?</li>
             <li>• How we’re different from agencies, freelancers and in‑house teams (hint: faster & leaner!)</li>
             <li>• Which subscription plan fits your growth goals?</li>
-          </ul> */}
-          <h5>
-            Our greatest satisfaction comes from seeing our client’s business succeed. Now it’s your high time to remove the barriers to your growth through reach and large no. of audience and accelerate your profitability.
-
-          </h5>
+          </ul>
         </div>
 
         <div className="rounded-[24px] sm:rounded-[28px] bg-white p-5 sm:p-8 shadow-xl text-neutral-900">
@@ -179,7 +174,7 @@ export default function ContactPage() {
               disabled={loading}
               className="rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 px-6 py-3 text-sm font-medium text-white shadow-lg disabled:opacity-50"
             >
-              {loading ? "Submitting..." : "Book A Free Audit "}
+              {loading ? "Submitting..." : "Chat With Us  "}
             </button>
 
             {status && (
