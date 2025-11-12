@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/api", contactRoutes);
-app.use("/", streamRoutes);
+// app.use("/", streamRoutes);
 
 
 
