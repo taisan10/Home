@@ -49,52 +49,100 @@ export default function Video() {
   //   ],
   // };
 
-  const BASEURL = "http://72.60.173.145:5000/video";
+  // const BASEURL = "http://72.60.173.145:5000/video";
 
-  const videoCategories = {
-    UGC: [
-      `${BASEURL}/UGC/UGC.mp4`,
-      `${BASEURL}/UGC/UGC1.mp4`,
-      `${BASEURL}/UGC/UGC2.mp4`,
-      `${BASEURL}/UGC/UGC3.mp4`,
-      `${BASEURL}/UGC/UGC4.mp4`,
-    ],
-    EVENTS: [
-      `${BASEURL}/Events/Events.mp4`,
-      `${BASEURL}/Events/Events%201.mp4`,
-      `${BASEURL}/Events/Events%202.mp4`,
-      `${BASEURL}/Events/Events%203.mp4`,
-      `${BASEURL}/Events/Events%204.mp4`,
-    ],
-    SMM: [
-      `${BASEURL}/SMM/SMM.mp4`,
-      `${BASEURL}/SMM/SMM1.mp4`,
-      `${BASEURL}/SMM/SMM2.mp4`,
-      `${BASEURL}/SMM/SMM3.mp4`,
-      `${BASEURL}/SMM/SMM4.mp4`,
-    ],
-    "Video Production": [
-      `${BASEURL}/Video%20Production/Video%20Production.mp4`,
-      `${BASEURL}/Video%20Production/Video%20Production1.mp4`,
-      `${BASEURL}/Video%20Production/Video%20Production2.mp4`,
-      `${BASEURL}/Video%20Production/Video%20Production3.mp4`,
-      `${BASEURL}/Video%20Production/Video%20Production4.mp4`,
-    ],
-    "Personal Branding": [
-      `${BASEURL}/Personal%20Branding/Personal%20Branding5.mp4`,
-      `${BASEURL}/Personal%20Branding/Personal%20Branding1.mp4`,
-      `${BASEURL}/Personal%20Branding/Personal%20Branding2.mp4`,
-      `${BASEURL}/Personal%20Branding/Personal%20Branding.mp4`,
-      `${BASEURL}/Personal%20Branding/Personal%20Branding3.mp4`,
-    ],
-    "Influencer Marketing": [
-      `${BASEURL}/Influencer%20Marketing/Influencer%20marketing.mp4`,
-      `${BASEURL}/Influencer%20Marketing/Influencer%20marketing1.mp4`,
-      `${BASEURL}/Influencer%20Marketing/Influencer%20marketing2.mp4`,
-      `${BASEURL}/Influencer%20Marketing/Influencer%20marketing3.mp4`,
-      `${BASEURL}/Influencer%20Marketing/Influencer%20marketing4.mp4`,
-    ],
-  };
+  // const videoCategories = {
+  //   UGC: [
+  //     `${BASEURL}/UGC/UGC.mp4`,
+  //     `${BASEURL}/UGC/UGC1.mp4`,
+  //     `${BASEURL}/UGC/UGC2.mp4`,
+  //     `${BASEURL}/UGC/UGC3.mp4`,
+  //     `${BASEURL}/UGC/UGC4.mp4`,
+  //   ],
+  //   EVENTS: [
+  //     `${BASEURL}/Events/Events.mp4`,
+  //     `${BASEURL}/Events/Events%201.mp4`,
+  //     `${BASEURL}/Events/Events%202.mp4`,
+  //     `${BASEURL}/Events/Events%203.mp4`,
+  //     `${BASEURL}/Events/Events%204.mp4`,
+  //   ],
+  //   SMM: [
+  //     `${BASEURL}/SMM/SMM.mp4`,
+  //     `${BASEURL}/SMM/SMM1.mp4`,
+  //     `${BASEURL}/SMM/SMM2.mp4`,
+  //     `${BASEURL}/SMM/SMM3.mp4`,
+  //     `${BASEURL}/SMM/SMM4.mp4`,
+  //   ],
+  //   "Video Production": [
+  //     `${BASEURL}/Video%20Production/Video%20Production.mp4`,
+  //     `${BASEURL}/Video%20Production/Video%20Production1.mp4`,
+  //     `${BASEURL}/Video%20Production/Video%20Production2.mp4`,
+  //     `${BASEURL}/Video%20Production/Video%20Production3.mp4`,
+  //     `${BASEURL}/Video%20Production/Video%20Production4.mp4`,
+  //   ],
+  //   "Personal Branding": [
+  //     `${BASEURL}/Personal%20Branding/Personal%20Branding5.mp4`,
+  //     `${BASEURL}/Personal%20Branding/Personal%20Branding1.mp4`,
+  //     `${BASEURL}/Personal%20Branding/Personal%20Branding2.mp4`,
+  //     `${BASEURL}/Personal%20Branding/Personal%20Branding.mp4`,
+  //     `${BASEURL}/Personal%20Branding/Personal%20Branding3.mp4`,
+  //   ],
+  //   "Influencer Marketing": [
+  //     `${BASEURL}/Influencer%20Marketing/Influencer%20marketing.mp4`,
+  //     `${BASEURL}/Influencer%20Marketing/Influencer%20marketing1.mp4`,
+  //     `${BASEURL}/Influencer%20Marketing/Influencer%20marketing2.mp4`,
+  //     `${BASEURL}/Influencer%20Marketing/Influencer%20marketing3.mp4`,
+  //     `${BASEURL}/Influencer%20Marketing/Influencer%20marketing4.mp4`,
+  //   ],
+  // };
+
+
+  
+ const videoCategories = {
+  UGC: [
+    "http://72.60.173.145:5000/video/UGC/UGC.mp4",
+    "http://72.60.173.145:5000/video/UGC/UGC1.mp4",
+    "http://72.60.173.145:5000/video/UGC/UGC2.mp4",
+    "http://72.60.173.145:5000/video/UGC/UGC3.mp4",
+    "http://72.60.173.145:5000/video/UGC/UGC4.mp4",
+  ],
+  EVENTS: [
+    "http://72.60.173.145:5000/video/Events/Events.mp4",
+    "http://72.60.173.145:5000/video/Events/Events%201.mp4",
+    "http://72.60.173.145:5000/video/Events/Events%202.mp4",
+    "http://72.60.173.145:5000/video/Events/Events%203.mp4",
+    "http://72.60.173.145:5000/video/Events/Events%204.mp4",
+  ],
+  SMM: [
+    "http://72.60.173.145:5000/video/SMM/SMM.mp4",
+    "http://72.60.173.145:5000/video/SMM/SMM1.mp4",
+    "http://72.60.173.145:5000/video/SMM/SMM2.mp4",
+    "http://72.60.173.145:5000/video/SMM/SMM3.mp4",
+    "http://72.60.173.145:5000/video/SMM/SMM4.mp4",
+  ],
+  "Video Production": [
+    "http://72.60.173.145:5000/video/Video%20Production/Video%20Production.mp4",
+    "http://72.60.173.145:5000/video/Video%20Production/Video%20Production1.mp4",
+    "http://72.60.173.145:5000/video/Video%20Production/Video%20Production2.mp4",
+    "http://72.60.173.145:5000/video/Video%20Production/Video%20Production3.mp4",
+    "http://72.60.173.145:5000/video/Video%20Production/Video%20Production4.mp4",
+  ],
+  "Personal Branding": [
+    "http://72.60.173.145:5000/video/Personal%20Branding/Personal%20Branding5.mp4",
+    "http://72.60.173.145:5000/video/Personal%20Branding/Personal%20Branding1.mp4",
+    "http://72.60.173.145:5000/video/Personal%20Branding/Personal%20Branding2.mp4",
+    "http://72.60.173.145:5000/video/Personal%20Branding/Personal%20Branding.mp4",
+    "http://72.60.173.145:5000/video/Personal%20Branding/Personal%20Branding3.mp4",
+  ],
+  "Influencer Marketing": [
+    "http://72.60.173.145:5000/video/Influencer%20Marketing/Influencer%20marketing.mp4",
+    "http://72.60.173.145:5000/video/Influencer%20Marketing/Influencer%20marketing1.mp4",
+    "http://72.60.173.145:5000/video/Influencer%20Marketing/Influencer%20marketing2.mp4",
+    "http://72.60.173.145:5000/video/Influencer%20Marketing/Influencer%20marketing3.mp4",
+    "http://72.60.173.145:5000/video/Influencer%20Marketing/Influencer%20marketing4.mp4",
+  ],
+};
+
 
   const categories = Object.keys(videoCategories);
 
