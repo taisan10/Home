@@ -1,10 +1,4 @@
-
-
-
-
-
-
-import { Container } from "../UI/UiComponent";
+import { Container,GradientText } from "../UI/UiComponent";
 import { useState } from "react";
 
 export default function ContactPage() {
@@ -12,8 +6,9 @@ export default function ContactPage() {
     firstName: "",
     lastName: "",
     email: "",
-    phoneCode: "", // default empty
+    phoneCode: "",
     phone: "",
+    role: "",
     message: "",
   });
 
@@ -51,13 +46,13 @@ export default function ContactPage() {
       submittedPhones,
     };
 
-   const CONTACT_API = import.meta.env.VITE_CONTACT_API;
+    const CONTACT_API = import.meta.env.VITE_CONTACT_API;
     try {
-     const res = await fetch(CONTACT_API, {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify(payload),
-});
+      const res = await fetch(CONTACT_API, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
 
       const result = await res.json();
 
@@ -69,6 +64,7 @@ export default function ContactPage() {
           email: "",
           phoneCode: "",
           phone: "",
+          role: "",
           message: "",
         });
       } else {
@@ -83,114 +79,141 @@ export default function ContactPage() {
   };
 
   return (
-    <section id="contact" className="py-16 sm:py-20">
-      <Container className="grid gap-8 sm:gap-12 md:grid-cols-2 items-start -mt-8 sm:-mt-12 md:-mt-12 lg:-mt-12 -mb-10 sm:-mb-10 md:-mb-18 lg:-mb-10 ">
-        <div>
-          <h3 className="text-3xl sm:text-4xl font-semibold leading-tight mb-4 sm:mb-6 text-white/80">
-            Ready to Elevate Your Marketing?
-          </h3>
-          <ul className="space-y-2 sm:space-y-3 text-white/80 text-base sm:text-lg">
-            <li>• How does the Bluenose agency work for your brand?</li>
-            <li>• How can you do marketing at scale better, faster and cheaper?</li>
-            <li>• How we’re different from agencies, freelancers and in‑house teams (hint: faster & leaner!)</li>
-            <li>• Which subscription plan fits your growth goals?</li>
-          </ul>
-        </div>
+    <section id="contact" className="bg-neutral text-white py-16 sm:py-20 -mb-30">
+      <Container className="max-w-6xl mx-auto">
+        {/* Heading */}
+        <h1 className="lg:text-8xl text-4xl sm:text-5xl font-bold text-start mb-10 -mt-10">
+        Connect with us  
+         <br />
+        directly
+        </h1>
+        <hr className="border-gray-400 mb-4" />
+    
 
-        <div className="rounded-[24px] sm:rounded-[28px] bg-white p-5 sm:p-8 shadow-xl text-neutral-900">
-          <form
-            onSubmit={handleSubmit}
-            className="grid grid-cols-1 gap-3 sm:gap-4 text-neutral-900"
-          >
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-              <input
-                name="firstName"
-                value={formData.firstName}
-                onChange={handleChange}
-                className="w-full rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm"
-                placeholder="First Name*"
-                required
-              />
-              <input
-                name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
-                className="w-full rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm"
-                placeholder="Last Name"
-              />
+
+       {/* <a className="mb-10 text-lg md:text-2xl"> <span className="text-2xl"> <GradientText>— </GradientText></span>sales@bluenosemarketing.com</a> */}
+<div className="mb-10 text-lg md:text-2xl">
+
+
+       <a
+              href="mailto:sales@bluenosemarketing.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+          <span className="text-sm md:text-md">
+              <GradientText>— </GradientText> </span>sales@bluenosemarketing.com
+            </a>
             </div>
 
-            <input
-              name="email"
-              type="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Work Email*"
-              className="w-full rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm"
-              required
-            />
+        {/* Left + Right */}
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
+          {/* Left Side */}
+          <div className="w-full md:w-1/2 text-center md:text-left">
+            <h5 className="text-2xl sm:text-3xl font-bold">
+            We're listening, reach out anytime!
 
-         <div className="flex gap-2 items-center relative">
-  {/* Country Code Dropdown */}
-  <div className="relative">
-    <select
-      name="phoneCode"
-      value={formData.phoneCode}
-      onChange={handleChange}
-      className="w-17 sm:w-19 md:w-18 lg:w-20 rounded-xl border border-neutral-300 bg-white px-2 py-3 text-sm appearance-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400 transition-all duration-200"
-    >
-      <option value="">Code</option>
-     <option value="+44">+44</option> <option value="+1">+1</option> <option value="+91">+91</option>
-      
-    </select>
+            </h5>
+          </div>
 
-    {/* Custom dropdown arrow */}
-    <span className="absolute right-3 top-1/2 -translate-y-1/2 text-neutral-500 pointer-events-none">
-      ▼
-    </span>
-  </div>
-
-  {/* Phone Number Input */}
-  <input
-    name="phone"
-    value={formData.phone}
-    onChange={handleChange}
-    placeholder="Phone (optional)"
-    className="flex-1 rounded-xl border border-neutral-300 bg-white px-1 py-3 text-sm focus:ring-2 focus:ring-sky-400 focus:border-sky-400 transition-all duration-200"
-  />
-</div>
+          {/* Right Side */}
+          <div className="w-full md:w-1/2 text-start">
+            <h3 className="text-2xl sm:text-3xl font-semibold mb-6 border-b border-gray-400">
+              Your Details
+            </h3>
 
 
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="What tasks would you like to solve?"
-              className="min-h-[120px] rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm"
-            />
+            {/* Form */}
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <input
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  required
+                  placeholder="First Name"
+                  className="w-full px-4 py-2 rounded-lg text-white border-b border-gray-50 focus:outline-none focus:ring-2 focus:ring-sky-400"
+                />
+                <input
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  placeholder="Last Name"
+                  className="w-full px-4 py-2 rounded-lg text-white border-b border-gray-50 focus:outline-none focus:ring-2 focus:ring-sky-400"
+                />
+              </div>
 
-            <button
-              type="submit"
-              disabled={loading}
-              className="rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 px-6 py-3 text-sm font-medium text-white shadow-lg disabled:opacity-50"
-            >
-              {loading ? "Submitting..." : "Chat With Us  "}
-            </button>
+              <input
+                name="email"
+                type="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                placeholder="Enter your email"
+                className="w-full px-4 py-2 rounded-lg text-white border-b border-gray-50 focus:outline-none focus:ring-2 focus:ring-sky-400"
+              />
 
-            {status && (
-  <div
-    className={`text-sm mt-2 ${
-      status.includes("❌") || status.includes("Please")
-        ? "text-red-600"
-        : "text-green-700"
-    }`}
-  >
-    {status}
-  </div>
-)}
-          </form>
+              <div className="flex gap-2 items-center">
+                <select
+                  name="phoneCode"
+                  value={formData.phoneCode}
+                  onChange={handleChange}
+                  className="w-1/3 px-4 py-2 rounded-lg text-white bg-black border-b border-gray-50 focus:outline-none focus:ring-2 focus:ring-sky-400"
+                >
+                  <option value="">Code</option>
+                  <option value="+44">+44</option>
+                  <option value="+91">+91</option>
+                  <option value="+1">+1</option>
+                </select>
+
+                <input
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder="Phone (optional)"
+                  className="w-2/3 px-4 py-2 rounded-lg text-white border-b border-gray-50 focus:outline-none focus:ring-2 focus:ring-sky-400"
+                />
+              </div>
+
+              <select
+                name="role"
+                value={formData.role}
+                onChange={handleChange}
+                className="w-full px-4 py-2 rounded-lg bg-black border-b border-gray-50 text-white focus:outline-none focus:ring-2 focus:ring-sky-400"
+              >
+                <option value="">Are you a Creator or a Brand?</option>
+                <option value="Creator">Creator</option>
+                <option value="Brand">Brand</option>
+              </select>
+
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="What services are you looking for?"
+                rows="4"
+                className="w-full px-4 py-2 rounded-lg text-white border-b border-gray-50 focus:outline-none focus:ring-2 focus:ring-sky-400"
+              />
+
+              <button type="submit" className="rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 px-6 py-3 text-sm font-medium text-white shadow-lg disabled:opacity-50" disabled={loading}>
+                {loading ? "Submitting..." : "Submit"}
+          </button>
+
+              {status && (
+                <div
+                  className={`text-sm mt-2 ${
+                    status.includes("❌") || status.includes("Please")
+                      ? "text-red-600"
+                      : "text-green-700"
+                  }`}
+                >
+                  {status}
+                </div>
+              )}
+            </form>
+          </div>
         </div>
       </Container>
     </section>
   );
 }
+

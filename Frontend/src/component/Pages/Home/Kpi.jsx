@@ -52,9 +52,9 @@ export default function Kpi() {
     <SectionTitle
   title={
     <div className="whitespace-normal lg:whitespace-nowrap">
-      The Next Era of Marketing,{" "}
+     The Numbers {" "}
       <br className="block lg:hidden" />
-      <GradientText>Designed for Growth</GradientText>
+      <GradientText>That Matters</GradientText>
     </div>
   }
 />
@@ -67,36 +67,38 @@ export default function Kpi() {
                   <Stat
                     kpi="3x"
                     title="Growth"
-                    desc="Smart strategy and creative execution that drives growth."
+                    desc="With smart strategy and creative execution"
                   />
+                    <Stat
+                      kpi="10.3M+"
+                      title="Total Views"
+                      desc="We generated through campaigning turning views into customers"
+                    />
                   <Stat
-                    kpi="100%"
-                    title="Clear Costs"
-                    desc="Straightforward pricing backed by honest partnerships."
-                  />
-                  <Stat
-                    kpi="10.3M+"
-                    title="Total Views That Convert"
-                    desc="We don't just create visibility, we create campaigns that turn viewers into loyal customers."
+                    kpi="76%"
+                    title="Brand authority & Market Share "
+                    desc="Our content isn't just seen, but actively resonates and builds brand loyality
+"
                   />
                 </>
               ) : (
                 <>
                   <Stat
-                    kpi="100%"
-                    title="Results Through Analytics"
-                    desc="Every decision backed by real analytics. No guesswork. Just proven strategies that deliver measurable results.
+                    kpi="83%"
+                    title="Client success & trust 
+"
+                    desc="A high retention rate signals that our clients are happy and keep getting results.
 "
                   />
                   <Stat
                     kpi="50+"
-                    title="Growing Brands"
-                    desc="From startups to established brands, we've partnered with over 50+ businesses to deliver real,  growth."
+                    title="Brands"
+                    desc="Trusted us to grow there businesses"
                   />
                   <Stat
                     kpi="24/7"
-                    title="Strategic Support"
-                    desc="Your marketing partner, always available to refine strategy, analyze performance, and drive growth for your business."
+                    title="Support"
+                    desc="We believe in resolving issues regardless of time zone."
                   />
                 </>
               )}
@@ -107,76 +109,80 @@ export default function Kpi() {
                <Stat
                     kpi="3x"
                     title="Growth"
-                    desc="Smart strategy and creative execution that drives growth."
-                  />
-          <Stat
-                    kpi="100%"
-                    title="Clear Costs"
-                    desc="Straightforward pricing backed by honest partnerships."
+                    desc="SWith smart strategy and creative execution"
                   />
                <Stat
                     kpi="10.3M+"
-                    title="Total Views That Convert"
-                    desc="We don't just create visibility, we create campaigns that turn viewers into loyal customers."
+                    title="Total Views"
+                    desc="We generated through campaigning turning views into customers"
+                  />
+          <Stat
+                    kpi="76%"
+                    title="Brand authority & Market Share "
+                    desc="Our content isn't just seen, but actively resonates and builds brand loyality
+"
                   />
             <Stat
-                    kpi="100%"
-                    title="Results Through Analytics"
-                    desc="Every decision backed by real analytics. No guesswork. Just proven strategies that deliver measurable results.
+                    kpi="83%"
+                    title="Client success & trust 
+"
+                    desc="A high retention rate signals that our clients are happy and keep getting results.
 "
                   />
                   <Stat
                     kpi="50+"
-                    title="Growing Brands"
-                    desc="From startups to established brands, we've partnered with over 50+ businesses to deliver real,  growth."
+                    title="Brands"
+                    desc="Trusted us to grow there businesses"
                   />
                   <Stat
                     kpi="24/7"
-                    title="Strategic Support"
-                    desc="Your marketing partner, always available to refine strategy, analyze performance, and drive growth for your business."
+                    title="Support"
+                    desc="We believe in resolving issues regardless of time zone."
                   />
             </div>
           )}
 
           {/* ✅ Desktop layout preserved */}
           <div className="hidden md:block">
-            <div className="grid grid-cols-[48%_48%] gap-4 lg:grid-cols-[24%_24%_48%]">
+            <div className="grid grid-cols-[48%_48%] gap-4 lg:grid-cols-[24%_24%_48%] ">
                 <Stat
                     kpi="3x"
                     title="Growth"
-                    desc="Smart strategy and creative execution that drives growth."
+                    desc="With smart strategy and creative execution"
                   />
                   <Stat
-                    kpi="100%"
-                    title="Clear Costs"
-                    desc="Straightforward pricing backed by honest partnerships."
-                  />
-              <div className="col-span-2 lg:col-span-1">
-                 <Stat
-                    kpi="10.3M+"
-                    title="Total Views That Convert"
-                    desc="We don't just create visibility, we create campaigns that turn viewers into loyal customers."
-                  />
+                     kpi="10.3M+"
+                     title="Total Views"
+                     desc="We generated through campaigning turning views into customers"
+                   />
+              <div className="col-span-2 lg:col-span-1 ">
+                <Stat
+                  kpi="76%"
+                  title="Brand authority & Market Share "
+                  desc="Our content isn't just seen, but actively resonates and builds brand loyality
+"
+                />
               </div>
             </div>
 
             <div className="mt-5 grid grid-cols-2 gap-4 lg:grid-cols-[49%_24%_24%]">
                <Stat
-                    kpi="100%"
-                    title="Results Through Analytics"
-                    desc="Every decision backed by real analytics. No guesswork. Just proven strategies that deliver measurable results.
+                    kpi="83%"
+                    title="Client success & trust 
+"
+                    desc="A high retention rate signals that our clients are happy and keep getting results.
 "
                   />
                   <Stat
                     kpi="50+"
-                    title="Growing Brands"
-                    desc="From startups to established brands, we've partnered with over 50+ businesses to deliver real,  growth."
+                    title="Brands"
+                    desc="Trusted us to grow there businesses"
                   />
               <div className="col-span-2 lg:col-span-1">
                 <Stat
                     kpi="24/7"
-                    title="Strategic Support"
-                    desc="Your marketing partner, always available to refine strategy, analyze performance, and drive growth for your business."
+                    title="Support"
+                    desc="We believe in resolving issues regardless of time zone."
                   />
               </div>
             </div>

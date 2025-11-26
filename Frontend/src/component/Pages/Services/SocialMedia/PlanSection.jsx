@@ -73,12 +73,12 @@ export function PlanSection() {
   }, []);
 
   return (
-    <section className="bg-black py-16 text-white">
+    <section className="bg-neutral py-16 text-white -mt-15 sm:-mt-28 md:-mt-28 lg:-mt-28">
       <Container>
      {/* Heading */}
 <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-center mb-6 md:mb-12 leading-snug md:leading-tight px-4">
- Your Plan, Your Way <br className="hidden sm:block" />
-  <GradientText>Flexible options that grow with your business.</GradientText>
+<br className="hidden sm:block" />
+  <GradientText> Your Plan, Your Way </GradientText>Flexible options that grow with your business.
 </h2>
 
 
@@ -203,7 +203,7 @@ export function PlanSection() {
                 )}
               </div>
               <div className="mt-6 flex justify-center">
-                <PrimaryButton href="#contact">Book A Call</PrimaryButton>
+                <PrimaryButton href="/Contact">Book A Call</PrimaryButton>
               </div>
             </div>
           ))}

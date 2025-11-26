@@ -1,7 +1,7 @@
-// import express from "express";
-// import { streamVideo } from "../controllers/streamController.js";
+import express from "express";
+import { streamVideo } from "../controllers/streamController.js";
 
-// const router = express.Router();
-// router.get("/video/:category/:filename", streamVideo);
-// export default router;
+const router = express.Router();
+router.get("/video/:category/:filename", streamVideo);
+export default router;
 

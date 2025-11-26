@@ -3,8 +3,8 @@ import { Container } from "../UI/UiComponent";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/1 py-10  text-white -mt-28 md:-mt-28 lg:-mt-28 ">
-      <Contact />
+    <footer className="border-t border-white/1 py-10 bg-neutral text-white mt-10 md:mt-10 lg:mt-20 ">
+   
 
       <Container className="grid grid-cols-1 md:grid-cols-4 gap-10 -mt-10 md:mt-12 lg:-mt-12 ">
         {/* Column 1: Logo + Contact + Social */}
@@ -17,6 +17,7 @@ export default function Footer() {
               href="mailto:sales@bluenosemarketing.com"
               target="_blank"
               rel="noopener noreferrer"
+              className="text-sm sm:text-md"
             >
               Email: sales@bluenosemarketing.com
             </a>
@@ -91,14 +92,15 @@ export default function Footer() {
             <h4 className="font-semibold mb-3">Pages</h4>
             <ul className="space-y-2 text-sm text-white/80">
               <li>
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="/">Works</a>
-              </li>
-              {/* <li><a href="/">Service</a></li>
-              <li><a href="/">Work</a></li>
-              <li><a href="/">Company</a></li> */}
+              <a href="/">Home</a>
+            </li>
+           <li><a href="/About">About</a></li>
+            <li>
+              <a href="/services/social-media">Service</a></li>
+            <li>
+              <a href="/work/triveeni-events">Work</a>
+            </li>
+              <li><a href="/Contact">Contact</a></li>
             </ul>
           </div>
 
@@ -151,30 +153,32 @@ export default function Footer() {
             <li>
               <a href="/">Home</a>
             </li>
+           <li><a href="/About">About</a></li>
             <li>
-              <a href="/">Work</a>
+              <a href="/services/social-media">Service</a></li>
+            <li>
+              <a href="/work/triveeni-events">Work</a>
             </li>
-            {/* <li><a href="/">Service</a></li>
-            <li><a href="/">Work</a></li>
-            <li><a href="/">Company</a></li> */}
+              <li><a href="/Contact">Contact</a></li>
           </ul>
         </div>
 
-        <div className="  -mt-60 sm:-mt-60   md:-mt-0  lg:-mt-0  order-3 md:order-3">
+        <div className="  -mt-40 sm:-mt-40   md:-mt-0  lg:-mt-0  order-3 md:order-3">
           <h4 className="font-semibold mb-4">Services</h4>
           <ul className="space-y-2 text-sm text-white/80">
             <li>
-              <a href="/">Social Media</a>
+              <a href="/services/social-media">Social Media</a>
             </li>
             <li>
-              <a href="/">Video Editing</a>
+              <a href="/services/video-editing">Video Editing</a>
+            </li>
+             <li>
+              <a href="/graphic-designing">Graphic Designing</a>
             </li>
             <li>
               <a href="/">VideoGraphy</a>
             </li>
-            <li>
-              <a href="/">Graphic Designing</a>
-            </li>
+           
           </ul>
         </div>
 

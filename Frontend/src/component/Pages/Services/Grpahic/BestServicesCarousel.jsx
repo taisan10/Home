@@ -146,7 +146,7 @@ export function BestServicesCarousel() {
   };
 
   return (
-    <div className="relative py-14 bg-neutral-950 text-white overflow-hidden">
+    <div className="relative py-14 bg-neutral text-white overflow-hidden -mt-18">
       <Container>
         <SectionTitle
           title={<GradientText>What We Do Best

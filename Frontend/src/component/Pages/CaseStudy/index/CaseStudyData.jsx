@@ -1,0 +1,136 @@
+// src/data/CaseStudiesData.js
+
+const CaseStudiesData = [
+  {
+    title: "Sake Cafe | Sushi Bar & Grill",
+    desc: "9.7K+ Views in 60 Days: Building Authentic Presence for Sake Cafe | Sushi Bar & Grill",
+    img: "/Client_Logo/7.1.png",
+    theme: "bg-[#b2222b] text-black",
+    slug: "sake-cafe-sushi-bar-&-grill",
+    data: [
+       { label: "Total Views (60 Days)", value: "9.7K" },
+      { label: "Posts Engagement Rate", value: "83.6%" },
+      { label: "Avg. Non-Follower Engagement", value: "54%" },
+      { label: "Total Interactions", value: "276" },
+    ],
+  },
+  {
+    title: "Beaver Bank Station Bar & Grill",
+    desc: "79K+ Views in 90 Days: Organic Social Media Strategy for Beaver Bank Station Bar & Grill",
+    img: "/Client_Logo/5.png",
+    theme: "bg-[#fa9b0b] text-black",
+    slug: "beaver-bank-station-Bar-&-grill",
+    data: [
+       { label: "Total Views", value: "79K+" },
+      { label: "Accounts Reached", value: "48K+" },
+      { label: "Total Interactions", value: "439" },
+      { label: "Avg. Non-Follower Engagement", value: "39%" },
+    ],
+  },
+  {
+    title: "Triveeni Events",
+    desc: "1.3M+ Views in 90 Days: Organic Social Media Strategy",
+    img: "/Client_Logo/1.png",
+    theme: "bg-[#FAFFD7] text-black",
+    slug: "triveeni-events",
+    data: [
+        { label: "Total Views", value: "1.3M+" },
+      { label: "Accounts Reached", value: "439K+" },
+      { label: "Organic Reach", value: "89%" },
+      { label: "Avg. Monthly Growth Rate", value: "130%" },
+    ],
+  },
+  {
+    title: "The Garden Retreat",
+    desc: "67K+ Views in 60 Days: Establishing Premium Presence for The Garden Retreat",
+    img: "/Client_Logo/8.png",
+    theme: "bg-[#2e5c2e] text-black",
+    slug: "the-garden-retreat",
+    data: [
+       { label: "Total Views (60 Days)", value: "67K" },
+       { label: "Content Shared", value: "74" },
+      { label: "Followers (Established Base)", value: "13K" },
+      { label: "Avg. Non-Follower Engagement", value: "49%" },
+    ],
+  },
+  {
+    title: "Nayya Pizza & Grill",
+    desc: "3.6M+ Views in 90 Days: Explosive Organic Growth for Nayya Pizza & Grill",
+    img: "/Client_Logo/2.png",
+    theme: "bg-[#FF6B01] text-black",
+    slug: "nayya-pizza-&-grill",
+    data: [
+      { label: "Total Views (90 Days)", value: "3.6M+" },
+      { label: "Content Shares", value: "93" },
+      { label: "Total Interactions", value: "45.4K" },
+      { label: "Avg. Non-Follower Engagement", value: "97%" },
+    ],
+  },
+  {
+    title: "Pita Nutso",
+    desc: "36.1K+ Views in 90 Days: Organic Growth Strategy for Pita Nutso",
+    img: "/Client_Logo/3.png",
+    theme: "bg-[#f0dfcc] text-black",
+    slug: "pita-nutso",
+    data: [
+      { label: "Total Views (90 Days)", value: "36.1K+" },
+      { label: "Content Shares", value: "52" },
+      { label: "Total Interactions", value: "276" },
+      { label: "Avg. Non-Follower Engagement", value: "66%" },
+    ],
+  },
+  {
+    title: "Hearthstone Inn",
+    desc: "1.6K+ Views in 60 Days: Building Brand Presence for Hearthstone Inn from Scratch",
+    img: "/Client_Logo/6.png",
+    theme: "bg-[#233369] text-black",
+    slug: "hearthstone-inn",
+    data: [
+       { label: "Total Views (60 Days)", value: "1.6K" },
+      { label: "Avg. Non-Follower Engagement", value: "78%" },
+      { label: "Posts Engagement Rate", value: "94.6%" },
+      { label: "Accounts Reached", value: "53" },
+    ],
+  },
+  {
+    title: "Rivaaj Resto-Bar",
+    desc: "48.9K+ Views in 30 Days: Launching Bedford's First Cultural Resto-Bar",
+    img: "/Client_Logo/17.png",
+    theme: "bg-[#ad863e] text-black",
+    slug: "rivaaj-resto-bar",
+    data: [
+      { label: "Total Views (30 Days)", value: "48.9K" },
+      { label: "Total Interactions", value: "403" },
+      { label: "New Followers (30 Days)", value: "74" },
+      { label: "Content Shared", value: "17" },
+    ],
+  },
+  {
+    title: "Adda Indian Eatery",
+    desc: "214K+ Views in 90 Days: Emotional Storytelling & Cultural Connection for Adda Indian Eatery",
+    img: "/Client_Logo/4.1.png",
+    theme: "bg-[#FFC100] text-black",
+    slug: "adda-indian-eatery",
+    data: [
+      { label: "Total Views (90 Days)", value: "214K+" },
+      { label: "Total Interactions", value: "1.2K" },
+      { label: "Content Shares", value: "71" },
+      { label: "Followers (+755 Growth)", value: "1.9K+" },
+    ],
+  },
+  {
+    title: "Besharam Bar and Grill",
+    desc: "60K+ Views in 60 Days: Bold Fusion Strategy for Besharam Bar and Grill",
+    img: "/Client_Logo/16.png",
+    theme: "bg-[#134457] text-black",
+    slug: "beshram-bar-and-grill",
+    data: [
+      { label: "Total Views (60 Days)", value: "60K" },
+      { label: "Followers (+157 Growth)", value: "9.6K" },
+      { label: "Content Shares", value: "59" },
+      { label: "Avg. Non-Follower Engagement", value: "62%" },
+    ],
+  },
+];
+
+export default CaseStudiesData;

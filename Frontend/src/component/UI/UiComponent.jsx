@@ -65,6 +65,17 @@ export   function PrimaryButton({ children, href = "#", onClick}) {
     </a>
   );
 }
+export   function ContactpageButton({ children, href = "#", onClick}) {
+  return (
+    <a
+      href={href}
+       onClick={onClick}
+      className="inline-flex w-full items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium text-white shadow-lg shadow-sky-500/20 transition focus:outline-none focus:ring-2  focus:ring-sky-400   bg-gradient-to-r from-sky-500 to-cyan-400"
+    >
+      {children}
+    </a>
+  );
+}
 
 // KPI Card
 //  export   function Stat({ kpi, accent, title, desc }) {
@@ -81,7 +92,7 @@ export   function Stat({ kpi, accent, title, desc }) {
    
   };
   return (
-    <div className="rounded-[22px] bg-white/5 p-6 sm:p-8 ring-5 ring-white/0 shadow-[0_1px_0_0_rgba(255,255,255,0.05)_inset]">
+    <div className="rounded-[22px] bg-white/5 h-full p-6 sm:p-8 ring-5 ring-white/0 shadow-[0_1px_0_0_rgba(255,255,255,0.05)_inset]">
       <div className="text-4xl sm:text-6xl font-semibold tracking-tight">
         {kpi}
       </div>
@@ -200,7 +211,7 @@ export function MobileNav({ open, setOpen, navItems }) {
               </NavLink>
             )
           )}
-          <PrimaryButton href="#contact" onClick={() => setOpen(false)}>Contact Us </PrimaryButton>
+          <PrimaryButton href="/contact" onClick={() => setOpen(false)}>Book A Callback </PrimaryButton>
         </nav>
       </div>
       )}

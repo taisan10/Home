@@ -25,19 +25,12 @@ const WorksData = [
     metrics: [
       { label: "Total Views", value: "1.3M+" },
       { label: "Accounts Reached", value: "439K+" },
-      { label: "Followers (136% Growth)", value: "713" },
       { label: "Organic Reach", value: "89%" },
-      { label: "Non-Follower Engagement", value: "62%" },
       { label: "Avg. Monthly Growth Rate", value: "130%" },
-    ],
-    otherCaseStudiesmetrics: [
-      { label: "Total Views", value: "1.3M+" },
-      { label: "Organic Reach", value: "89%" },
-      { label: "Accounts Reached", value: "439K+" },
-      { label: "Followers (136% Growth)", value: "713" },
+      // { label: "Followers (136% Growth)", value: "713" },
       // { label: "Non-Follower Engagement", value: "62%" },
-      // { label: "Avg. Monthly Growth Rate", value: "130%" },
     ],
+    
   },
   servicesProvided: [
     { name: "Social Media Strategy", icon: "📊" },
@@ -79,39 +72,7 @@ const WorksData = [
     subtext: "Contact us to see how we can meet your needs!",
     button: "Book a call",
   },
-  otherCaseStudies: [
-    {
-      title: "Beaver Bank Station Bar & Grill",
-      desc: "79K+ Views in 90 Days: Organic Social Media Strategy for Beaver Bank Station Bar & Grill",
-      img: "/Client_Logo/5.png",
-      theme: "bg-[#fa9b0b]   text-black",
-      slug: "beaver-bank-station-Bar-&-grill",
-    },
-    {
-  title: "The Garden Retreat",
-  desc: "67K+ Views in 60 Days: Establishing Premium Presence for The Garden Retreat",
-  img: "/Client_Logo/8.png",
-  theme: "bg-[#2e5c2e] text-black",
-  slug: "the-garden-retreat",
-  },
-    {
-      title: "Adda Indian Eatery",
-      desc: "214K+ Views in 90 Days: Emotional Storytelling & Cultural Connection for Adda Indian Eatery",
-      img: "/Client_Logo/4.1.png",
-      theme: "bg-[#FFC100] text-black",
-      slug: "adda-indian-eatery",
-    },
-   {
-  
-    title: "Sake Cafe | Sushi Bar & Grill",
-    desc: "9.7K+ Views in 60 Days: Building Authentic Presence for Sake Cafe | Sushi Bar & Grill",
-    img: "/Client_Logo/7.1.png",
-    theme: "bg-[#b2222b] text-black",
-    slug: "sake-cafe-sushi-bar-&-grill",
-
-  },
-
-  ],
+ 
 },
  {
   id: 2,
@@ -139,11 +100,12 @@ const WorksData = [
     metrics: [
       { label: "Total Views", value: "79K+" },
       { label: "Accounts Reached", value: "48K+" },
-      { label: "Followers (Stable Base)", value: "3.9K" },
       { label: "Total Interactions", value: "439" },
-      { label: "New Followers (Last 30 Days)", value: "33" },
       { label: "Avg. Non-Follower Engagement", value: "39%" },
+      // { label: "Followers (Stable Base)", value: "3.9K" },
+      // { label: "New Followers (Last 30 Days)", value: "33" },
     ],
+    
   },
   servicesProvided: [
     { name: "Social Media Strategy", icon: "📊" },
@@ -189,42 +151,7 @@ const WorksData = [
     subtext: "Contact us to see how we can meet your needs!",
     button: "Book a call",
   },
-  otherCaseStudies: [
-   
-   {
-      title: "Nayya Pizza & Grill",
-      desc: "3.6M+ Views in 90 Days: Explosive Organic Growth for Nayya Pizza & Grill",
-      img: "/Client_Logo/2.png",
-      theme: "bg-[#FF6B01] text-black",
-      slug: "nayya-pizza-&-grill",
-
-    },
-   {
-     title: "Pita Nutso",
-     desc: "36.1K+ Views in 90 Days: Organic Growth Strategy for Pita Nutso",
-     img: "/Client_Logo/3.png",
-     theme: "bg-[#f0dfcc] text-black",
-     slug: "pita-nutso",
-  
-  },
-  {
-    title: "Besharam Bar and Grill",
-    desc: "60K+ Views in 60 Days: Bold Fusion Strategy for Besharam Bar and Grill",
-    img: "/Client_Logo/16.png",
-    theme: "bg-[#134457] text-black",
-    slug: "beshram-bar-and-grill",
-  },
-
-  {
-    title: "Hearthstone Inn",
-    desc: "1.6K+ Views in 60 Days: Building Brand Presence for Hearthstone Inn from Scratch",
-    img: "/Client_Logo/6.png",
-    theme: "bg-[#233369] text-black",
-    slug: "hearthstone-inn",
-  },
-
-
-  ],
+ 
 },
 {
   id: 3,
@@ -250,11 +177,11 @@ const WorksData = [
     ],
     metrics: [
       { label: "Total Views (90 Days)", value: "3.6M+" },
-      { label: "Followers (+755 Growth)", value: "2.7K+" },
-      { label: "New Followers (90 Days)", value: "755" },
       { label: "Total Interactions", value: "45.4K" },
-      { label: "Content Shares", value: "93" },
       { label: "Avg. Non-Follower Engagement", value: "97%" },
+      { label: "Content Shares", value: "93" },
+      // { label: "Followers (+755 Growth)", value: "2.7K+" },
+      // { label: "New Followers (90 Days)", value: "755" },
     ],
   },
   servicesProvided: [
@@ -300,37 +227,7 @@ const WorksData = [
     subtext: "Contact us to see how we can meet your needs!",
     button: "Book a call",
   },
-   otherCaseStudies: [
-    {
-     title: "Triveeni Events",
-     desc: "1.3M+ Views in 90 Days: Organic Social Media Strategy",
-     img: "/Client_Logo/1.png",
-     theme: "bg-[#FAFFD7] text-black",
-     slug: "triveeni-events",
-  },
-    {
-  title: "Rivaaj Resto-Bar",
-  desc: "48.9K+ Views in 30 Days: Launching Bedford's First Cultural Resto-Bar",
-  img: "/Client_Logo/17.png",
-  theme: "bg-[#ad863e]  text-black",
-  slug: "rivaaj-resto-bar",
-},
- {
-  title: "The Garden Retreat",
-  desc: "67K+ Views in 60 Days: Establishing Premium Presence for The Garden Retreat",
-  img: "/Client_Logo/8.png",
-  theme: "bg-[#2e5c2e] text-black",
-  slug: "the-garden-retreat",
-  },
-    {
-     title: "Pita Nutso",
-     desc: "36.1K+ Views in 90 Days: Organic Growth Strategy for Pita Nutso",
-     img: "/Client_Logo/3.png",
-     theme: "bg-[#f0dfcc] text-black",
-     slug: "pita-nutso",
-  },
-    
-  ],
+  
 },
 {
   id: 4,
@@ -357,11 +254,11 @@ const WorksData = [
     ],
     metrics: [
       { label: "Total Views (90 Days)", value: "214K+" },
-      { label: "Followers (+755 Growth)", value: "1.9K+" },
-      { label: "New Followers (90 Days)", value: "95" },
       { label: "Total Interactions", value: "1.2K" },
       { label: "Content Shares", value: "71" },
-      { label: "Avg. Non-Follower Engagement", value: "79%" },
+      { label: "Followers (+755 Growth)", value: "1.9K+" },
+      // { label: "Avg. Non-Follower Engagement", value: "79%" },
+      // { label: "New Followers (90 Days)", value: "95" },
     ],
   },
   servicesProvided: [
@@ -407,38 +304,7 @@ const WorksData = [
     subtext: "Contact us to see how we can meet your needs!",
     button: "Book a call",
   },
-   otherCaseStudies: [
-    {
-     title: "Triveeni Events",
-     desc: "1.3M+ Views in 90 Days: Organic Social Media Strategy",
-     img: "/Client_Logo/1.png",
-     theme: "bg-[#FAFFD7] text-black",
-     slug: "triveeni-events",
-  },
-{
-    title: "Hearthstone Inn",
-    desc: "1.6K+ Views in 60 Days: Building Brand Presence for Hearthstone Inn from Scratch",
-    img: "/Client_Logo/6.png",
-    theme: "bg-[#233369] text-black",
-    slug: "hearthstone-inn",
-  },
-
-   {
-    title: "Besharam Bar and Grill",
-    desc: "60K+ Views in 60 Days: Bold Fusion Strategy for Besharam Bar and Grill",
-    img: "/Client_Logo/16.png",
-    theme: "bg-[#134457] text-black",
-    slug: "beshram-bar-and-grill",
-  },
-
-{
-    title: "Sake Cafe | Sushi Bar & Grill",
-    desc: "9.7K+ Views in 60 Days: Building Authentic Presence for Sake Cafe | Sushi Bar & Grill",
-    img: "/Client_Logo/7.1.png",
-    theme: "bg-[#b2222b] text-black",
-    slug: "sake-cafe-sushi-bar-&-grill",
-  },
-  ],
+   
 },
 
  {
@@ -465,11 +331,11 @@ const WorksData = [
     ],
     metrics: [
       { label: "Total Views (90 Days)", value: "36.1K+" },
-      { label: "Followers (+32% Growth)", value: "430" },
-      { label: "New Followers (90 Days)", value: "32" },
-      { label: "Total Interactions", value: "276" },
       { label: "Content Shares", value: "52" },
+      { label: "Total Interactions", value: "276" },
       { label: "Avg. Non-Follower Engagement", value: "66%" },
+      // { label: "Followers (+32% Growth)", value: "430" },
+      // { label: "New Followers (90 Days)", value: "32" },
     ],
   },
   servicesProvided: [
@@ -512,36 +378,7 @@ const WorksData = [
     subtext: "Contact us to see how we can meet your needs!",
     button: "Book a call",
   },
-   otherCaseStudies: [
-   {
-  title: "Rivaaj Resto-Bar",
-  desc: "48.9K+ Views in 30 Days: Launching Bedford's First Cultural Resto-Bar",
-  img: "/Client_Logo/17.png",
-  theme: "bg-[#ad863e]  text-black",
-  slug: "rivaaj-resto-bar",
-},
- {
-      title: "Beaver Bank Station Bar & Grill",
-      desc: "79K+ Views in 90 Days: Organic Social Media Strategy for Beaver Bank Station Bar & Grill",
-      img: "/Client_Logo/5.png",
-      theme: "bg-[#fa9b0b]   text-black",
-      slug: "beaver-bank-station-Bar-&-grill",
-    },
-     {
-     title: "Triveeni Events",
-     desc: "1.3M+ Views in 90 Days: Organic Social Media Strategy",
-     img: "/Client_Logo/1.png",
-     theme: "bg-[#FAFFD7] text-black",
-     slug: "triveeni-events",
-  },
-  {
-  title: "The Garden Retreat",
-  desc: "67K+ Views in 60 Days: Establishing Premium Presence for The Garden Retreat",
-  img: "/Client_Logo/8.png",
-  theme: "bg-[#2e5c2e] text-black",
-  slug: "the-garden-retreat",
-  },
-  ],
+   
 },
 
 {
@@ -570,11 +407,11 @@ const WorksData = [
     ],
     metrics: [
       { label: "Total Views (60 Days)", value: "9.7K" },
-      { label: "Followers (Stable Base)", value: "2.2K" },
-      { label: "Accounts Reached", value: "308" },
-      { label: "Avg. Non-Follower Engagement", value: "54%" },
-        { label: "Total Interactions", value: "276" },
       { label: "Posts Engagement Rate", value: "83.6%" },
+      { label: "Avg. Non-Follower Engagement", value: "54%" },
+      { label: "Total Interactions", value: "276" },
+      // { label: "Followers (Stable Base)", value: "2.2K" },
+      // { label: "Accounts Reached", value: "308" },
     ],
   },
   servicesProvided: [
@@ -621,38 +458,7 @@ const WorksData = [
     subtext: "Contact us to see how we can meet your needs!",
     button: "Book a call",
   },
-   otherCaseStudies: [
-    {
-     title: "Pita Nutso",
-     desc: "36.1K+ Views    in 90 Days: Organic Growth Strategy for Pita Nutso",
-     img: "/Client_Logo/3.png",
-     theme: "bg-[#f0dfcc] text-black",
-     slug: "pita-nutso",
-  },
-  {
-    title: "Hearthstone Inn",
-    desc: "1.6K+ Views in 60 Days: Building Brand Presence for Hearthstone Inn from Scratch",
-    img: "/Client_Logo/6.png",
-    theme: "bg-[#233369] text-black",
-    slug: "hearthstone-inn",
-  },
-
-    {
-      title: "Adda Indian Eatery",
-      desc: "214K+ Views in 90 Days: Emotional Storytelling & Cultural Connection for Adda Indian Eatery",
-      img: "/Client_Logo/4.1.png",
-      theme: "bg-[#FFC100] text-black",
-      slug: "adda-indian-eatery",
-    },
- {
-      title: "Nayya Pizza & Grill",
-      desc: "3.6M+ Views in 90 Days: Explosive Organic Growth for Nayya Pizza & Grill",
-      img: "/Client_Logo/2.png",
-      theme: "bg-[#FF6B01] text-black",
-      slug: "nayya-pizza-&-grill",
-    },
-
-  ],
+   
 },
 
 {
@@ -679,10 +485,10 @@ const WorksData = [
     ],
     metrics: [
       { label: "Total Views (60 Days)", value: "1.6K" },
-      { label: "Followers (New Account)", value: "16" },
-      { label: "Accounts Reached", value: "53" },
       { label: "Avg. Non-Follower Engagement", value: "78%" },
       { label: "Posts Engagement Rate", value: "94.6%" },
+      { label: "Accounts Reached", value: "53" },
+      // { label: "Followers (New Account)", value: "16" },
     ],
   },
   servicesProvided: [
@@ -730,39 +536,9 @@ const WorksData = [
     subtext: "Contact us to see how we can meet your needs!",
     button: "Book a call",
   },
-   otherCaseStudies: [
-           {
-      title: "Beaver Bank Station Bar & Grill",
-      desc: "79K+ Views in 90 Days: Organic Social Media Strategy for Beaver Bank Station Bar & Grill",
-      img: "/Client_Logo/5.png",
-      theme: "bg-[#fa9b0b]   text-black",
-      slug: "beaver-bank-station-Bar-&-grill",
-    },
-
-    {
-  title: "Rivaaj Resto-Bar",
-  desc: "48.9K+ Views in 30 Days: Launching Bedford's First Cultural Resto-Bar",
-  img: "/Client_Logo/17.png",
-  theme: "bg-[#ad863e]  text-black",
-  slug: "rivaaj-resto-bar",
+   
 },
-    {
-     title: "Triveeni Events",
-     desc: "1.3M+ Views in 90 Days: Organic Social Media Strategy",
-     img: "/Client_Logo/1.png",
-     theme: "bg-[#FAFFD7] text-black",
-     slug: "triveeni-events",
-  },
-{
-     title: "Pita Nutso",
-     desc: "36.1K+ Views in 90 Days: Organic Growth Strategy for Pita Nutso",
-     img: "/Client_Logo/3.png",
-     theme: "bg-[#f0dfcc] text-black",
-     slug: "pita-nutso",
-  },
 
-  ],
-},
 {
   id: 8,
   name: "The Garden Retreat",
@@ -787,10 +563,10 @@ const WorksData = [
     metrics: [
       { label: "Total Views (60 Days)", value: "67K" },
       { label: "Followers (Established Base)", value: "13K" },
-      { label: "New Followers (60 Days)", value: "64" },
-      { label: "Total Interactions", value: "193" },
       { label: "Content Shared", value: "74" },
       { label: "Avg. Non-Follower Engagement", value: "49%" },
+      // { label: "New Followers (60 Days)", value: "64" },
+      // { label: "Total Interactions", value: "193" },
     ],
   },
   servicesProvided: [
@@ -837,37 +613,7 @@ const WorksData = [
     subtext: "Contact us to see how we can meet your needs!",
     button: "Book a call",
   },
- otherCaseStudies: [
-    {
-  title: "Rivaaj Resto-Bar",
-  desc: "48.9K+ Views in 30 Days: Launching Bedford's First Cultural Resto-Bar",
-  img: "/Client_Logo/17.png",
-  theme: "bg-[#ad863e]  text-black",
-  slug: "rivaaj-resto-bar",
-},
-{
-    title: "Hearthstone Inn",
-    desc: "1.6K+ Views in 60 Days: Building Brand Presence for Hearthstone Inn from Scratch",
-    img: "/Client_Logo/6.png",
-    theme: "bg-[#233369] text-black",
-    slug: "hearthstone-inn",
-  },
-
-    {
-      title: "Nayya Pizza & Grill",
-      desc: "3.6M+ Views in 90 Days: Explosive Organic Growth for Nayya Pizza & Grill",
-      img: "/Client_Logo/2.png",
-      theme: "bg-[#FF6B01] text-black",
-      slug: "nayya-pizza-&-grill",
-    },
-{
-    title: "Sake Cafe | Sushi Bar & Grill",
-    desc: "9.7K+ Views in 60 Days: Building Authentic Presence for Sake Cafe | Sushi Bar & Grill",
-    img: "/Client_Logo/7.1.png",
-    theme: "bg-[#b2222b] text-black",
-    slug: "sake-cafe-sushi-bar-&-grill",
-  },
-  ],
+ 
 },
 
 
@@ -896,10 +642,10 @@ const WorksData = [
     metrics: [
       { label: "Total Views (60 Days)", value: "60K" },
       { label: "Followers (+157 Growth)", value: "9.6K" },
-      { label: "New Followers (60 Days)", value: "157" },
-      { label: "Total Interactions", value: "795" },
       { label: "Content Shares", value: "59" },
       { label: "Avg. Non-Follower Engagement", value: "62%" },
+      // { label: "New Followers (60 Days)", value: "157" },
+      // { label: "Total Interactions", value: "795" },
     ],
   },
   servicesProvided: [
@@ -945,40 +691,7 @@ const WorksData = [
     subtext: "Contact us to see how we can meet your needs!",
     button: "Book a call",
   },
-   otherCaseStudies: [
    
-   {
-      title: "Nayya Pizza & Grill",
-      desc: "3.6M+ Views in 90 Days: Explosive Organic Growth for Nayya Pizza & Grill",
-      img: "/Client_Logo/2.png",
-      theme: "bg-[#FF6B01] text-black",
-      slug: "nayya-pizza-&-grill",
-    },
-   {
-     title: "Pita Nutso",
-     desc: "36.1K+ Views in 90 Days: Organic Growth Strategy for Pita Nutso",
-     img: "/Client_Logo/3.png",
-     theme: "bg-[#f0dfcc] text-black",
-     slug: "pita-nutso",
-  
-  },
-  {
-    title: "Sake Cafe | Sushi Bar & Grill",
-    desc: "9.7K+ Views in 60 Days: Building Authentic Presence for Sake Cafe | Sushi Bar & Grill",
-    img: "/Client_Logo/7.1.png",
-    theme: "bg-[#b2222b] text-black",
-    slug: "sake-cafe-sushi-bar-&-grill",
-  },
-  {
-    title: "Hearthstone Inn",
-    desc: "1.6K+ Views in 60 Days: Building Brand Presence for Hearthstone Inn from Scratch",
-    img: "/Client_Logo/6.png",
-    theme: "bg-[#233369] text-black",
-    slug: "hearthstone-inn",
-  },
-
-
-  ],
 },
 
 
@@ -1007,10 +720,10 @@ const WorksData = [
     metrics: [
       { label: "Total Views (30 Days)", value: "48.9K" },
       { label: "Total Interactions", value: "403" },
-      { label: "Followers", value: "276" },
       { label: "New Followers (30 Days)", value: "74" },
       { label: "Content Shared", value: "17" },
-      { label: "Non-Follower Engagement", value: "75%" },
+      // { label: "Followers", value: "276" },
+      // { label: "Non-Follower Engagement", value: "75%" },
     ],
   },
   servicesProvided: [
@@ -1056,40 +769,80 @@ const WorksData = [
     subtext: "Contact us to see how we can meet your needs!",
     button: "Book a call",
   },
-  otherCaseStudies: [
-   {
-    title: "Sake Cafe | Sushi Bar & Grill",
-    desc: "9.7K+ Views in 60 Days: Building Authentic Presence for Sake Cafe | Sushi Bar & Grill",
-    img: "/Client_Logo/7.1.png",
-    theme: "bg-[#b2222b] text-black",
-    slug: "sake-cafe-sushi-bar-&-grill",
+},
+
+{
+  id: 11,
+  name: "Desi Garden",
+  names: "Desi Garden",
+  slug: "desi-garden",
+  grid: {
+    image: "/Grid/7.jpg",
   },
- {
-      title: "Beaver Bank Station Bar & Grill",
-      desc: "79K+ Views in 90 Days: Organic Social Media Strategy for Beaver Bank Station Bar & Grill",
-      img: "/Client_Logo/5.png",
-      theme: "bg-[#fa9b0b]   text-black",
-      slug: "beaver-bank-station-Bar-&-grill",
-    },
-     {
-     title: "Triveeni Events",
-     desc: "1.3M+ Views in 90 Days: Organic Social Media Strategy",
-     img: "/Client_Logo/1.png",
-     theme: "bg-[#FAFFD7] text-black",
-     slug: "triveeni-events",
+  heroSection: {
+    title: "Desi Garden",
+    subtitle: "2.1M+ Views in 90 Days: Explosive Viral Growth for Desi Garden | Takeout Kitchen",
+    tags: ["Strategic Planning", "Performance Pulse", "Content Power"],
+    image: "/Client_Logo/9.png",
+    theme: "bg-[#fa6709] text-white",
   },
-  {
-  title: "The Garden Retreat",
-  desc: "67K+ Views in 60 Days: Establishing Premium Presence for The Garden Retreat",
-  img: "/Client_Logo/8.png",
-  theme: "bg-[#2e5c2e] text-black",
-  slug: "the-garden-retreat",
+  overview: {
+    summary: [
+      "Desi Garden is an Indian takeout kitchen specializing in authentic home-style Indian meals with the tagline 'Tastes Like Home, Take It Home.' Located in Halifax, Nova Scotia, Desi Garden brings the comfort and authenticity of traditional Indian home cooking to the community through convenient takeout service.",
+      "The target audience includes Indian diaspora craving authentic home-cooked meals, busy professionals seeking quality takeout, families looking for convenient dinner solutions, students missing home-style Indian food, and food enthusiasts exploring authentic regional Indian cuisine.",
+      "Our goal was to establish Desi Garden's Instagram presence as the go-to destination for authentic home-style Indian takeout through relatable, appetizing content that showcases the comfort and authenticity of their dishes.",
+      "We focused on creating viral Reels content that captured the essence of 'home' while maximizing organic reach to attract both the Indian community and curious food lovers across Halifax.",
+    ],
+    metrics: [
+      { label: "Views (Last 30 Days)", value: "943K" },
+      { label: "Content Shared (30 Days)", value: "74" },
+      { label: "Total Interactions", value: "10.8K" },
+      { label: "Avg. Non-Follower Engagement", value: "99%" },
+    ],
   },
+  servicesProvided: [
+    { name: "Social Media Strategy", icon: "📈" },
+    { name: "Reels-First Content Creation", icon: "🎥" },
+    { name: "Viral Food Videography", icon: "📹" },
+    { name: "Home-Style Food Photography", icon: "📸" },
+    { name: "Analytics & Performance Tracking", icon: "📊" },
+    { name: "Authentic Brand Storytelling", icon: "📖" },
   ],
-
-
-}
-
+  challenge: {
+    summary: [
+      "We started by reviewing Desi Garden's Instagram presence and growth objectives.",
+      "As a takeout kitchen competing in Halifax's diverse food scene, the client needed to differentiate themselves through authentic positioning and viral content strategy.",
+    ],
+    heading: "Key challenges included:",
+    points: [
+      "Standing out in competitive Halifax Indian food market",
+      "Communicating 'home-style' authenticity vs. restaurant dining",
+      "Building emotional connection through 'Tastes Like Home' messaging",
+      "Creating viral content that drives massive discovery",
+      "Attracting Indian diaspora seeking authentic home cooking",
+      "Competing with established restaurants with larger market",
+      "Building brand recognition as takeout-focused kitchen",
+    ],
+  },
+  approach: [
+    "Built an aggressive, optimized, and exclusive Reels-first content strategy, ensuring that approximately 98% of all published content was presented in the high-discovery vertical video format.",
+    "Launched and consistently applied a distinct and recognizable brand aesthetic centered on themes of being authentic, homely, comforting, and highly relatable, which deeply resonated with the target audience.",
+    "Achieved exceptional viral performance across the platform, with a staggering 99% non-follower engagement rate successfully driving massive organic discovery and community growth.",
+  ],
+  keyStrategies: [
+    "Engineered a viral formula using authenticity, relatability, and trending sound.",
+    "Comfort food positioning: emotional connection over just food",
+    "SEO-optimized captions with emotional, relatable copy",
+    "Optimal Reels length (7–15 seconds) for maximum completion rates",
+    "Explore page domination: 99% non-follower reach through viral content",
+    "Established sustainable community capital by strategically converting followers into emotionally engaged brand advocates.",
+  ],
+  cta: {
+    heading: "Want results like these?",
+    subtext: "Let’s build your brand’s viral presence together.",
+    button: "Book a strategy call",
+  },
+},
 
 ]
 export default WorksData;

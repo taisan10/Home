@@ -184,7 +184,11 @@ const scrollTabs = (direction) => {
           }}
           className={`whitespace-nowrap px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm md:text-md font-medium transition-all duration-300 ${
             activeIndex === index ? `${work.heroSection.theme}` : "bg-gray-50 text-gray-700 hover:bg-gray-200"
-          }`}
+          } , ${
+    ["Hearthstone Inn","Garden Retreat","Sake Cafe","Besharam "].some(val =>  activeWork.name.includes(val))
+      ? "text-gray-100"
+      : "text-black"
+  }`}
         >
           {work.name}
         </button>
@@ -214,12 +218,26 @@ const scrollTabs = (direction) => {
         >
           {/* Left: Text Content */}
           <div className="w-full md:w-1/2 flex flex-col gap-4 sm:gap-6 text-center md:text-left">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold">
-              {activeWork.name}
-            </h3>
-            <p className="text-base sm:text-lg opacity-90">
-              {activeWork.heroSection.subtitle}
-            </p>
+        
+            <h3
+  className={`text-2xl sm:text-3xl md:text-4xl font-bold   ${
+    ["Hearthstone Inn","Garden Retreat","Sake Cafe","Besharam "].some(val =>  activeWork.name.includes(val))
+      ? "text-gray-100"
+      : "text-black"
+  }`}
+>
+  {activeWork.name}
+</h3>
+
+<p
+  className={`text-base sm:text-lg opacity-90 ${
+    ["1.6K", "67K+","9.7K+","60K"].some(val => activeWork.heroSection.subtitle.includes(val))
+      ? "text-gray-100"
+      : "text-black"
+  }`}
+>
+  {activeWork.heroSection.subtitle}
+</p>
 
             {/* Stats */}
             <div
@@ -279,7 +297,7 @@ const scrollTabs = (direction) => {
 
         {/* Bottom Navigation */}
         <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
-          <PrimaryButton href="#contact">Book A Free Audit</PrimaryButton>
+          <PrimaryButton href="/contact">Book A Callback</PrimaryButton>
           <div className="flex gap-2 sm:gap-3">
             <button
               onClick={() => scrollTabs("left")}

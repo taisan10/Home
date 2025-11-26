@@ -11,7 +11,7 @@ import { ChallengeSection } from "../Challenge";
 import { ApproachSection } from "../Approach";
 import { Strategic } from "../KeyStrategy";
 // import { CuriousSection } from "../CuriousAbout";
-import { CaseStudiesSections } from "../OtherCaseStudy";
+import { CaseStudiesSections } from "../FourCaseStudy";
 import { Sidebar } from "../Sidebar";
 // import Contact from "../Contact";
 
@@ -57,7 +57,7 @@ const company = WorksData.find((item) => item.slug === companyName);
         
       </div>
           {/* <Contact /> */}
-          <CaseStudiesSections data={company.otherCaseStudies} />
+          <CaseStudiesSections data={company.FourCaseStudies} />
     </div>
   );
 }

@@ -14,7 +14,11 @@ export function HeroSection({ data }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.3 }}
-            className="text-4xl md:text-6xl font-bold leading-tight"
+            className={`text-4xl md:text-6xl font-bold leading-tight   ${
+    ["Hearthstone Inn","Garden Retreat","Sake Cafe","Besharam "].some(val =>  title.includes(val))
+      ? "text-gray-100"
+      : "text-black"
+  }`}
           >
             {title}
           </motion.h1>
@@ -24,7 +28,11 @@ export function HeroSection({ data }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.3 }}
-            className="text-lg md:text-xl font-medium"
+            className={`text-lg md:text-xl font-medium ${
+    ["1.6K", "67K+","9.7K+","60K"].some(val => subtitle.includes(val))
+      ? "text-gray-100"
+      : "text-black"
+  }`}
           >
             {subtitle}
           </motion.p>
@@ -54,7 +62,7 @@ export function HeroSection({ data }) {
             transition={{ duration: 1, delay: 0.9 }}
           >
            <div className="hidden md:block  ">
-                       <PrimaryButton href="#contact">Book A Free Audit</PrimaryButton>
+                       <PrimaryButton href="/contact">Book A Callback</PrimaryButton>
                      </div>
           </motion.div>
         </div>

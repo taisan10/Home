@@ -4,7 +4,7 @@ import { ChallengesSection } from "../ChallengesSection";
 import { HeroSection } from "../HeroSection";
 import { PlanSection } from "../PlanSection";
 import { RatingSection } from "../RatingSection";
-import { Team } from "../Team";
+// import { Team } from "../Team";
 
 export default function SocialMedia() {
   return (
@@ -15,7 +15,7 @@ export default function SocialMedia() {
   <BestServicesCarousel />
   <PlanSection />
   <RatingSection />
-  <Team />
+  {/* <Team /> */}
 
 
   </>

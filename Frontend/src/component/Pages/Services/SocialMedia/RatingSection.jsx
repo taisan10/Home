@@ -1,7 +1,7 @@
 import { useState} from "react";
 
 import {Container} from "../../../UI/UiComponent"
-import ContactPage from "../../../UI/Contactpage";
+
 
 
 // ⭐ Custom Icons (SVG)
@@ -99,12 +99,12 @@ export  function RatingSection() {
 
   return (
     <>
-    <section className="bg-black text-white py-16 px-4 md:px-12">
+    <section className="bg-neutraltext-white py-16 px-4 md:px-12 -mt-15 sm:-mt-15 -mb-15">
       <Container>
       {/* Heading */}
       <h2 className="text-2xl md:text-4xl font-bold text-center mb-10">
         Our rating based on{" "}
-        <span className="text-yellow-400">2</span> verified client reviews
+        <span className="text-sky-400">2</span> verified client reviews
       </h2>
 
       <div className="flex flex-col md:flex-row gap-8">
@@ -122,7 +122,7 @@ export  function RatingSection() {
 
           <p className="text-xl font-semibold mb-2 flex items-center">
             4.9{" "}
-            <span className="flex text-yellow-400 ml-2">
+            <span className="flex text-sky-400 ml-2">
               {Array(5)
                 .fill()
                 .map((_, i) => (
@@ -233,7 +233,7 @@ export  function RatingSection() {
                 <div
                 key={i}
                 className={`h-2 w-2 rounded-full ${
-                  current === i ? "bg-yellow-400" : "bg-gray-600"
+                  current === i ? "bg-sky-400" : "bg-gray-600"
                 }`}
                 />
               ))}
@@ -243,8 +243,7 @@ export  function RatingSection() {
       </div>
       </Container>
     </section>
-              
-              <ContactPage />
+           
               
               </>
   );
