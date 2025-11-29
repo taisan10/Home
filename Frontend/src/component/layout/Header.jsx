@@ -49,12 +49,9 @@ const workNavChildren = WorksData.map((item) => ({
     children: serviceNavChildren,
   },
 
-    
+   
     {
       label: "Contact", href:"/Contact"
-    },
-    {
-      label: "ContactNew", href:"/Contact12"
     },
 
 

@@ -1,47 +1,47 @@
- const videoCategories = {
-  UGC: [
-    "http://localhost:5000/video/UGC/UGC.mp4",
-    "http://localhost:5000/video/UGC/UGC1.mp4",
-    "http://localhost:5000/video/UGC/UGC2.mp4",
-    "http://localhost:5000/video/UGC/UGC3.mp4",
-    "http://localhost:5000/video/UGC/UGC4.mp4",
-  ],
-  EVENTS: [
-    "http://localhost:5000/video/Events/Events.mp4",
-    "http://localhost:5000/video/Events/Events%201.mp4",
-    "http://localhost:5000/video/Events/Events%202.mp4",
-    "http://localhost:5000/video/Events/Events%203.mp4",
-    "http://localhost:5000/video/Events/Events%204.mp4",
-  ],
-  SMM: [
-    "http://localhost:5000/video/SMM/SMM.mp4",
-    "http://localhost:5000/video/SMM/SMM1.mp4",
-    "http://localhost:5000/video/SMM/SMM2.mp4",
-    "http://localhost:5000/video/SMM/SMM3.mp4",
-    "http://localhost:5000/video/SMM/SMM4.mp4",
-  ],
-  "Video Production": [
-    "http://localhost:5000/video/Video%20Production/Video%20Production.mp4",
-    "http://localhost:5000/video/Video%20Production/Video%20Production1.mp4",
-    "http://localhost:5000/video/Video%20Production/Video%20Production2.mp4",
-    "http://localhost:5000/video/Video%20Production/Video%20Production3.mp4",
-    "http://localhost:5000/video/Video%20Production/Video%20Production4.mp4",
-  ],
-  "Personal Branding": [
-    "http://localhost:5000/video/Personal%20Branding/Personal%20Branding5.mp4",
-    "http://localhost:5000/video/Personal%20Branding/Personal%20Branding1.mp4",
-    "http://localhost:5000/video/Personal%20Branding/Personal%20Branding2.mp4",
-    "http://localhost:5000/video/Personal%20Branding/Personal%20Branding.mp4",
-    "http://localhost:5000/video/Personal%20Branding/Personal%20Branding3.mp4",
-  ],
-  "Influencer Marketing": [
-    "http://localhost:5000/video/Influencer%20Marketing/Influencer%20marketing.mp4",
-    "http://localhost:5000/video/Influencer%20Marketing/Influencer%20marketing1.mp4",
-    "http://localhost:5000/video/Influencer%20Marketing/Influencer%20marketing2.mp4",
-    "http://localhost:5000/video/Influencer%20Marketing/Influencer%20marketing3.mp4",
-    "http://localhost:5000/video/Influencer%20Marketing/Influencer%20marketing4.mp4",
-  ],
-};
+//  const videoCategories = {
+//   UGC: [
+//     "http://localhost:5000/video/UGC/UGC.mp4",
+//     "http://localhost:5000/video/UGC/UGC1.mp4",
+//     "http://localhost:5000/video/UGC/UGC2.mp4",
+//     "http://localhost:5000/video/UGC/UGC3.mp4",
+//     "http://localhost:5000/video/UGC/UGC4.mp4",
+//   ],
+//   EVENTS: [
+//     "http://localhost:5000/video/Events/Events.mp4",
+//     "http://localhost:5000/video/Events/Events%201.mp4",
+//     "http://localhost:5000/video/Events/Events%202.mp4",
+//     "http://localhost:5000/video/Events/Events%203.mp4",
+//     "http://localhost:5000/video/Events/Events%204.mp4",
+//   ],
+//   SMM: [
+//     "http://localhost:5000/video/SMM/SMM.mp4",
+//     "http://localhost:5000/video/SMM/SMM1.mp4",
+//     "http://localhost:5000/video/SMM/SMM2.mp4",
+//     "http://localhost:5000/video/SMM/SMM3.mp4",
+//     "http://localhost:5000/video/SMM/SMM4.mp4",
+//   ],
+//   "Video Production": [
+//     "http://localhost:5000/video/Video%20Production/Video%20Production.mp4",
+//     "http://localhost:5000/video/Video%20Production/Video%20Production1.mp4",
+//     "http://localhost:5000/video/Video%20Production/Video%20Production2.mp4",
+//     "http://localhost:5000/video/Video%20Production/Video%20Production3.mp4",
+//     "http://localhost:5000/video/Video%20Production/Video%20Production4.mp4",
+//   ],
+//   "Personal Branding": [
+//     "http://localhost:5000/video/Personal%20Branding/Personal%20Branding5.mp4",
+//     "http://localhost:5000/video/Personal%20Branding/Personal%20Branding1.mp4",
+//     "http://localhost:5000/video/Personal%20Branding/Personal%20Branding2.mp4",
+//     "http://localhost:5000/video/Personal%20Branding/Personal%20Branding.mp4",
+//     "http://localhost:5000/video/Personal%20Branding/Personal%20Branding3.mp4",
+//   ],
+//   "Influencer Marketing": [
+//     "http://localhost:5000/video/Influencer%20Marketing/Influencer%20marketing.mp4",
+//     "http://localhost:5000/video/Influencer%20Marketing/Influencer%20marketing1.mp4",
+//     "http://localhost:5000/video/Influencer%20Marketing/Influencer%20marketing2.mp4",
+//     "http://localhost:5000/video/Influencer%20Marketing/Influencer%20marketing3.mp4",
+//     "http://localhost:5000/video/Influencer%20Marketing/Influencer%20marketing4.mp4",
+//   ],
+// };
 
 
 
@@ -49,67 +49,67 @@
 
 
 
-//   const videoCategories = {
-//     UGC: [
+// //   const videoCategories = {
+// //     UGC: [
 
-//       "/videos/UGC/UGC.mp4",
-//       "/videos/UGC/UGC1.mp4",
-//       "/videos/UGC/UGC2.mp4",
-//       "/videos/UGC/UGC3.mp4",
-//       "/videos/UGC/UGC4.mp4",
+// //       "/videos/UGC/UGC.mp4",
+// //       "/videos/UGC/UGC1.mp4",
+// //       "/videos/UGC/UGC2.mp4",
+// //       "/videos/UGC/UGC3.mp4",
+// //       "/videos/UGC/UGC4.mp4",
      
      
-//     ],
-//     EVENTS: [
+// //     ],
+// //     EVENTS: [
        
-//       "/videos/Events/Events.mp4",
-//       "/videos/Events/Events 1.mp4",
-//       "/videos/Events/Events 2.mp4",
-//       "/videos/Events/Events 3.mp4",
-//       "/videos/Events/Events 4.mp4",
+// //       "/videos/Events/Events.mp4",
+// //       "/videos/Events/Events 1.mp4",
+// //       "/videos/Events/Events 2.mp4",
+// //       "/videos/Events/Events 3.mp4",
+// //       "/videos/Events/Events 4.mp4",
       
      
-//     ],
-//     SMM: [
-//       "/videos/SMM/SMM.mp4",
-//       "/videos/SMM/SMM1.mp4",
-//       "/videos/SMM/SMM2.mp4",
-//       "/videos/SMM/SMM3.mp4",
-//       "/videos/SMM/SMM4.mp4",
+// //     ],
+// //     SMM: [
+// //       "/videos/SMM/SMM.mp4",
+// //       "/videos/SMM/SMM1.mp4",
+// //       "/videos/SMM/SMM2.mp4",
+// //       "/videos/SMM/SMM3.mp4",
+// //       "/videos/SMM/SMM4.mp4",
 
 
      
-//     ],
-//     "Video Production": [
-//       "/videos/Video Production/Video Production.mp4",
-//       "/videos/Video Production/Video Production1.mp4",
-//       "/videos/Video Production/Video Production2.mp4",
-//       "/videos/Video Production/Video Production3.mp4",
-//       "/videos/Video Production/Video Production4.mp4",
+// //     ],
+// //     "Video Production": [
+// //       "/videos/Video Production/Video Production.mp4",
+// //       "/videos/Video Production/Video Production1.mp4",
+// //       "/videos/Video Production/Video Production2.mp4",
+// //       "/videos/Video Production/Video Production3.mp4",
+// //       "/videos/Video Production/Video Production4.mp4",
 
       
       
-//     ],
-//     "Personal Branding": [
-//       "/videos/Personal Branding/Personal Branding5.mp4",
-//       "/videos/Personal Branding/Personal Branding1.mp4",
-//       "/videos/Personal Branding/Personal Branding2.mp4",
-//       "/videos/Personal Branding/Personal Branding.mp4",
-//       "/videos/Personal Branding/Personal Branding3.mp4",
+// //     ],
+// //     "Personal Branding": [
+// //       "/videos/Personal Branding/Personal Branding5.mp4",
+// //       "/videos/Personal Branding/Personal Branding1.mp4",
+// //       "/videos/Personal Branding/Personal Branding2.mp4",
+// //       "/videos/Personal Branding/Personal Branding.mp4",
+// //       "/videos/Personal Branding/Personal Branding3.mp4",
   
-// ,
+// // ,
 
-//     ],
-//     "Influencer Marketing": [
-//       "/videos/Influencer Marketing/Influencer marketing.mp4",
-//       "/videos/Influencer Marketing/Influencer marketing1.mp4",
-//       "/videos/Influencer Marketing/Influencer marketing2.mp4",
-//       "/videos/Influencer Marketing/Influencer marketing3.mp4",
-//       "/videos/Influencer Marketing/Influencer marketing4.mp4",
+// //     ],
+// //     "Influencer Marketing": [
+// //       "/videos/Influencer Marketing/Influencer marketing.mp4",
+// //       "/videos/Influencer Marketing/Influencer marketing1.mp4",
+// //       "/videos/Influencer Marketing/Influencer marketing2.mp4",
+// //       "/videos/Influencer Marketing/Influencer marketing3.mp4",
+// //       "/videos/Influencer Marketing/Influencer marketing4.mp4",
 
      
-//     ],
-//   };
+// //     ],
+// //   };
 
 
 
@@ -121,47 +121,111 @@
 
 
 
- const videoCategories = {
-  UGC: [
-    "http://72.60.173.145/video/UGC/UGC.mp4",
-    "http://72.60.173.145/video/UGC/UGC1.mp4",
-    "http://72.60.173.145/video/UGC/UGC2.mp4",
-    "http://72.60.173.145/video/UGC/UGC3.mp4",
-    "http://72.60.173.145/video/UGC/UGC4.mp4",
-  ],
-  EVENTS: [
-    "http://72.60.173.145/video/Events/Events.mp4",
-    "http://72.60.173.145/video/Events/Events%201.mp4",
-    "http://72.60.173.145/video/Events/Events%202.mp4",
-    "http://72.60.173.145/video/Events/Events%203.mp4",
-    "http://72.60.173.145/video/Events/Events%204.mp4",
-  ],
-  SMM: [
-    "http://72.60.173.145/video/SMM/SMM.mp4",
-    "http://72.60.173.145/video/SMM/SMM1.mp4",
-    "http://72.60.173.145/video/SMM/SMM2.mp4",
-    "http://72.60.173.145/video/SMM/SMM3.mp4",
-    "http://72.60.173.145/video/SMM/SMM4.mp4",
-  ],
-  "Video Production": [
-    "http://72.60.173.145/video/Video%20Production/Video%20Production.mp4",
-    "http://72.60.173.145/video/Video%20Production/Video%20Production1.mp4",
-    "http://72.60.173.145/video/Video%20Production/Video%20Production2.mp4",
-    "http://72.60.173.145/video/Video%20Production/Video%20Production3.mp4",
-    "http://72.60.173.145/video/Video%20Production/Video%20Production4.mp4",
-  ],
-  "Personal Branding": [
-    "http://72.60.173.145/video/Personal%20Branding/Personal%20Branding5.mp4",
-    "http://72.60.173.145/video/Personal%20Branding/Personal%20Branding1.mp4",
-    "http://72.60.173.145/video/Personal%20Branding/Personal%20Branding2.mp4",
-    "http://72.60.173.145/video/Personal%20Branding/Personal%20Branding.mp4",
-    "http://72.60.173.145/video/Personal%20Branding/Personal%20Branding3.mp4",
-  ],
-  "Influencer Marketing": [
-    "http://72.60.173.145/video/Influencer%20Marketing/Influencer%20marketing.mp4",
-    "http://72.60.173.145/video/Influencer%20Marketing/Influencer%20marketing1.mp4",
-    "http://72.60.173.145/video/Influencer%20Marketing/Influencer%20marketing2.mp4",
-    "http://72.60.173.145/video/Influencer%20Marketing/Influencer%20marketing3.mp4",
-    "http://72.60.173.145/video/Influencer%20Marketing/Influencer%20marketing4.mp4",
-  ],
-};
+//  const videoCategories = {
+//   UGC: [
+//     "http://72.60.173.145/video/UGC/UGC.mp4",
+//     "http://72.60.173.145/video/UGC/UGC1.mp4",
+//     "http://72.60.173.145/video/UGC/UGC2.mp4",
+//     "http://72.60.173.145/video/UGC/UGC3.mp4",
+//     "http://72.60.173.145/video/UGC/UGC4.mp4",
+//   ],
+//   EVENTS: [
+//     "http://72.60.173.145/video/Events/Events.mp4",
+//     "http://72.60.173.145/video/Events/Events%201.mp4",
+//     "http://72.60.173.145/video/Events/Events%202.mp4",
+//     "http://72.60.173.145/video/Events/Events%203.mp4",
+//     "http://72.60.173.145/video/Events/Events%204.mp4",
+//   ],
+//   SMM: [
+//     "http://72.60.173.145/video/SMM/SMM.mp4",
+//     "http://72.60.173.145/video/SMM/SMM1.mp4",
+//     "http://72.60.173.145/video/SMM/SMM2.mp4",
+//     "http://72.60.173.145/video/SMM/SMM3.mp4",
+//     "http://72.60.173.145/video/SMM/SMM4.mp4",
+//   ],
+//   "Video Production": [
+//     "http://72.60.173.145/video/Video%20Production/Video%20Production.mp4",
+//     "http://72.60.173.145/video/Video%20Production/Video%20Production1.mp4",
+//     "http://72.60.173.145/video/Video%20Production/Video%20Production2.mp4",
+//     "http://72.60.173.145/video/Video%20Production/Video%20Production3.mp4",
+//     "http://72.60.173.145/video/Video%20Production/Video%20Production4.mp4",
+//   ],
+//   "Personal Branding": [
+//     "http://72.60.173.145/video/Personal%20Branding/Personal%20Branding5.mp4",
+//     "http://72.60.173.145/video/Personal%20Branding/Personal%20Branding1.mp4",
+//     "http://72.60.173.145/video/Personal%20Branding/Personal%20Branding2.mp4",
+//     "http://72.60.173.145/video/Personal%20Branding/Personal%20Branding.mp4",
+//     "http://72.60.173.145/video/Personal%20Branding/Personal%20Branding3.mp4",
+//   ],
+//   "Influencer Marketing": [
+//     "http://72.60.173.145/video/Influencer%20Marketing/Influencer%20marketing.mp4",
+//     "http://72.60.173.145/video/Influencer%20Marketing/Influencer%20marketing1.mp4",
+//     "http://72.60.173.145/video/Influencer%20Marketing/Influencer%20marketing2.mp4",
+//     "http://72.60.173.145/video/Influencer%20Marketing/Influencer%20marketing3.mp4",
+//     "http://72.60.173.145/video/Influencer%20Marketing/Influencer%20marketing4.mp4",
+//   ],
+// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const BASEURL = "http://72.60.173.145:5000/video";
+
+  // const videoCategories = {
+  //   UGC: [
+  //     `${BASEURL}/UGC/UGC.mp4`,
+  //     `${BASEURL}/UGC/UGC1.mp4`,
+  //     `${BASEURL}/UGC/UGC2.mp4`,
+  //     `${BASEURL}/UGC/UGC3.mp4`,
+  //     `${BASEURL}/UGC/UGC4.mp4`,
+  //   ],
+  //   EVENTS: [
+  //     `${BASEURL}/Events/Events.mp4`,
+  //     `${BASEURL}/Events/Events%201.mp4`,
+  //     `${BASEURL}/Events/Events%202.mp4`,
+  //     `${BASEURL}/Events/Events%203.mp4`,
+  //     `${BASEURL}/Events/Events%204.mp4`,
+  //   ],
+  //   SMM: [
+  //     `${BASEURL}/SMM/SMM.mp4`,
+  //     `${BASEURL}/SMM/SMM1.mp4`,
+  //     `${BASEURL}/SMM/SMM2.mp4`,
+  //     `${BASEURL}/SMM/SMM3.mp4`,
+  //     `${BASEURL}/SMM/SMM4.mp4`,
+  //   ],
+  //   "Video Production": [
+  //     `${BASEURL}/Video%20Production/Video%20Production.mp4`,
+  //     `${BASEURL}/Video%20Production/Video%20Production1.mp4`,
+  //     `${BASEURL}/Video%20Production/Video%20Production2.mp4`,
+  //     `${BASEURL}/Video%20Production/Video%20Production3.mp4`,
+  //     `${BASEURL}/Video%20Production/Video%20Production4.mp4`,
+  //   ],
+  //   "Personal Branding": [
+  //     `${BASEURL}/Personal%20Branding/Personal%20Branding5.mp4`,
+  //     `${BASEURL}/Personal%20Branding/Personal%20Branding1.mp4`,
+  //     `${BASEURL}/Personal%20Branding/Personal%20Branding2.mp4`,
+  //     `${BASEURL}/Personal%20Branding/Personal%20Branding.mp4`,
+  //     `${BASEURL}/Personal%20Branding/Personal%20Branding3.mp4`,
+  //   ],
+  //   "Influencer Marketing": [
+  //     `${BASEURL}/Influencer%20Marketing/Influencer%20marketing.mp4`,
+  //     `${BASEURL}/Influencer%20Marketing/Influencer%20marketing1.mp4`,
+  //     `${BASEURL}/Influencer%20Marketing/Influencer%20marketing2.mp4`,
+  //     `${BASEURL}/Influencer%20Marketing/Influencer%20marketing3.mp4`,
+  //     `${BASEURL}/Influencer%20Marketing/Influencer%20marketing4.mp4`,
+  //   ],
+  // };
