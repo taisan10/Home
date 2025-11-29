@@ -7,7 +7,7 @@ import { Container, GradientText } from "../../UI/UiComponent";
         step: "01",
         title: "Deep Brand Discovery",
         desc: "We dive into your unique vision, goals, and audience to build a comprehensive foundation for tailored success.",
-        img: "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80",
+        img: "/About/Process/deep_discovery.jpeg",
       },
       {
         step: "02",
@@ -36,11 +36,14 @@ import { Container, GradientText } from "../../UI/UiComponent";
           >
             <div className=" w-full md:w-[50%] lg:w-[40%] flex justify-center md:justify-end">
             <div className="w-full max-w-md rounded-3xl border border-white/10 bg-white/5 p-3 sm:p-4">
-              <div className="aspect-[4/3] w-full rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center">
-                <div className="text-4xl select-none" aria-hidden>
-                 
-                </div>
-              </div>
+              <div className="aspect-[6/3] w-full rounded-2xl overflow-hidden">
+  <img
+    src={p.img}
+    alt={p.title}
+    className="w-full h-full object-cover rounded-2xl"
+    loading="lazy"
+  />
+</div>
 
               
                <div className="mt-3 text-center text-xs sm:text-sm text-white/80">
