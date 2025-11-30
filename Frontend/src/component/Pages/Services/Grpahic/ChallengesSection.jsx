@@ -217,9 +217,13 @@ export function ChallengesSection() {
               <h3 className="text-lg font-semibold leading-snug transition-all duration-300 group-hover:text-base group-hover:text-sky-400">
                 {item.title}
               </h3>
-              <p className="text-white/60 text-sm mt-4 opacity-0 group-hover:opacity-100 group-hover:text-lg group-hover:text-white transition-all duration-300">
-                {item.answer}
-              </p>
+            <p
+  className="text-white/60 text-sm mt-4 
+             sm:opacity-0 sm:group-hover:opacity-100 
+             opacity-100 transition-all duration-300"
+>
+  {item.answer}
+</p>
             </div>
           ))}
         </div>
