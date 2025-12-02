@@ -3,8 +3,8 @@ import { ChallengesSection } from "../ChallengesSection";
 
 import { HeroSection } from "../HeroSection";
 import { PlanSection } from "../PlanSection";
-import { RatingSection } from "../RatingSection";
-import { Team } from "../Team";
+// import { RatingSection } from "../RatingSection";
+// import { Team } from "../Team";
 
 export default function VideoEditing() {
   return (
@@ -14,8 +14,8 @@ export default function VideoEditing() {
   <ChallengesSection />
   <BestServicesCarousel />
   <PlanSection />
-  <RatingSection />
-  <Team />
+  {/* <RatingSection /> */}
+  {/* <Team /> */}
   
 
   </>
